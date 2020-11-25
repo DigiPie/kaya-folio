@@ -6,6 +6,8 @@
  */
 
 .heroBanner {
+  background-color: var(--ifm-color-secondary-lightest);
+  color: var(--ifm-color-secondary);
   padding: 4rem 0;
   text-align: center;
   position: relative;
@@ -16,6 +18,24 @@
   .heroBanner {
     padding: 2rem;
   }
+}
+
+.heroBanner h1 {
+  font-size: 2.4rem;
+}
+
+.heroBanner p {
+  font-size: 1.2rem;
+}
+
+.socialLinkList {
+  font-size: 1.2rem;
+  list-style: none outside;
+}
+
+.socialLinkList li {
+  display: inline-block;
+  margin: 0 1rem;
 }
 
 .buttons {
@@ -32,6 +52,11 @@
 }
 
 .featureImage {
-  height: 200px;
-  width: 200px;
+  max-height: 384px;
+  max-width: 384px;
+  margin-bottom: 1rem;
+}
+
+.featureText {
+  padding: 1rem;
 }

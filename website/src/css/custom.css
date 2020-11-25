@@ -7,13 +7,21 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: #4285f4;
+  --ifm-color-primary-dark: #2572f2;
+  --ifm-color-primary-darker: #1669f1;
+  --ifm-color-primary-darkest: #0c55cd;
+  --ifm-color-primary-light: #5f98f6;
+  --ifm-color-primary-lighter: #6ea1f7;
+  --ifm-color-primary-lightest: #9abef9;
+  --ifm-color-secondary: #313131;
+  --ifm-color-secondary-dark: #222222;
+  --ifm-color-secondary-darker: #141414;
+  --ifm-color-secondary-darkest: #050505;
+  --ifm-color-secondary-light: #5d5d5d;
+  --ifm-color-secondary-lighter: #898989;
+  --ifm-color-secondary-lightest: #e1e1e1;
+  --ifm-link-color: #2572f2;
   --ifm-code-font-size: 95%;
 }
 
@@ -22,4 +30,16 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0f9d58;
+}
+
+ul {
+  padding-left: 0;
 }
