@@ -21,7 +21,7 @@ const internetProfiles = {
   },
   projects: {
     label: "Projects",
-    to: "projects/",
+    to: "docs",
   },
   resume: {
     label: "Resume",
@@ -33,8 +33,8 @@ module.exports = {
   title: "Evan Tay",
   tagline:
     "A Software Engineer and Cloud Engineer passionate about solving Meaningful Problems.",
-  url: "https://www.evantay.com",
-  baseUrl: "/",
+  url: "https://digipie.github.io/",
+  baseUrl: "/kaya-folio/",
   onBrokenLinks: "throw",
   favicon: "img/favicon.png",
   organizationName: "digipie", // Usually your GitHub org/user name.
@@ -56,8 +56,8 @@ module.exports = {
           position: "left",
         },
         {
-          to: "projects/",
-          activeBasePath: "projects",
+          to: "docs/",
+          activeBasePath: "docs",
           label: "Projects",
           position: "left",
         },
