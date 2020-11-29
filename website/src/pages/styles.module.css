@@ -28,6 +28,10 @@
   font-size: 1.2rem;
 }
 
+.heroBanner ul {
+  padding-left: 0;
+}
+
 .socialLinkList {
   font-size: 1.2rem;
   list-style: none outside;
