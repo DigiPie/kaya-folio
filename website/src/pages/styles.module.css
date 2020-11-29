@@ -6,8 +6,8 @@
  */
 
 .heroBanner {
-  background-color: var(--ifm-color-secondary-lightest);
-  color: var(--ifm-color-secondary);
+  background-color: var(--ifm-color-secondary);
+  color: var(--ifm-color-secondary-dark);
   padding: 4rem 0;
   text-align: center;
   position: relative;
