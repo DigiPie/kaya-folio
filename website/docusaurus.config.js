@@ -22,10 +22,6 @@ const internetProfiles = {
     label: "Docs",
     to: "docs",
   },
-  projects: {
-    label: "Projects",
-    to: "docs",
-  },
   resume: {
     label: "Resume",
     href: "https://github.com/DigiPie/Deedy-Resume/raw/master/resume.pdf",
@@ -59,12 +55,6 @@ module.exports = {
           position: "left",
         },
         {
-          to: "docs/",
-          activeBasePath: "docs",
-          label: "Projects",
-          position: "left",
-        },
-        {
           href: internetProfiles.resume.href,
           label: "Resume",
           position: "right",
@@ -86,7 +76,6 @@ module.exports = {
           items: [
             internetProfiles.blog,
             internetProfiles.docs,
-            internetProfiles.projects,
             internetProfiles.resume,
           ],
         },
