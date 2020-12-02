@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
@@ -47,7 +47,8 @@ const features = [
         I was a Full-Stack Software Engineer Intern at{" "}
         <a href="https://open.gov.sg/">Open Government Products</a> for Summer
         2020. I am currently learning more about{" "}
-        <a href="https://reactjs.org/">ReactJS</a>.
+        <a href="https://reactjs.org/">ReactJS</a> and{" "}
+        <a href="https://v2.docusaurus.io/">Docusaurus 2</a>.
       </>
     ),
   },
@@ -94,19 +95,30 @@ function Feature({ imageUrl, title, description }) {
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
+  const [bannerHeight, setBannerHeight] = useState(0);
+
+  useEffect(() => {
+    function handleResize() {
+      setBannerHeight(Math.max(384, window.innerHeight));
+    }
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return (_) => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <Layout description="Description will go into a meta tag in <head />">
-      <header className={clsx("hero", styles.heroBanner)}>
+      <header
+        className={clsx("hero", styles.heroBanner)}
+        style={{ height: bannerHeight }}
+      >
         <div className="container">
-          <img
-            src="img/profilepic.jpg"
-            style={{
-              borderRadius: "50%",
-              maxWidth: 128,
-            }}
-          />
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <h1>Hello world</h1>
+          <p>{siteConfig.tagline}</p>
           <ul className={styles.socialLinkList}>
             {socialLinks.map((props, idx) => (
               <SocialLink key={idx} {...props} />
@@ -115,6 +127,23 @@ function Home() {
         </div>
       </header>
       <main>
+        <div className={styles.about}>
+          <div className="container">
+            <div className="row">
+              <div className="col col--3">
+                <img src="img/profilepic.jpg" className={styles.profilePic} />
+              </div>
+              <div className="col col--9">
+                <h1>Evan Tay</h1>
+                <p>
+                  Hello! I graduated from <a href="https://www.nus.edu.sg/">
+                    National University of Singapore
+                  </a> as a <a href="https://www.comp.nus.edu.sg/">Computer Science major</a> in 2020. I was the <a href="https://dscnustech.github.io">Deputy Head of Technology</a> at <a href="https://dscnustech.github.io/">Google Developer Student Club NUS</a>, and the <a href="https://www.instagram.com/nusskating/">President of the NUS Skating Club</a>. I was also a <a href="https://github.com/DigiPie/CS1010-Tutorial-C09">Teaching Assistant</a> for 3 different courses, and an <a href="https://www.imda.gov.sg">IMDA scholarship recipient</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className="container">
@@ -123,12 +152,14 @@ function Home() {
                   <Feature key={idx} {...props} />
                 ))}
               </div>
+              <p className="text--center">
+                <a href="http://www.freepik.com">
+                  Graphics designed by slidesgo / Freepik
+                </a>
+              </p>
             </div>
           </section>
         )}
-        <p className="text--center">
-          <a href="http://www.freepik.com">Graphics designed by slidesgo / Freepik</a>
-        </p>
       </main>
     </Layout>
   );

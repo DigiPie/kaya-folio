@@ -15,12 +15,15 @@
   --ifm-color-primary-lighter: #6ea1f7;
   --ifm-color-primary-lightest: #9abef9;
   --ifm-color-secondary: #e1e1e1;
-  --ifm-color-secondary-dark: #313131;
-  --ifm-color-secondary-darker: #222222;
+  --ifm-color-secondary-dark: #222222;
+  --ifm-color-secondary-darker: #141414;
   --ifm-color-secondary-darkest: #141414;
   --ifm-color-secondary-light: #050505;
   --ifm-color-secondary-lighter: #5d5d5d;
   --ifm-color-secondary-lightest: #898989;
+  --ifm-navbar-background-color: #141414;
+  --ifm-background-color: #141414;
+  --ifm-color-success: #0f9d58;
   --ifm-link-color: #2572f2;
   --ifm-code-font-size: 95%;
 }
@@ -32,10 +35,49 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
 }
 
 a:hover {
-  color: #0f9d58;
+  color: var(--ifm-color-success);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.align-r {
+  text-align: right;
+}
+
+@media screen and (max-width: 966px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }

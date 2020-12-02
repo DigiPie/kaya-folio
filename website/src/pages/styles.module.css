@@ -6,26 +6,21 @@
  */
 
 .heroBanner {
-  background-color: var(--ifm-color-secondary);
-  color: var(--ifm-color-secondary-dark);
-  padding: 4rem 0;
+  background-color: var(--ifm-color-secondary-darkest);
+  color: var(--ifm-color-secondary);
+  padding: 0 0 6rem;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
 .heroBanner h1 {
-  font-size: 2.4rem;
+  color: var(--ifm-color-success);
+  font-size: 6rem;
 }
 
 .heroBanner p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .heroBanner ul {
@@ -48,19 +43,47 @@
   justify-content: center;
 }
 
+.about,
 .features {
-  display: flex;
   align-items: center;
+  display: flex;
   padding: 2rem 0;
   width: 100%;
 }
 
-.featureImage {
-  max-height: 384px;
-  max-width: 384px;
-  margin-bottom: 1rem;
+.about {
+  background-color: var(--ifm-color-secondary);
+  color: var(--ifm-color-secondary-darkest);
+}
+
+.features {
+  background-color: var(--ifm-color-secondary-darkest);
+}
+
+.profilePic {
+  border-radius: 50%;
+  max-height: 196px;
+  max-width: 196px;
 }
 
 .featureText {
   padding: 1rem;
+}
+
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+
+  .heroBanner h1 {
+    font-size: 3.2rem;
+  }
+
+  .heroBanner p {
+    font-size: 1.2rem;
+  }
+
+  .profilePic {
+    display: none;
+  }
 }

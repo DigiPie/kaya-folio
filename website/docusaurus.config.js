@@ -31,7 +31,7 @@ const internetProfiles = {
 module.exports = {
   title: "Evan Tay",
   tagline:
-    "A Software Engineer and Cloud Engineer passionate about solving Meaningful Problems.",
+    "I am a Software Engineer and Cloud Engineer passionate about solving Meaningful Problems.",
   url: "https://digipie.github.io/",
   baseUrl: "/kaya-folio/",
   onBrokenLinks: "throw",
