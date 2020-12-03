@@ -64,6 +64,15 @@ p {
   text-align: right;
 }
 
+.small {
+  font-size: 0.8rem;
+}
+
+.btn-sec {
+  font-size: 1.2rem;
+  margin: 0.6rem 1.2rem;
+}
+
 @media screen and (max-width: 966px) {
   h1 {
     font-size: 2.4rem;
@@ -79,5 +88,10 @@ p {
 
   p {
     font-size: 1rem;
+  }
+
+  .btn-sec {
+    font-size: 1rem;
+    margin: 0.6rem;
   }
 }

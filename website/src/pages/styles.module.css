@@ -24,39 +24,46 @@
 }
 
 .heroBanner ul {
-  padding-left: 0;
+  padding: 0;
 }
 
 .socialLinkList {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   list-style: none outside;
 }
 
 .socialLinkList li {
   display: inline-block;
-  margin: 0 1rem;
+  margin: 0 1.2rem;
+}
+
+.landingScrolldown {
+  font-size: 2.8rem;
+  margin: 0 auto;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1.6rem 0 1.8rem;
 }
 
 .about,
 .features {
   align-items: center;
   display: flex;
-  padding: 2rem 0;
   width: 100%;
 }
 
 .about {
+  padding: 4.8rem 0;
   background-color: var(--ifm-color-secondary);
   color: var(--ifm-color-secondary-darkest);
 }
 
 .features {
+  padding: 2rem 0;
   background-color: var(--ifm-color-secondary-darkest);
 }
 
@@ -66,6 +73,11 @@
   max-width: 196px;
 }
 
+.featureImage {
+  max-height: 384px;
+  max-width: 384px;
+}
+
 .featureText {
   padding: 1rem;
 }
@@ -73,6 +85,7 @@
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
+    text-align: left;
   }
 
   .heroBanner h1 {
@@ -80,7 +93,24 @@
   }
 
   .heroBanner p {
+    font-size: 1rem;
+  }
+
+  .about {
+    padding: 3rem 0;
+  }
+
+  .socialLinkList {
     font-size: 1.2rem;
+  }
+
+  .socialLinkList li {
+    display: block;
+    margin: 0;
+  }
+
+  .landingScrolldown {
+    font-size: 2.4rem;
   }
 
   .profilePic {

@@ -45,6 +45,7 @@ module.exports = {
       respectPrefersColorScheme: false,
     },
     navbar: {
+      hideOnScroll: true,
       title: "Evan Tay",
       items: [
         { to: "blog", label: "Blog", position: "left" },

@@ -6,6 +6,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeOpen } from "@fortawesome/free-regular-svg-icons";
+import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import styles from "./styles.module.css";
 
@@ -32,7 +33,7 @@ function SocialLink({ faIcon, alt, url }) {
   return (
     <li>
       <a href={formattedUrl}>
-        <FontAwesomeIcon alt={alt} title={alt} icon={faIcon} size="2x" />
+        <FontAwesomeIcon alt={alt} title={alt} icon={faIcon} size="1x" /> {alt}
       </a>
     </li>
   );
@@ -95,11 +96,14 @@ function Feature({ imageUrl, title, description }) {
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
-  const [bannerHeight, setBannerHeight] = useState(0);
+  const [headerHeight, setHeaderHeight] = useState(384);
+  const [bannerHeight, setBannerHeight] = useState(256);
 
   useEffect(() => {
     function handleResize() {
-      setBannerHeight(Math.max(384, window.innerHeight));
+      const tempHeaderHeight = Math.max(384, window.innerHeight);
+      setHeaderHeight(tempHeaderHeight);
+      setBannerHeight(Math.max(256, tempHeaderHeight / 2));
     }
 
     handleResize();
@@ -114,19 +118,31 @@ function Home() {
     <Layout description="Description will go into a meta tag in <head />">
       <header
         className={clsx("hero", styles.heroBanner)}
-        style={{ height: bannerHeight }}
+        style={{ height: headerHeight }}
       >
         <div className="container">
-          <h1>Hello world</h1>
-          <p>{siteConfig.tagline}</p>
-          <ul className={styles.socialLinkList}>
-            {socialLinks.map((props, idx) => (
-              <SocialLink key={idx} {...props} />
-            ))}
-          </ul>
+          <div style={{ minHeight: bannerHeight }}>
+            <h1>Hello world</h1>
+            <p>{siteConfig.tagline}</p>
+            <ul className={styles.socialLinkList}>
+              {socialLinks.map((props, idx) => (
+                <SocialLink key={idx} {...props} />
+              ))}
+            </ul>
+          </div>
+          <div className="row">
+            <a className={styles.landingScrolldown} href="#main">
+              <FontAwesomeIcon
+                alt="Scroll down"
+                title="Scroll down"
+                icon={faArrowCircleDown}
+                size="1x"
+              />
+            </a>
+          </div>
         </div>
       </header>
-      <main>
+      <main id="main">
         <div className={styles.about}>
           <div className="container">
             <div className="row">
@@ -136,9 +152,35 @@ function Home() {
               <div className="col col--9">
                 <h1>Evan Tay</h1>
                 <p>
-                  Hello! I graduated from <a href="https://www.nus.edu.sg/">
+                  Hello! I graduated from{" "}
+                  <a href="https://www.nus.edu.sg/">
                     National University of Singapore
-                  </a> as a <a href="https://www.comp.nus.edu.sg/">Computer Science major</a> in 2020. I was the <a href="https://dscnustech.github.io">Deputy Head of Technology</a> at <a href="https://dscnustech.github.io/">Google Developer Student Club NUS</a>, and the <a href="https://www.instagram.com/nusskating/">President of the NUS Skating Club</a>. I was also a <a href="https://github.com/DigiPie/CS1010-Tutorial-C09">Teaching Assistant</a> for 3 different courses, and an <a href="https://www.imda.gov.sg">IMDA scholarship recipient</a>.
+                  </a>{" "}
+                  as a{" "}
+                  <a href="https://www.comp.nus.edu.sg/">
+                    Computer Science major
+                  </a>{" "}
+                  in 2020. I was the{" "}
+                  <a href="https://dscnustech.github.io">
+                    Deputy Head of Technology
+                  </a>{" "}
+                  at{" "}
+                  <a href="https://dscnustech.github.io/">
+                    Google Developer Student Club NUS
+                  </a>
+                  , and the{" "}
+                  <a href="https://www.instagram.com/nusskating/">
+                    President of the NUS Skating Club
+                  </a>
+                  . I was also a{" "}
+                  <a href="https://github.com/DigiPie/CS1010-Tutorial-C09">
+                    Teaching Assistant
+                  </a>{" "}
+                  for 3 different courses, and an{" "}
+                  <a href="https://www.imda.gov.sg">
+                    IMDA scholarship recipient
+                  </a>
+                  .
                 </p>
               </div>
             </div>
@@ -152,7 +194,25 @@ function Home() {
                   <Feature key={idx} {...props} />
                 ))}
               </div>
-              <p className="text--center">
+              <div className={styles.buttons}>
+                <Link
+                  className={
+                    "button button--outline button--secondary btn-sec"
+                  }
+                  to={useBaseUrl("blog/")}
+                >
+                  Read my blog
+                </Link>
+                <Link
+                  className={
+                    "button button--outline button--secondary btn-sec"
+                  }
+                  to={useBaseUrl("docs/")}
+                >
+                  Read my docs
+                </Link>
+              </div>
+              <p className="text--center small">
                 <a href="http://www.freepik.com">
                   Graphics designed by slidesgo / Freepik
                 </a>
