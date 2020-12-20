@@ -6,7 +6,6 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeOpen } from "@fortawesome/free-regular-svg-icons";
-import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import styles from "./styles.module.css";
 
@@ -41,15 +40,16 @@ function SocialLink({ faIcon, alt, url }) {
 
 const features = [
   {
-    title: "Full-Stack Software Engineer",
+    title: "Full Stack Software Engineer",
     imageUrl: "img/fullstack.png",
     description: (
       <>
-        I was a Full-Stack Software Engineer Intern at{" "}
-        <a href="https://open.gov.sg/">Open Government Products</a> for Summer
-        2020. I am currently learning more about{" "}
-        <a href="https://reactjs.org/">ReactJS</a> and{" "}
-        <a href="https://v2.docusaurus.io/">Docusaurus 2</a>.
+        I am currently working as a Full Stack Engineer at{" "}
+        <a href="https://padlet.com/dashboard">Padlet</a>. I was a Software
+        Engineering Intern at{" "}
+        <a href="https://open.gov.sg/">Open Government Products</a> during
+        Summer 2020. I am currently learning more about{" "}
+        <a href="https://reactjs.org/">ReactJS</a>.
       </>
     ),
   },
@@ -67,6 +67,10 @@ const features = [
           AWS Certified Cloud Practitioner
         </a>
         . I am currently learning more about{" "}
+        <a href="https://www.hashicorp.com/resources/getting-started-with-infrastructure-as-code-iac">
+          Infrastructure-as-Code
+        </a>
+        , specifically{" "}
         <a href="https://www.udemy.com/certificate/UC-a6e7af40-8f26-4c13-846f-636b88ce326e/">
           AWS CloudFormation
         </a>{" "}
@@ -118,11 +122,16 @@ function Home() {
     <Layout description="Description will go into a meta tag in <head />">
       <header
         className={clsx("hero", styles.heroBanner)}
-        style={{ height: headerHeight }}
+        style={{ minHeight: headerHeight }}
       >
         <div className="container">
           <div style={{ minHeight: bannerHeight }}>
-            <h1>Hello world</h1>
+            <p>Hello world, my name is</p>
+            <h1>Evan Tay.</h1>
+            <h2>
+              I am a Full Stack Engineer @{" "}
+              <a href="https://padlet.com/dashboard">Padlet</a>.
+            </h2>
             <p>{siteConfig.tagline}</p>
             <ul className={styles.socialLinkList}>
               {socialLinks.map((props, idx) => (
@@ -130,15 +139,16 @@ function Home() {
               ))}
             </ul>
           </div>
-          <div className="row">
-            <a className={styles.landingScrolldown} href="#main">
-              <FontAwesomeIcon
-                alt="Scroll down"
-                title="Scroll down"
-                icon={faArrowCircleDown}
-                size="1x"
-              />
-            </a>
+          <div>
+            <Link
+              className={clsx(
+                "button button--outline button--secondary btn-sec",
+                styles.buttonLearnMore
+              )}
+              to="#main"
+            >
+              Learn more about me
+            </Link>
           </div>
         </div>
       </header>
@@ -146,41 +156,46 @@ function Home() {
         <div className={styles.about}>
           <div className="container">
             <div className="row">
-              <div className="col col--3">
-                <img src="img/profilepic.jpg" className={styles.profilePic} />
+              <div className={clsx("col col--3", styles.profilePic)}>
+                <img src="img/profilepic.jpg" />
               </div>
               <div className="col col--9">
                 <h1>Evan Tay</h1>
                 <p>
-                  Hello! I graduated from{" "}
-                  <a href="https://www.nus.edu.sg/">
+                  Hello! I'm Evan, a Full Stack Software Engineer and Certified
+                  Cloud Engineer based in Singapore.
+                </p>
+                <p>
+                  I love building cool, fun and meaningful things with tech,
+                  whether that be <Link to={useBaseUrl("#")}>websites</Link>,{" "}
+                  <Link to={useBaseUrl("/projects")}>applications</Link> or{" "}
+                  <a href="https://digipie.itch.io/">games</a>. To me, coding is
+                  the closest thing to magic we have in this world.
+                </p>
+                <p>
+                  I was a Computer Science major at the{" "}
+                  <a href="https://www.comp.nus.edu.sg/">
                     National University of Singapore
                   </a>{" "}
-                  as a{" "}
-                  <a href="https://www.comp.nus.edu.sg/">
-                    Computer Science major
-                  </a>{" "}
-                  in 2020. I was the{" "}
-                  <a href="https://dscnustech.github.io">
-                    Deputy Head of Technology
-                  </a>{" "}
-                  at{" "}
+                  from 2017 to 2020. During my time there, I was the Deputy Head
+                  of Technology at{" "}
                   <a href="https://dscnustech.github.io/">
                     Google Developer Student Club NUS
                   </a>
-                  , and the{" "}
+                  , and also the President of the{" "}
                   <a href="https://www.instagram.com/nusskating/">
-                    President of the NUS Skating Club
+                    NUS Skating Club
                   </a>
                   . I was also a{" "}
                   <a href="https://github.com/DigiPie/CS1010-Tutorial-C09">
                     Teaching Assistant
                   </a>{" "}
-                  for 3 different courses, and an{" "}
-                  <a href="https://www.imda.gov.sg">
-                    IMDA scholarship recipient
-                  </a>
-                  .
+                  for Programming Methodology and Networking courses.
+                </p>
+                <p>
+                  Shortly after graduating, I joined{" "}
+                  <a href="https://padlet.com/dashboard">Padlet</a> as a Full
+                  Stack Engineer.
                 </p>
               </div>
             </div>
@@ -196,17 +211,13 @@ function Home() {
               </div>
               <div className={styles.buttons}>
                 <Link
-                  className={
-                    "button button--outline button--secondary btn-sec"
-                  }
+                  className={"button button--outline button--secondary btn-sec"}
                   to={useBaseUrl("blog/")}
                 >
                   Read my blog
                 </Link>
                 <Link
-                  className={
-                    "button button--outline button--secondary btn-sec"
-                  }
+                  className={"button button--outline button--secondary btn-sec"}
                   to={useBaseUrl("docs/")}
                 >
                   Read my docs

@@ -8,22 +8,31 @@
 .heroBanner {
   background-color: var(--ifm-color-secondary-darkest);
   color: var(--ifm-color-secondary);
-  padding: 0 0 6rem;
-  text-align: center;
+  padding: 1rem 0 2rem;
+  text-align: left;
   position: relative;
   overflow: hidden;
 }
 
 .heroBanner h1 {
   color: var(--ifm-color-success);
-  font-size: 6rem;
+  font-size: 3.6rem;
+}
+
+.heroBanner h2 {
+  color: var(--ifm-color-secondary);
+  font-size: 2.4rem;
+  margin-left: 2px;
 }
 
 .heroBanner p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  margin: 4px;
+  max-width: 512px;
 }
 
 .heroBanner ul {
+  margin: 4px;
   padding: 0;
 }
 
@@ -34,12 +43,11 @@
 
 .socialLinkList li {
   display: inline-block;
-  margin: 0 1.2rem;
+  margin: 0 1.2rem 0 0;
 }
 
-.landingScrolldown {
-  font-size: 2.8rem;
-  margin: 0 auto;
+.buttonLearnMore {
+  margin: 24px 4px 0;
 }
 
 .buttons {
@@ -62,13 +70,17 @@
   color: var(--ifm-color-secondary-darkest);
 }
 
+.about p {
+  max-width: 512px;
+}
+
 .features {
   padding: 2rem 0;
   background-color: var(--ifm-color-secondary-darkest);
 }
 
-.profilePic {
-  border-radius: 50%;
+.profilePic img {
+  border-radius: 5%;
   max-height: 196px;
   max-width: 196px;
 }
@@ -84,12 +96,15 @@
 
 @media screen and (max-width: 966px) {
   .heroBanner {
-    padding: 2rem;
-    text-align: left;
+    padding: 2rem 0;
   }
 
   .heroBanner h1 {
     font-size: 3.2rem;
+  }
+
+  .heroBanner h2 {
+    font-size: 2rem;
   }
 
   .heroBanner p {
@@ -106,14 +121,11 @@
 
   .socialLinkList li {
     display: block;
-    margin: 0;
-  }
-
-  .landingScrolldown {
-    font-size: 2.4rem;
+    margin: 0 0 8px 0;
   }
 
   .profilePic {
-    display: none;
+    margin: 4px 0 24px;
+    text-align: center;
   }
 }
