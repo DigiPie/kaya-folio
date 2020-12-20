@@ -1,6 +1,19 @@
 module.exports = {
-  someSidebar: {
-    Landing: ["recommendation-list", "to-do"],
-    Networking: ["network-model"],
-  },
+  docs: [
+    {
+      type: "category",
+      label: "Landing",
+      items: ["recommendation-list", "to-do"],
+    },
+    {
+      type: "category",
+      label: "Networking",
+      items: [
+        {
+          Mininet: ["mininet-setup"],
+        },
+        "network-model",
+      ],
+    },
+  ],
 };
