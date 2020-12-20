@@ -14,7 +14,8 @@ const workItems = [
     link: "https://www.padlet.com",
     position: "Full Stack Engineer",
     period: "January 2021 to Present",
-    description: <>I will start work at Padlet on 11 January 2021.</>,
+    description: <>I work on the Padlet platform which is used by millions
+    of users across the globe.</>,
   },
   {
     location: "National University of Singapore, School of Computing",
@@ -286,7 +287,7 @@ function ResumeItem({ location, link, position, period, description }) {
       <p>
         <b>{position}</b> <span>•</span> <i>{period}</i>
       </p>
-      <p>{description}</p>
+      <div>{description}</div>
     </div>
   );
 }
@@ -320,39 +321,82 @@ function About() {
       >
         <div className="container">
           <div style={{ minHeight: bannerHeight }}>
-            <h1>About me</h1>
-            <h3>
-              Full-stack Software Engineer | Certified Cloud Engineer for GCP
-              and AWS
-            </h3>
-            <p>{siteConfig.tagline}</p>
+            <p>More about</p>
+            <h1 className="colorWarning">Evan Tay.</h1>
+            <p>
+              I am a Full Stack Software Engineer and Certified Cloud Engineer
+              for GCP and AWS.
+            </p>
             <SocialLinks />
           </div>
           <div>
             <Link
               className={clsx(
-                "button button--outline button--secondary btn-sec",
+                "button button--outline button--secondary btnSec",
                 styles.buttonLearnMore
               )}
               to="#experience"
             >
-              My experience
+              Experience
             </Link>{" "}
             <Link
               className={clsx(
-                "button button--outline button--secondary btn-sec",
+                "button button--outline button--secondary btnSec",
                 styles.buttonLearnMore
               )}
               to="#education"
             >
-              My education
-            </Link>
+              Education
+            </Link>{" "}
           </div>
         </div>
       </header>
       <main id="main">
         <div className={styles.about}>
           <div className="container">
+            <div className="row">
+              <div className={clsx("col col--3", styles.profilePic)}>
+                <img src="img/profilepic.jpg" />
+              </div>
+              <div className="col col--9">
+                <h1>Evan Tay</h1>
+                <p>
+                  Hello! I'm Evan, a Full Stack Software Engineer and Certified
+                  Cloud Engineer based in Singapore.
+                </p>
+                <p>
+                  I love building cool, fun and meaningful things with tech,
+                  whether that be <Link to={useBaseUrl("#")}>websites</Link>,{" "}
+                  <Link to={useBaseUrl("#")}>applications</Link> or{" "}
+                  <a href="https://digipie.itch.io/">games</a>. To me, coding is
+                  the closest thing to magic we have in this world.
+                </p>
+                <p>
+                  I was a Computer Science major at the{" "}
+                  <a href="https://www.comp.nus.edu.sg/">
+                    National University of Singapore
+                  </a>{" "}
+                  from 2017 to 2020. During my time there, I was the Deputy Head
+                  of Technology at{" "}
+                  <a href="https://dscnustech.github.io/">
+                    Google Developer Student Club NUS
+                  </a>
+                  , and also the President of the{" "}
+                  <a href="https://www.instagram.com/nusskating/">
+                    NUS Skating Club
+                  </a>
+                  . I was also a{" "}
+                  <a href="https://github.com/DigiPie/CS1010-Tutorial-C09">
+                    Teaching Assistant
+                  </a>{" "}
+                  for Programming Methodology and Networking courses.
+                </p>
+                <p>
+                  Shortly after graduating, I started working as a Full Stack
+                  Engineer at <a href="https://padlet.com/dashboard">Padlet</a>.
+                </p>
+              </div>
+            </div>
             <div id="experience" className="row" style={{ paddingTop: "4rem" }}>
               <div className={clsx("col col--3", styles.headerAbout)}>
                 <h2>Experience</h2>
@@ -372,6 +416,15 @@ function About() {
                   <ResumeItem key={idx} {...props} />
                 ))}
               </div>
+            </div>
+            <div className="row">
+              <a
+                className="button button--outline button--primary btnSec"
+                href="https://github.com/DigiPie/Deedy-Resume/raw/master/resume.pdf"
+                style={{ margin: "0 auto" }}
+              >
+                View my resume
+              </a>
             </div>
           </div>
         </div>

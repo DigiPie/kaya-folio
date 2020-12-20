@@ -24,6 +24,7 @@
   --ifm-navbar-background-color: #141414;
   --ifm-background-color: #141414;
   --ifm-color-success: #0f9d58;
+  --ifm-color-warning: #F4B400;
   --ifm-link-color: #2572f2;
   --ifm-code-font-size: 95%;
 }
@@ -68,9 +69,17 @@ p {
   font-size: 0.8rem;
 }
 
-.btn-sec {
+.btnSec {
   font-size: 1.2rem;
   margin: 0.6rem 1.2rem;
+}
+
+.colorSuccess {
+  color: var(--ifm-color-success);
+}
+
+.colorWarning {
+  color: var(--ifm-color-warning);
 }
 
 @media screen and (max-width: 966px) {
@@ -90,7 +99,7 @@ p {
     font-size: 1rem;
   }
 
-  .btn-sec {
+  .btnSec {
     font-size: 1rem;
     margin: 0.6rem;
   }

@@ -97,18 +97,14 @@ function Home() {
         <div className="container">
           <div style={{ minHeight: bannerHeight }}>
             <p>Hello world, my name is</p>
-            <h1>Evan Tay.</h1>
-            <h2>
-              I am a Full Stack Engineer @{" "}
-              <a href="https://padlet.com/dashboard">Padlet</a>.
-            </h2>
+            <h1 className="colorSuccess">Evan Tay.</h1>
             <p>{siteConfig.tagline}</p>
             <SocialLinks />
           </div>
           <div>
             <Link
               className={clsx(
-                "button button--outline button--secondary btn-sec",
+                "button button--outline button--secondary btnSec",
                 styles.buttonLearnMore
               )}
               to="#main"
@@ -128,48 +124,33 @@ function Home() {
               <div className="col col--9">
                 <h1>Evan Tay</h1>
                 <p>
-                  Hello! I'm Evan, a Full Stack Software Engineer and Certified
-                  Cloud Engineer based in Singapore.
+                  Hello! I'm Evan, a Software Engineer and Cloud Engineer based
+                  in Singapore.
                 </p>
                 <p>
-                  I love building cool, fun and meaningful things with tech,
-                  whether that be <Link to={useBaseUrl("#")}>websites</Link>,{" "}
-                  <Link to={useBaseUrl("#")}>applications</Link> or{" "}
-                  <a href="https://digipie.itch.io/">games</a>. To me, coding is
-                  the closest thing to magic we have in this world.
+                  I am currently working at{" "}
+                  <a href="https://padlet.com/dashboard">Padlet</a> as a Full
+                  Stack Engineer.
                 </p>
                 <p>
-                  I was a Computer Science major at the{" "}
+                  I graduated from the{" "}
                   <a href="https://www.comp.nus.edu.sg/">
                     National University of Singapore
                   </a>{" "}
-                  from 2017 to 2020. During my time there, I was the Deputy Head
-                  of Technology at{" "}
-                  <a href="https://dscnustech.github.io/">
-                    Google Developer Student Club NUS
+                  with a{" "}
+                  <a href="https://www.comp.nus.edu.sg/programmes/ug/cs/">
+                    Bachelor of Computing in Computer Science
                   </a>
-                  , and also the President of the{" "}
-                  <a href="https://www.instagram.com/nusskating/">
-                    NUS Skating Club
-                  </a>
-                  . I was also a{" "}
-                  <a href="https://github.com/DigiPie/CS1010-Tutorial-C09">
-                    Teaching Assistant
-                  </a>{" "}
-                  for Programming Methodology and Networking courses.
-                </p>
-                <p>
-                  Shortly after graduating, I started working as a Full Stack Engineer at {" "}
-                  <a href="https://padlet.com/dashboard">Padlet</a>. Here, I work on the Padlet platform which is used by millions of users across the globe.
+                  .
                 </p>
                 <Link
                   className={clsx(
-                    "button button--outline button--primary btn-sec",
+                    "button button--outline button--primary btnSec",
                     styles.buttonAbout
                   )}
                   to={useBaseUrl("/about")}
                 >
-                  Read more
+                  Read more about me
                 </Link>
               </div>
             </div>
@@ -185,13 +166,13 @@ function Home() {
               </div>
               <div className={styles.buttons}>
                 <Link
-                  className={"button button--outline button--secondary btn-sec"}
+                  className={"button button--outline button--secondary btnSec"}
                   to={useBaseUrl("blog/")}
                 >
                   Read my blog
                 </Link>
                 <Link
-                  className={"button button--outline button--secondary btn-sec"}
+                  className={"button button--outline button--secondary btnSec"}
                   to={useBaseUrl("docs/")}
                 >
                   Read my docs
