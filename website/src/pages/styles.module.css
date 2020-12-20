@@ -50,6 +50,10 @@
   margin: 24px 4px 0;
 }
 
+.buttonAbout {
+  margin: 24px 0 4px;
+}
+
 .buttons {
   display: flex;
   align-items: center;
@@ -70,8 +74,12 @@
   color: var(--ifm-color-secondary-darkest);
 }
 
+.about a {
+  font-weight: bold;
+}
+
 .about p {
-  max-width: 512px;
+  max-width: 640px;
 }
 
 .features {
@@ -92,6 +100,22 @@
 
 .featureText {
   padding: 1rem;
+}
+
+.headerAbout {
+  padding-right: 2rem;
+  text-align: right;
+}
+
+.headerAbout h2 {
+  border-bottom: 4px solid var(--ifm-color-success);
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.resumeItem {
+  border-bottom: 2px solid gray;
+  margin-bottom: 36px;
 }
 
 @media screen and (max-width: 966px) {
@@ -127,5 +151,10 @@
   .profilePic {
     margin: 4px 0 24px;
     text-align: center;
+  }
+
+  .headerAbout {
+    text-align: left;
+    margin-bottom: 12px;
   }
 }

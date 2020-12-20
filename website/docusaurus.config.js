@@ -1,5 +1,5 @@
-const math = require('remark-math');
-const katex = require('rehype-katex');
+const math = require("remark-math");
+const katex = require("rehype-katex");
 
 const internetProfiles = {
   linkedin: {
@@ -21,6 +21,10 @@ const internetProfiles = {
   docs: {
     label: "Docs",
     to: "docs",
+  },
+  about: {
+    label: "About",
+    to: "about",
   },
   resume: {
     label: "Resume",
@@ -55,6 +59,7 @@ module.exports = {
           label: "Docs",
           position: "left",
         },
+        { to: "about", label: "About", position: "right" },
         {
           href: internetProfiles.resume.href,
           label: "Resume",
@@ -110,11 +115,11 @@ module.exports = {
   ],
   stylesheets: [
     {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
-      type: 'text/css',
+      href: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css",
+      type: "text/css",
       integrity:
-        'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
-      crossorigin: 'anonymous',
+        "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X",
+      crossorigin: "anonymous",
     },
   ],
 };

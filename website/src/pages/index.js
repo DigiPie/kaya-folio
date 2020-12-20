@@ -4,39 +4,9 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelopeOpen } from "@fortawesome/free-regular-svg-icons";
-import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import styles from "./styles.module.css";
 
-const socialLinks = [
-  {
-    faIcon: faLinkedinIn,
-    alt: "Linkedin",
-    url: "https://www.linkedin.com/in/evanitsg/",
-  },
-  {
-    faIcon: faGithub,
-    alt: "GitHub",
-    url: "https://github.com/digipie",
-  },
-  {
-    faIcon: faEnvelopeOpen,
-    alt: "Email",
-    url: "mailto:evan.it.sg@gmail.com",
-  },
-];
-
-function SocialLink({ faIcon, alt, url }) {
-  const formattedUrl = useBaseUrl(url);
-  return (
-    <li>
-      <a href={formattedUrl}>
-        <FontAwesomeIcon alt={alt} title={alt} icon={faIcon} size="1x" /> {alt}
-      </a>
-    </li>
-  );
-}
+import SocialLinks from "./components/SocialLinks";
 
 const features = [
   {
@@ -133,11 +103,7 @@ function Home() {
               <a href="https://padlet.com/dashboard">Padlet</a>.
             </h2>
             <p>{siteConfig.tagline}</p>
-            <ul className={styles.socialLinkList}>
-              {socialLinks.map((props, idx) => (
-                <SocialLink key={idx} {...props} />
-              ))}
-            </ul>
+            <SocialLinks />
           </div>
           <div>
             <Link
@@ -168,7 +134,7 @@ function Home() {
                 <p>
                   I love building cool, fun and meaningful things with tech,
                   whether that be <Link to={useBaseUrl("#")}>websites</Link>,{" "}
-                  <Link to={useBaseUrl("/projects")}>applications</Link> or{" "}
+                  <Link to={useBaseUrl("#")}>applications</Link> or{" "}
                   <a href="https://digipie.itch.io/">games</a>. To me, coding is
                   the closest thing to magic we have in this world.
                 </p>
@@ -193,10 +159,18 @@ function Home() {
                   for Programming Methodology and Networking courses.
                 </p>
                 <p>
-                  Shortly after graduating, I joined{" "}
-                  <a href="https://padlet.com/dashboard">Padlet</a> as a Full
-                  Stack Engineer.
+                  Shortly after graduating, I started working as a Full Stack Engineer at {" "}
+                  <a href="https://padlet.com/dashboard">Padlet</a>. Here, I work on the Padlet platform which is used by millions of users across the globe.
                 </p>
+                <Link
+                  className={clsx(
+                    "button button--outline button--primary btn-sec",
+                    styles.buttonAbout
+                  )}
+                  to={useBaseUrl("/about")}
+                >
+                  Read more
+                </Link>
               </div>
             </div>
           </div>
