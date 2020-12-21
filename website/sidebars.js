@@ -1,6 +1,10 @@
 module.exports = {
   docs: [
     {
+      type: "doc",
+      id: "digidocs",
+    },
+    {
       type: "category",
       label: "Landing",
       items: ["recommendation-list", "to-do"],

@@ -1,6 +1,5 @@
 ---
 title: Recommendation list
-slug: '/'
 ---
 
 On this page you will find videos, papers and more which I found thought-provoking.
