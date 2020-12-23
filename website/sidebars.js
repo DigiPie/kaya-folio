@@ -19,5 +19,15 @@ module.exports = {
         "network-model",
       ],
     },
+    {
+      type: "category",
+      label: "Web Dev",
+      items: [
+        {
+          MongoDB: ["mongodb-setup", "mongodb-cheatsheet"],
+          NodeJS: ["nodejs-auto-reload", "nodejs-set-npm-run-shell"],
+        },
+      ],
+    },
   ],
 };

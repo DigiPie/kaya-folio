@@ -82,6 +82,11 @@ p {
   color: var(--ifm-color-warning);
 }
 
+.admonition a, .admonition a:hover {
+  color: var(--ifm-alert-color);
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 966px) {
   h1 {
     font-size: 2.4rem;

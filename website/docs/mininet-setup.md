@@ -190,8 +190,8 @@ sudo mn --controller=remote,ip=192.168.0.152,port=6633
 
 ## Resources
 
-1. [Original copy of this document at DigiDocs](https://digipie.github.io/digidocs/mininet/getting-started/)
-1. [Download/Get Started With Mininet](http://mininet.org/download/)
-1. [Mininet Walkthrough](http://mininet.org/walkthrough/)
-1. [NUS CS4226: A short walk-through of Mininet and POX](https://www.comp.nus.edu.sg/~tbma/teaching/cs4226y16_past/tutorial-Mininet-POX.pdf)
-1. [StackOverflow: VMWare fusion: connecting to host's web server from guest](https://stackoverflow.com/a/19824282)
+- [Original copy of this document at DigiDocs](https://digipie.github.io/digidocs/mininet/getting-started/)
+- [Download/Get Started With Mininet](http://mininet.org/download/)
+- [Mininet Walkthrough](http://mininet.org/walkthrough/)
+- [NUS CS4226: A short walk-through of Mininet and POX](https://www.comp.nus.edu.sg/~tbma/teaching/cs4226y16_past/tutorial-Mininet-POX.pdf)
+- [StackOverflow: VMWare fusion: connecting to host's web server from guest](https://stackoverflow.com/a/19824282)
