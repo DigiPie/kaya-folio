@@ -6,11 +6,6 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Landing",
-      items: ["recommendation-list", "to-do"],
-    },
-    {
-      type: "category",
       label: "Networking",
       items: [
         {
@@ -38,6 +33,10 @@ module.exports = {
           id: "c-cheatsheet",
         },
       ],
+    },
+    {
+      type: "doc",
+      id: "reading-list",
     },
   ],
 };

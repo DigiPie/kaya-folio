@@ -1,5 +1,5 @@
 ---
-title: NodeJS Auto-reload Server
+title: NodeJS Auto-reload server
 ---
 
 *This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/nodejs/auto-reload/)*
