@@ -7,10 +7,11 @@ slug: '/'
 
 **DigiDocs 2.0** is a collection of concise tutorials focused on full-stack software engineering and cloud operations.
 
-|   | Category   | Topics                                       |
-|---|------------|----------------------------------------------|
-| 1 | Networking | Mininet, Network Performance and Queue Model |
-| 2 | Web Dev    | MongoDB, NodeJS                              |
+|   | Category    | Topics                                       |
+|---|-------------|----------------------------------------------|
+| 1 | Networking  | Mininet, Network Performance and Queue Model |
+| 2 | Web Dev     | MongoDB, NodeJS                              |
+| 3 | Programming | C                                            |
 
 ## Background
 

@@ -29,5 +29,15 @@ module.exports = {
         },
       ],
     },
+    {
+      type: "category",
+      label: "Programming",
+      items: [
+        {
+          type: "doc",
+          id: "c-cheatsheet",
+        },
+      ],
+    },
   ],
 };

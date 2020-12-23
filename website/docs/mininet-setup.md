@@ -160,6 +160,7 @@ If you are unable to connect to the POX controller from your VM, it could be one
 If you are certain you are specifiying the correct IP address and port, and that your firewall is off or allowing traffic in for the port POX is listening on, attempt the fix in [#vm-host-connectivity](#vm-host-connectivity).
 
 ### VM-Host connectivity
+
 The instructions here are for VMware Fusion and MacOS, but you can use it as a guide for solving connectivity issues between Windows/Linux and VirtualBox/other virtualization programs too. See [this](https://stackoverflow.com/a/19824282) for more information.
 
 On your local machine:
