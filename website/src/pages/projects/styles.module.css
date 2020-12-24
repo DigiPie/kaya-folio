@@ -1,0 +1,219 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.projectCard {
+  border: 1px solid var(--ifm-color-secondary-light);
+  background-color: var(--ifm-navbar-background-color);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: none;
+  height: 100%;
+}
+
+:global(.card__image) {
+  max-height: 175px;
+  overflow: hidden;
+}
+
+/* stylelint-disable docusaurus/copyright-header */
+
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  background: none;
+  color: var(--ifm-color-secondary);
+  padding: 1rem 0 2rem;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.heroBanner h1 {
+  font-size: 3.6rem;
+}
+
+.heroBanner h2 {
+  color: var(--ifm-color-secondary);
+  font-size: 2rem;
+  margin-left: 2px;
+}
+
+.heroBanner p {
+  font-size: 1.2rem;
+  margin: 4px;
+  max-width: 512px;
+}
+
+.heroBanner ul {
+  margin: 4px;
+  padding: 0;
+}
+
+.socialLinkList {
+  font-size: 1.4rem;
+  list-style: none outside;
+}
+
+.socialLinkList li {
+  display: inline-block;
+  margin: 0 1.2rem 0 0;
+}
+
+.buttonLearnMore {
+  border-radius: 0%;
+  margin: 24px;
+}
+
+.buttonAbout {
+  margin: 24px 0 4px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6rem 0 1.8rem;
+}
+
+.about,
+.features {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.about {
+  padding: 4.8rem 0;
+  background-color: var(--ifm-color-secondary);
+  color: var(--ifm-color-secondary-darkest);
+}
+
+.about a {
+  font-weight: bold;
+}
+
+.about p {
+  max-width: 640px;
+}
+
+.features {
+  padding: 2rem 0;
+  background-color: var(--ifm-color-secondary-darkest);
+}
+
+.profilePic {
+  text-align: right;
+}
+
+.profilePic img {
+  border-radius: 5%;
+  max-height: 196px;
+  max-width: 196px;
+}
+
+.featureImage {
+  max-height: 384px;
+  max-width: 384px;
+}
+
+.featureText {
+  padding: 1rem;
+}
+
+.headerAbout {
+  padding-right: 2rem;
+  text-align: right;
+}
+
+.headerAbout h2 {
+  border-bottom: 4px solid var(--ifm-color-success);
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.resumeItem {
+  border-bottom: 2px solid gray;
+  margin-bottom: 36px;
+}
+
+.resumeItem div {
+  margin-bottom: 24px;
+}
+
+.projectItem h2 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.projectItem {
+  margin: 0 auto;
+  max-width: 512px;
+  text-align: left;
+}
+
+.projectItem ul {
+  list-style: none outside;
+  margin: 0;
+  padding: 8px;
+  text-align: left;
+}
+
+.projectItem svg {
+  margin-right: 4px;
+  max-width: 12px;
+}
+
+.buttonBack {
+  font-size: 1.2rem;
+  margin: 1.2rem 0;
+}
+
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem 0;
+  }
+
+  .heroBanner h1 {
+    font-size: 3.2rem;
+  }
+
+  .heroBanner h2 {
+    font-size: 1.8rem;
+  }
+
+  .heroBanner p {
+    font-size: 1rem;
+  }
+
+  .about {
+    padding: 3rem 0;
+  }
+
+  .socialLinkList {
+    font-size: 1.2rem;
+  }
+
+  .socialLinkList li {
+    display: block;
+    margin: 0 0 8px 0;
+  }
+
+  .profilePic {
+    margin: 4px 0 24px;
+    text-align: center;
+  }
+
+  .headerAbout {
+    text-align: left;
+    margin-bottom: 12px;
+  }
+}

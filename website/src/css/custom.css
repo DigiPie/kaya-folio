@@ -24,7 +24,7 @@
   --ifm-navbar-background-color: #141414;
   --ifm-background-color: #141414;
   --ifm-color-success: #0f9d58;
-  --ifm-color-warning: #F4B400;
+  --ifm-color-warning: #f4b400;
   --ifm-link-color: #2572f2;
   --ifm-code-font-size: 95%;
 }
@@ -82,7 +82,8 @@ p {
   color: var(--ifm-color-warning);
 }
 
-.admonition a, .admonition a:hover {
+.admonition a,
+.admonition a:hover {
   color: var(--ifm-alert-color);
   text-decoration: underline;
 }

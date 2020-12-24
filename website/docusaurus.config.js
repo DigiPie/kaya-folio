@@ -22,6 +22,10 @@ const internetProfiles = {
     label: "Docs",
     to: "docs",
   },
+  projects: {
+    label: "Projects",
+    to: "projects",
+  },
   about: {
     label: "About",
     to: "about",
@@ -59,6 +63,7 @@ module.exports = {
           label: "Docs",
           position: "left",
         },
+        { to: "projects", label: "Projects", position: "left" },
         { to: "about", label: "About", position: "right" },
         {
           href: internetProfiles.resume.href,
@@ -82,6 +87,7 @@ module.exports = {
           items: [
             internetProfiles.blog,
             internetProfiles.docs,
+            internetProfiles.projects,
             internetProfiles.about,
             internetProfiles.resume,
           ],

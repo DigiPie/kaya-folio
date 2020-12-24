@@ -6,7 +6,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 
-import SocialLinks from "./components/SocialLinks";
+import SocialLinks from "./components/_SocialLinks";
 
 const features = [
   {
