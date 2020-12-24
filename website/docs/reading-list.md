@@ -1,5 +1,5 @@
 ---
-title: Reading list
+title: Reading List
 ---
 
 Here, you will find things I found thought-provoking and interesting, ranging from academic papers to conference videos.

@@ -9,11 +9,12 @@ slug: "/"
 
 |     | Category        | Topics                                       |
 | --- | --------------- | -------------------------------------------- |
-| 1   | Networking      | Mininet, Network Performance and Queue Model |
-| 2   | Web Development | MongoDB, NodeJS                              |
-| 3   | Programming     | C                                            |
-| 4   | Tools           | Git                                          |
-| 5   | Reading list    | My recommended reading and viewing lists     |
+| 1   | Cloud           | Docker, GCP GKE                              |
+| 2   | Networking      | Mininet, Network Performance and Queue Model |
+| 3   | Web Development | MongoDB, NodeJS                              |
+| 4   | Programming     | C                                            |
+| 5   | Tools and OS    | Git, Ubuntu                                  |
+| 6   | Reading list    | My recommended reading and viewing lists     |
 
 ## Background
 

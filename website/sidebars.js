@@ -6,13 +6,13 @@ module.exports = {
     },
     {
       type: "category",
+      label: "Cloud",
+      items: ["docker-cheatsheet", "gcp-gke-cheatsheet"],
+    },
+    {
+      type: "category",
       label: "Networking",
-      items: [
-        {
-          Mininet: ["mininet-setup"],
-        },
-        "network-model",
-      ],
+      items: ["mininet-setup", "network-model"],
     },
     {
       type: "category",
@@ -36,11 +36,12 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Tools",
+      label: "Tools and OS",
       items: [
         {
           Git: ["git-cheatsheet", "git-ignore-file"],
         },
+        "os-ubuntu-cheatsheet",
       ],
     },
     {
