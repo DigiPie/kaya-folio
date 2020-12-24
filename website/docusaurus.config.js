@@ -82,6 +82,7 @@ module.exports = {
           items: [
             internetProfiles.blog,
             internetProfiles.docs,
+            internetProfiles.about,
             internetProfiles.resume,
           ],
         },

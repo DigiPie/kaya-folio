@@ -15,10 +15,9 @@ const features = [
     description: (
       <>
         I am currently working as a Full Stack Engineer at{" "}
-        <a href="https://padlet.com/dashboard">Padlet</a>. I was a Software
-        Engineering Intern at{" "}
-        <a href="https://open.gov.sg/">Open Government Products</a> during
-        Summer 2020. I am currently learning more about{" "}
+        <a href="https://padlet.com/">Padlet</a>. I was a Software Engineering
+        Intern at <a href="https://open.gov.sg/">Open Government Products</a>{" "}
+        during Summer 2020. I am currently learning more about{" "}
         <a href="https://reactjs.org/">ReactJS</a>.
       </>
     ),
