@@ -1,18 +1,19 @@
 ---
 title: DigiDocs 2.0
-slug: '/'
+slug: "/"
 ---
 
 ## Introduction
 
 **DigiDocs 2.0** is a collection of concise tutorials focused on full-stack software engineering and cloud operations.
 
-|   | Category     | Topics                                       |
-|---|--------------|----------------------------------------------|
-| 1 | Networking   | Mininet, Network Performance and Queue Model |
-| 2 | Web Dev      | MongoDB, NodeJS                              |
-| 3 | Programming  | C                                            |
-| 4 | Reading list | My recommended reading and viewing lists     |
+|     | Category        | Topics                                       |
+| --- | --------------- | -------------------------------------------- |
+| 1   | Networking      | Mininet, Network Performance and Queue Model |
+| 2   | Web Development | MongoDB, NodeJS                              |
+| 3   | Programming     | C                                            |
+| 4   | Tools           | Git                                          |
+| 5   | Reading list    | My recommended reading and viewing lists     |
 
 ## Background
 

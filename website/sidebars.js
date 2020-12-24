@@ -16,7 +16,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Web Dev",
+      label: "Web Development",
       items: [
         {
           MongoDB: ["mongodb-setup", "mongodb-cheatsheet"],
@@ -31,6 +31,15 @@ module.exports = {
         {
           type: "doc",
           id: "c-cheatsheet",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Tools",
+      items: [
+        {
+          Git: ["git-cheatsheet", "git-ignore-file"],
         },
       ],
     },
