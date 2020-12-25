@@ -31,6 +31,7 @@ function Projects() {
         if (project) {
           setProjectItem(project);
           setShowProjectItem(true);
+          window.scrollTo(0, 0);
           return;
         }
       }
@@ -57,6 +58,7 @@ function Projects() {
         >
           {projects.map((project) => (
             <div
+              id={project.title}
               key={project.title + "-card"}
               className="col col--4 margin-bottom--lg"
             >
