@@ -70,7 +70,8 @@
 
 .buttonLearnMore {
   border-radius: 0%;
-  margin: 24px;
+  margin: 0;
+  width: 100%;
 }
 
 .buttonAbout {
@@ -165,6 +166,10 @@
   margin: 0;
   padding: 8px;
   text-align: left;
+}
+
+.projectItem li {
+  margin-bottom: 8px;
 }
 
 .projectItem svg {

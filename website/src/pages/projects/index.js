@@ -53,7 +53,7 @@ function Projects() {
       <main className="container margin-vert--lg" ref={mainRef} hidden={true}>
         <div
           className="row"
-          style={{ display: showProjectItem ? "none" : "block" }}
+          style={{ display: showProjectItem ? "none" : "flex" }}
         >
           {projects.map((project) => (
             <div
@@ -68,21 +68,25 @@ function Projects() {
                   <div className="avatar">
                     <div className="avatar__intro margin-left--none">
                       <h4 className="avatar__name">{project.title}</h4>
+                      <p className="avatar__subtitle">{project.subtitle}</p>
                       <small className="avatar__subtitle">
-                        {project.subtitle}
+                        <FontAwesomeIcon alt="Code" icon={faCode} />{" "}
+                        {project.tech}
                       </small>
                     </div>
                   </div>
                 </div>
-                <Link
-                  className={clsx(
-                    "button button--outline button--secondary btnSec",
-                    styles.buttonLearnMore
-                  )}
-                  to={project.slug}
-                >
-                  Read more
-                </Link>
+                <div className="card__footer">
+                  <Link
+                    className={clsx(
+                      "button button--outline button--secondary btnSec",
+                      styles.buttonLearnMore
+                    )}
+                    to={project.slug}
+                  >
+                    Read more
+                  </Link>
+                </div>
               </div>
             </div>
           ))}
