@@ -4,7 +4,7 @@ const projects = [
   {
     title: "DigiCourse",
     slug: "#digicourse",
-    image: "img/projects/digicourse.png",
+    imageUrl: "img/projects/digicourse.png",
     links: [
       {
         name: "GitHub",
