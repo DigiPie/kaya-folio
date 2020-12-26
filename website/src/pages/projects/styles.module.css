@@ -70,8 +70,9 @@
 
 .buttonLearnMore {
   border-radius: 0%;
+  display: flex;
   margin: 0;
-  width: 100%;
+  justify-content: center;
 }
 
 .buttonAbout {
