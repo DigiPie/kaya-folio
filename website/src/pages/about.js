@@ -337,7 +337,7 @@ function About() {
               )}
               to="#experience"
             >
-              Experience
+              My experience
             </Link>{" "}
             <Link
               className={clsx(
@@ -346,7 +346,7 @@ function About() {
               )}
               to="#education"
             >
-              Education
+              My education
             </Link>{" "}
           </div>
         </div>
