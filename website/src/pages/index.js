@@ -15,10 +15,8 @@ const features = [
     description: (
       <>
         I am currently working as a Full Stack Engineer at{" "}
-        <a href="https://padlet.com/">Padlet</a>. I was a Software Engineering
-        Intern at <a href="https://open.gov.sg/">Open Government Products</a>{" "}
-        during Summer 2020. I am currently learning more about{" "}
-        <a href="https://reactjs.org/">ReactJS</a>.
+        <a href="https://padlet.com/">Padlet</a>. I am currently learning more
+        about <a href="https://reactjs.org/">ReactJS</a>.
       </>
     ),
   },
@@ -37,13 +35,9 @@ const features = [
         </a>
         . I am currently learning more about{" "}
         <a href="https://www.hashicorp.com/resources/getting-started-with-infrastructure-as-code-iac">
-          Infrastructure-as-Code
+          IaC
         </a>
-        , specifically{" "}
-        <a href="https://www.udemy.com/certificate/UC-a6e7af40-8f26-4c13-846f-636b88ce326e/">
-          AWS CloudFormation
-        </a>{" "}
-        and <a href="http://terraform.io/">Hashicorp Terraform</a>.
+        .
       </>
     ),
   },
@@ -149,7 +143,7 @@ function Home() {
                   )}
                   to={useBaseUrl("/about")}
                 >
-                  Read more about me
+                  Read more
                 </Link>
               </div>
             </div>
@@ -168,13 +162,19 @@ function Home() {
                   className={"button button--outline button--secondary btnSec"}
                   to={useBaseUrl("blog/")}
                 >
-                  Read my blog
+                  My blog
                 </Link>
                 <Link
                   className={"button button--outline button--secondary btnSec"}
                   to={useBaseUrl("docs/")}
                 >
-                  Read my docs
+                  My docs
+                </Link>
+                <Link
+                  className={"button button--outline button--secondary btnSec"}
+                  to={useBaseUrl("projects/")}
+                >
+                  My code
                 </Link>
               </div>
               <p className="text--center small">
