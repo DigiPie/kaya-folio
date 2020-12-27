@@ -66,7 +66,7 @@ module.exports = {
         { to: "projects", label: "Projects", position: "left" },
         { to: "about", label: "About", position: "right" },
         {
-          href: internetProfiles.resume.href,
+          href: "pdf/resume.pdf",
           label: "Resume",
           position: "right",
         },

@@ -1,6 +1,7 @@
 import React from "react";
 import clsx from "clsx";
 
+import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
@@ -67,7 +68,7 @@ function About() {
             <div className="row">
               <a
                 className="button button--outline button--primary btnSec"
-                href="pdf/resume.pdf"
+                href={useBaseUrl("pdf/resume.pdf")}
                 style={{ margin: "0 auto" }}
               >
                 View my resume
