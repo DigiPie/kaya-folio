@@ -16,6 +16,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faChrome } from "@fortawesome/free-brands-svg-icons";
 import styles from "./styles.module.css";
+
+import SocialLinks from "../components/_SocialLinks";
 import projects from "../../data/_Projects";
 
 const TITLE = "Projects";
@@ -73,6 +75,7 @@ function Projects() {
     <Layout title={TITLE} description={DESCRIPTION}>
       <header className={styles.projectPageHeader}>
         <h1>{TITLE}</h1>
+        <SocialLinks />
       </header>
       <main className="container" ref={mainRef} hidden={true}>
         <div
