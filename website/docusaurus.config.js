@@ -32,7 +32,7 @@ const internetProfiles = {
   },
   resume: {
     label: "Resume",
-    href: "https://github.com/DigiPie/Deedy-Resume/raw/master/resume.pdf",
+    href: "pdf/resume.pdf",
   },
 };
 

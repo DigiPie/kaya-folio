@@ -64,7 +64,7 @@ function About() {
             <div className="row">
               <a
                 className="button button--outline button--primary btnSec"
-                href="https://github.com/DigiPie/Deedy-Resume/raw/master/resume.pdf"
+                href="pdf/resume.pdf"
                 style={{ margin: "0 auto" }}
               >
                 View my resume
