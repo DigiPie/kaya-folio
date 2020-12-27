@@ -35,7 +35,7 @@ const features = [
         </a>
         . I am currently learning more about{" "}
         <a href="https://www.hashicorp.com/resources/getting-started-with-infrastructure-as-code-iac">
-          IaC
+          Infrastructure-as-Code
         </a>
         .
       </>
@@ -177,11 +177,13 @@ function Home() {
                   My code
                 </Link>
               </div>
-              <p className="text--center small">
-                <a href="http://www.freepik.com">
-                  Graphics designed by slidesgo / Freepik
-                </a>
-              </p>
+              <div>
+                <p className="text--center">
+                  <a href="http://www.freepik.com">
+                    <small>Graphics designed by slidesgo / Freepik</small>
+                  </a>
+                </p>
+              </div>
             </div>
           </section>
         )}
