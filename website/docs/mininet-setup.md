@@ -4,7 +4,7 @@ title: Mininet Setup
 
 *This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/mininet/getting-started/)*
 
-![Mininet diagram](../static/img/mininet.png)
+![Mininet diagram](../static/img/docs/mininet.png)
 
 In this section you will find my notes on:
 
