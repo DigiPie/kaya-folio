@@ -1,21 +1,74 @@
-import React, { useEffect, useState } from "react";
-import clsx from "clsx";
-import Layout from "@theme/Layout";
+import React from "react";
 import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-import styles from "./styles.module.css";
 
-import SocialLinks from "./components/_SocialLinks";
+export function AboutBody() {
+  return (
+    <>
+      <h1>Evan Tay</h1>
+      <p>
+        Hello! I'm Evan, a Full Stack Software Engineer and Certified Cloud
+        Engineer based in Singapore.
+      </p>
+      <p>
+        I love building cool, fun and meaningful things with tech, whether that
+        be <Link to={useBaseUrl("#")}>websites</Link>,{" "}
+        <Link to={useBaseUrl("#")}>applications</Link> or{" "}
+        <a href="https://digipie.itch.io/">games</a>. To me, coding is the
+        closest thing to magic we have in this world.
+      </p>
+      <p>
+        I was a Computer Science major at the{" "}
+        <a href="https://www.comp.nus.edu.sg/">
+          National University of Singapore
+        </a>{" "}
+        from 2017 to 2020. During my time there, I was the Deputy Head of
+        Technology at{" "}
+        <a href="https://dscnustech.github.io/">
+          Google Developer Student Club NUS
+        </a>
+        , and also the President of the{" "}
+        <a href="https://www.instagram.com/nusskating/">NUS Skating Club</a>. I
+        was also a{" "}
+        <a href="https://github.com/DigiPie/CS1010-Tutorial-C09">
+          Teaching Assistant
+        </a>{" "}
+        for Programming Methodology and Networking courses.
+      </p>
+      <p>
+        Shortly after graduating, I started working as a Full Stack Engineer at{" "}
+        <a href="https://padlet.com/dashboard">Padlet</a>.
+      </p>
+      <div>
+        <Link
+          className="button button--outline button--primary btnSec"
+          to="#experience"
+        >
+          My experience
+        </Link>{" "}
+        <Link
+          className="button button--outline button--primary btnSec"
+          to="#education"
+        >
+          My education
+        </Link>{" "}
+      </div>
+    </>
+  );
+}
 
-const workItems = [
+export const WorkItems = [
   {
     location: "Padlet",
     link: "https://www.padlet.com",
     position: "Full Stack Engineer",
     period: "January 2021 to Present",
-    description: <>I work on the Padlet platform which is used by millions
-    of users across the globe.</>,
+    description: (
+      <>
+        I work on the Padlet platform which is used by millions of users across
+        the globe.
+      </>
+    ),
   },
   {
     location: "National University of Singapore, School of Computing",
@@ -119,7 +172,7 @@ const workItems = [
   },
 ];
 
-const educationItems = [
+export const EducationItems = [
   {
     location: "National University of Singapore, School of Computing",
     link: "https://www.comp.nus.edu.sg/",
@@ -277,160 +330,3 @@ const educationItems = [
     ),
   },
 ];
-
-function ResumeItem({ location, link, position, period, description }) {
-  return (
-    <div className={styles.resumeItem}>
-      <h3>
-        <a href={link}>{location}</a>
-      </h3>
-      <p>
-        <b>{position}</b> <span>•</span> <i>{period}</i>
-      </p>
-      <div>{description}</div>
-    </div>
-  );
-}
-
-function About() {
-  const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
-  const [headerHeight, setHeaderHeight] = useState(384);
-  const [bannerHeight, setBannerHeight] = useState(256);
-
-  useEffect(() => {
-    function handleResize() {
-      const tempHeaderHeight = Math.max(384, window.innerHeight);
-      setHeaderHeight(tempHeaderHeight);
-      setBannerHeight(Math.max(256, tempHeaderHeight / 2));
-    }
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return (_) => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  return (
-    <Layout description="Description will go into a meta tag in <head />">
-      <header
-        className={clsx("hero", styles.heroBanner)}
-        style={{ minHeight: headerHeight }}
-      >
-        <div className="container">
-          <div style={{ minHeight: bannerHeight }}>
-            <p>More about</p>
-            <h1 className="colorWarning">Evan Tay.</h1>
-            <p>
-              I am a Full Stack Software Engineer and Certified Cloud Engineer
-              for GCP and AWS.
-            </p>
-            <SocialLinks />
-          </div>
-          <div>
-            <Link
-              className={clsx(
-                "button button--outline button--secondary btnSec",
-                styles.buttonLearnMore
-              )}
-              to="#experience"
-            >
-              My experience
-            </Link>{" "}
-            <Link
-              className={clsx(
-                "button button--outline button--secondary btnSec",
-                styles.buttonLearnMore
-              )}
-              to="#education"
-            >
-              My education
-            </Link>{" "}
-          </div>
-        </div>
-      </header>
-      <main id="main">
-        <div className={styles.about}>
-          <div className="container">
-            <div className="row">
-              <div className={clsx("col col--3", styles.profilePic)}>
-                <img src="img/profilepic.jpg" />
-              </div>
-              <div className="col col--9">
-                <h1>Evan Tay</h1>
-                <p>
-                  Hello! I'm Evan, a Full Stack Software Engineer and Certified
-                  Cloud Engineer based in Singapore.
-                </p>
-                <p>
-                  I love building cool, fun and meaningful things with tech,
-                  whether that be <Link to={useBaseUrl("#")}>websites</Link>,{" "}
-                  <Link to={useBaseUrl("#")}>applications</Link> or{" "}
-                  <a href="https://digipie.itch.io/">games</a>. To me, coding is
-                  the closest thing to magic we have in this world.
-                </p>
-                <p>
-                  I was a Computer Science major at the{" "}
-                  <a href="https://www.comp.nus.edu.sg/">
-                    National University of Singapore
-                  </a>{" "}
-                  from 2017 to 2020. During my time there, I was the Deputy Head
-                  of Technology at{" "}
-                  <a href="https://dscnustech.github.io/">
-                    Google Developer Student Club NUS
-                  </a>
-                  , and also the President of the{" "}
-                  <a href="https://www.instagram.com/nusskating/">
-                    NUS Skating Club
-                  </a>
-                  . I was also a{" "}
-                  <a href="https://github.com/DigiPie/CS1010-Tutorial-C09">
-                    Teaching Assistant
-                  </a>{" "}
-                  for Programming Methodology and Networking courses.
-                </p>
-                <p>
-                  Shortly after graduating, I started working as a Full Stack
-                  Engineer at <a href="https://padlet.com/dashboard">Padlet</a>.
-                </p>
-              </div>
-            </div>
-            <div id="experience" className="row" style={{ paddingTop: "4rem" }}>
-              <div className={clsx("col col--3", styles.headerAbout)}>
-                <h2>Experience</h2>
-              </div>
-              <div className="col col--9">
-                {workItems.map((props, idx) => (
-                  <ResumeItem key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-            <div id="education" className="row" style={{ paddingTop: "4rem" }}>
-              <div className={clsx("col col--3", styles.headerAbout)}>
-                <h2>Education</h2>
-              </div>
-              <div className="col col--9">
-                {educationItems.map((props, idx) => (
-                  <ResumeItem key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-            <div className="row">
-              <a
-                className="button button--outline button--primary btnSec"
-                href="https://github.com/DigiPie/Deedy-Resume/raw/master/resume.pdf"
-                style={{ margin: "0 auto" }}
-              >
-                View my resume
-              </a>
-            </div>
-          </div>
-        </div>
-      </main>
-    </Layout>
-  );
-}
-
-export default About;

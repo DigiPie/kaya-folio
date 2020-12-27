@@ -106,12 +106,12 @@
   padding: 1rem;
 }
 
-.headerAbout {
+.aboutSectionHeader {
   padding-right: 2rem;
   text-align: right;
 }
 
-.headerAbout h2 {
+.aboutSectionHeader h2 {
   border-bottom: 4px solid var(--ifm-color-success);
   display: inline-block;
   padding-bottom: 6px;
@@ -184,7 +184,7 @@
     text-align: center;
   }
 
-  .headerAbout {
+  .aboutSectionHeader {
     text-align: left;
     margin-bottom: 12px;
   }

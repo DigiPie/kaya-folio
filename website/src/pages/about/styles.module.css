@@ -1,0 +1,83 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+.aboutHeader {
+  background: none;
+  color: var(--ifm-color-secondary);
+  padding: 1rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.aboutHeader h1 {
+  border-bottom: 4px solid var(--ifm-color-warning);
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.aboutBody {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.aboutBody {
+  padding: 4.8rem 0;
+  background-color: var(--ifm-color-secondary);
+  color: var(--ifm-color-secondary-darkest);
+}
+
+.aboutBody a {
+  font-weight: bold;
+}
+
+.aboutBody p {
+  max-width: 640px;
+}
+
+.profilePic {
+  text-align: right;
+}
+
+.profilePic img {
+  border-radius: 5%;
+  max-height: 196px;
+  max-width: 196px;
+}
+
+.aboutSectionHeader {
+  padding-right: 2rem;
+  text-align: right;
+}
+
+.aboutSectionHeader h2 {
+  border-bottom: 4px solid var(--ifm-color-success);
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.resumeItem {
+  border-bottom: 2px solid gray;
+  margin-bottom: 36px;
+}
+
+.resumeItem div {
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 966px) {
+  .aboutBody {
+    padding: 3rem 0;
+  }
+
+  .aboutSectionHeader {
+    text-align: left;
+    margin-bottom: 12px;
+  }
+
+  .profilePic {
+    margin: 4px 0 24px;
+    text-align: center;
+  }
+}

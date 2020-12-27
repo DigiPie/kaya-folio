@@ -1,0 +1,11 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+.socialLinkList {
+  font-size: 1.4rem;
+  list-style: none outside;
+}
+
+.socialLinkList li {
+  display: inline-block;
+  margin: 0 1.2rem 0 0;
+}
