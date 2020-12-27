@@ -15,58 +15,33 @@
   height: 100%;
 }
 
-:global(.card__image) {
-  max-height: 175px;
-  overflow: hidden;
-}
-
-/* stylelint-disable docusaurus/copyright-header */
-
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-.heroBanner {
+.projectPageHeader {
   background: none;
   color: var(--ifm-color-secondary);
-  padding: 1rem 0 2rem;
-  text-align: left;
+  padding: 1rem 0;
+  text-align: center;
   position: relative;
   overflow: hidden;
   display: block;
 }
 
-.heroBanner h1 {
-  font-size: 3.6rem;
-}
-
-.heroBanner h2 {
-  color: var(--ifm-color-secondary);
-  font-size: 2rem;
-  margin-left: 2px;
-}
-
-.heroBanner p {
-  font-size: 1.2rem;
-  margin: 4px;
-  max-width: 512px;
-}
-
-.heroBanner ul {
-  margin: 4px;
-  padding: 0;
-}
-
-.socialLinkList {
-  font-size: 1.4rem;
-  list-style: none outside;
-}
-
-.socialLinkList li {
+.projectPageHeader h1 {
+  border-bottom: 4px solid var(--ifm-color-danger);
   display: inline-block;
-  margin: 0 1.2rem 0 0;
+  padding-bottom: 6px;
 }
+
+:global(.card__image) {
+  height: 164px;
+  overflow: hidden;
+}
+
+:global(.card__image) h2 {
+  display: inline-block;
+  margin: 12px;
+}
+
+/* stylelint-disable docusaurus/copyright-header */
 
 .buttonLearnMore {
   border-radius: 0%;
@@ -140,15 +115,6 @@
   border-bottom: 4px solid var(--ifm-color-success);
   display: inline-block;
   padding-bottom: 6px;
-}
-
-.resumeItem {
-  border-bottom: 2px solid gray;
-  margin-bottom: 36px;
-}
-
-.resumeItem div {
-  margin-bottom: 24px;
 }
 
 .projectItem h2 {

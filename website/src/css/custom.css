@@ -25,6 +25,7 @@
   --ifm-background-color: #141414;
   --ifm-color-success: #0f9d58;
   --ifm-color-warning: #f4b400;
+  --ifm-color-danger: #db4437;
   --ifm-link-color: #2572f2;
   --ifm-code-font-size: 95%;
 }
@@ -65,10 +66,6 @@ p {
   text-align: right;
 }
 
-.small {
-  font-size: 0.8rem;
-}
-
 .btnSec {
   font-size: 1.2rem;
   margin: 0.6rem 1.2rem;
@@ -80,6 +77,19 @@ p {
 
 .colorWarning {
   color: var(--ifm-color-warning);
+}
+
+.colorDanger {
+  color: var(--ifm-color-danger);
+}
+
+.bgColorSuccess {
+  background-color: var(--ifm-color-success);
+}
+
+
+.bgColorDanger {
+  background-color: var(--ifm-color-danger);
 }
 
 .admonition a,

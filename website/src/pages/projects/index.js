@@ -8,14 +8,40 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendar,
   faCode,
+  faFile,
+  faGamepad,
   faLink,
+  faTools,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
+import { faChrome } from "@fortawesome/free-brands-svg-icons";
 import styles from "./styles.module.css";
 import projects from "../../data/_Projects";
 
 const TITLE = "Projects";
 const DESCRIPTION = "Check out my notable projects and contributions";
+
+function CategoryIcon({ category, size = "1x" }) {
+  let faIcon;
+  switch (category) {
+    case "Project":
+      faIcon = faFile;
+      break;
+    case "Open Source Tool":
+      faIcon = faTools;
+      break;
+    case "Website":
+      faIcon = faChrome;
+      break;
+    case "Game":
+      faIcon = faGamepad;
+      break;
+    default:
+      faIcon = faFile;
+  }
+
+  return <FontAwesomeIcon alt={category} size={size} icon={faIcon} />;
+}
 
 function Projects() {
   const mainRef = useRef(null);
@@ -45,13 +71,10 @@ function Projects() {
 
   return (
     <Layout title={TITLE} description={DESCRIPTION}>
-      <header className={clsx("hero", styles.heroBanner)}>
-        <div className="container">
-          <h1>{TITLE}</h1>
-          <p>{DESCRIPTION}</p>
-        </div>
+      <header className={styles.projectPageHeader}>
+        <h1>{TITLE}</h1>
       </header>
-      <main className="container margin-vert--lg" ref={mainRef} hidden={true}>
+      <main className="container" ref={mainRef} hidden={true}>
         <div
           className="row"
           style={{ display: showProjectItem ? "none" : "flex" }}
@@ -63,14 +86,36 @@ function Projects() {
               className="col col--4 margin-bottom--lg"
             >
               <div className={styles.projectCard}>
-                <div className="card__image">
-                  <img src={useBaseUrl(project.imageUrl)} alt={project.title} />
-                </div>
+                {project.imageUrl ? (
+                  <div className="card__image">
+                    <img
+                      src={useBaseUrl(project.imageUrl)}
+                      alt={project.title}
+                    />
+                  </div>
+                ) : (
+                  <div
+                    className={
+                      project.bgColor == "alternate"
+                        ? "card__image bgColorDanger"
+                        : "card__image bgColorSuccess"
+                    }
+                  >
+                    <h2>{project.title}</h2>
+                  </div>
+                )}
                 <div className="card__body">
                   <div className="avatar">
                     <div className="avatar__intro margin-left--none">
-                      <h4 className="avatar__name">{project.title}</h4>
+                      <h4 className="avatar__name">
+                        <CategoryIcon category={project.category} />{" "}
+                        {project.title}
+                      </h4>
                       <p className="avatar__subtitle">{project.subtitle}</p>
+                      <small className="avatar__subtitle">
+                        <FontAwesomeIcon alt="Code" icon={faCalendar} />{" "}
+                        {project.period}
+                      </small>
                       <small className="avatar__subtitle">
                         <FontAwesomeIcon alt="Code" icon={faCode} />{" "}
                         {project.tech}
@@ -108,9 +153,18 @@ function Projects() {
           </Link>
           <h1>{projectItem.title}</h1>
           <h2>{projectItem.subtitle}</h2>
-          <img src={useBaseUrl(projectItem.imageUrl)} alt={projectItem.title} />
+          {projectItem.imageUrl && (
+            <img
+              src={useBaseUrl(projectItem.imageUrl)}
+              alt={projectItem.title}
+            />
+          )}
           <div>
             <ul>
+              <li>
+                <CategoryIcon category={projectItem.category} />{" "}
+                {projectItem.category}
+              </li>
               <li>
                 <FontAwesomeIcon alt="Calendar" icon={faCalendar} />{" "}
                 {projectItem.period}
