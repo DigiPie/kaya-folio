@@ -1,10 +1,3 @@
-/* stylelint-disable docusaurus/copyright-header */
-
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
   background-color: var(--ifm-color-secondary-darkest);
   color: var(--ifm-color-secondary);
@@ -35,29 +28,12 @@
   padding: 0;
 }
 
-.socialLinkList {
-  font-size: 1.4rem;
-  list-style: none outside;
-}
-
-.socialLinkList li {
-  display: inline-block;
-  margin: 0 1.2rem 0 0;
-}
-
-.buttonLearnMore {
+.ctaButtonAbout {
   margin: 24px 4px 0;
 }
 
 .buttonAbout {
   margin: 24px 0 4px;
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.6rem 0 1.8rem;
 }
 
 .about,
@@ -96,6 +72,11 @@
   max-width: 196px;
 }
 
+.features {
+  padding: 2rem 0;
+  background-color: var(--ifm-color-secondary-darkest);
+}
+
 .featureImage {
   max-height: 384px;
   max-width: 384px;
@@ -105,24 +86,11 @@
   padding: 1rem;
 }
 
-.aboutSectionHeader {
-  padding-right: 2rem;
-  text-align: right;
-}
-
-.aboutSectionHeader h2 {
-  border-bottom: 4px solid var(--ifm-color-success);
-  display: inline-block;
-  padding-bottom: 6px;
-}
-
-.resumeItem {
-  border-bottom: 2px solid gray;
-  margin-bottom: 36px;
-}
-
-.resumeItem div {
-  margin-bottom: 24px;
+.ctaButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6rem 0 1.8rem;
 }
 
 @media screen and (max-width: 966px) {
@@ -142,26 +110,8 @@
     font-size: 1rem;
   }
 
-  .about {
-    padding: 3rem 0;
-  }
-
-  .socialLinkList {
-    font-size: 1.2rem;
-  }
-
-  .socialLinkList li {
-    display: block;
-    margin: 0 0 8px 0;
-  }
-
   .profilePic {
     margin: 4px 0 24px;
     text-align: center;
-  }
-
-  .aboutSectionHeader {
-    text-align: left;
-    margin-bottom: 12px;
   }
 }

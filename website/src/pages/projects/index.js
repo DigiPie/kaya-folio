@@ -130,7 +130,7 @@ function Projects() {
                   <Link
                     className={clsx(
                       "button button--outline button--secondary btnSec",
-                      styles.buttonLearnMore
+                      styles.projectItemButton
                     )}
                     to={project.slug}
                   >
@@ -148,7 +148,7 @@ function Projects() {
           <Link
             className={clsx(
               "button button--outline button--secondary",
-              styles.buttonBack
+              styles.projectItemBackButton
             )}
             to="/projects"
           >
@@ -208,7 +208,7 @@ function Projects() {
           <Link
             className={clsx(
               "button button--outline button--secondary",
-              styles.buttonBack
+              styles.projectItemBackButton
             )}
             to="/projects"
           >

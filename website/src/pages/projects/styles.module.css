@@ -1,18 +1,11 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-.projectCard {
-  border: 1px solid var(--ifm-color-secondary-light);
-  background-color: var(--ifm-navbar-background-color);
+:global(.card__image) {
+  height: 164px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  border-radius: none;
-  height: 100%;
+}
+
+:global(.card__image) h2 {
+  display: inline-block;
+  margin: 12px;
 }
 
 .projectPageHeader {
@@ -31,101 +24,29 @@
   padding-bottom: 6px;
 }
 
-:global(.card__image) {
-  height: 164px;
+.projectCard {
+  border: 1px solid var(--ifm-color-secondary-light);
+  background-color: var(--ifm-navbar-background-color);
   overflow: hidden;
-}
-
-:global(.card__image) h2 {
-  display: inline-block;
-  margin: 12px;
-}
-
-/* stylelint-disable docusaurus/copyright-header */
-
-.buttonLearnMore {
-  border-radius: 0%;
   display: flex;
-  margin: 0;
-  justify-content: center;
-}
-
-.buttonAbout {
-  margin: 24px 0 4px;
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.6rem 0 1.8rem;
-}
-
-.about,
-.features {
-  align-items: center;
-  display: flex;
-  width: 100%;
-}
-
-.about {
-  padding: 4.8rem 0;
-  background-color: var(--ifm-color-secondary);
-  color: var(--ifm-color-secondary-darkest);
-}
-
-.about a {
-  font-weight: bold;
-}
-
-.about p {
-  max-width: 640px;
-}
-
-.features {
-  padding: 2rem 0;
-  background-color: var(--ifm-color-secondary-darkest);
-}
-
-.profilePic {
-  text-align: right;
-}
-
-.profilePic img {
-  border-radius: 5%;
-  max-height: 196px;
-  max-width: 196px;
-}
-
-.featureImage {
-  max-height: 384px;
-  max-width: 384px;
-}
-
-.featureText {
-  padding: 1rem;
-}
-
-.aboutSectionHeader {
-  padding-right: 2rem;
-  text-align: right;
-}
-
-.aboutSectionHeader h2 {
-  border-bottom: 4px solid var(--ifm-color-success);
-  display: inline-block;
-  padding-bottom: 6px;
-}
-
-.projectItem h2 {
-  font-size: 1rem;
-  font-weight: normal;
+  flex-direction: column;
+  border-radius: none;
+  height: 100%;
 }
 
 .projectItem {
   margin: 0 auto;
   max-width: 512px;
   text-align: left;
+}
+
+.projectItem h1 {
+  font-size: 2.4rem;
+}
+
+.projectItem h2 {
+  font-size: 1rem;
+  font-weight: normal;
 }
 
 .projectItem ul {
@@ -144,48 +65,14 @@
   max-width: 12px;
 }
 
-.buttonBack {
-  font-size: 1.2rem;
-  margin: 1.2rem 0;
+.projectItemButton {
+  border-radius: 0%;
+  display: flex;
+  margin: 0;
+  justify-content: center;
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem 0;
-  }
-
-  .heroBanner h1 {
-    font-size: 3.2rem;
-  }
-
-  .heroBanner h2 {
-    font-size: 1.8rem;
-  }
-
-  .heroBanner p {
-    font-size: 1rem;
-  }
-
-  .about {
-    padding: 3rem 0;
-  }
-
-  .socialLinkList {
-    font-size: 1.2rem;
-  }
-
-  .socialLinkList li {
-    display: block;
-    margin: 0 0 8px 0;
-  }
-
-  .profilePic {
-    margin: 4px 0 24px;
-    text-align: center;
-  }
-
-  .aboutSectionHeader {
-    text-align: left;
-    margin-bottom: 12px;
-  }
+.projectItemBackButton {
+  font-size: 1.2rem;
+  margin: 1.2rem 0;
 }

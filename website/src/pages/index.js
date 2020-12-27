@@ -98,7 +98,7 @@ function Home() {
             <Link
               className={clsx(
                 "button button--outline button--secondary btnSec",
-                styles.buttonLearnMore
+                styles.ctaButtonAbout
               )}
               to="#main"
             >
@@ -157,7 +157,7 @@ function Home() {
                   <Feature key={idx} {...props} />
                 ))}
               </div>
-              <div className={styles.buttons}>
+              <div className={styles.ctaButtons}>
                 <Link
                   className={"button button--outline button--secondary btnSec"}
                   to={useBaseUrl("blog/")}
