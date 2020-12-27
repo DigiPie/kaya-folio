@@ -12,10 +12,11 @@ export function AboutBody() {
       </p>
       <p>
         I love building cool, fun and meaningful things with tech, whether that
-        be <Link to={useBaseUrl("#")}>websites</Link>,{" "}
-        <Link to={useBaseUrl("#")}>applications</Link> or{" "}
-        <a href="https://digipie.itch.io/">games</a>. To me, coding is the
-        closest thing to magic we have in this world.
+        be{" "}
+        <Link to={useBaseUrl("projects/")}>
+          websites, applications or games
+        </Link>
+        . To me, coding is the closest thing to magic we have in this world.
       </p>
       <p>
         I was a Computer Science major at the{" "}

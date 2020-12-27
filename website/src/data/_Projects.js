@@ -170,8 +170,7 @@ const projects = [
         <p>
           Developer Student Club, National University of Singapore is made up of
           people from diverse backgrounds, majors, years of study, genders and
-          races. We come together to push our mission of{" "}
-          <a href="https://www.instagram.com/dscnus/">#TechforGood</a>.
+          races. We come together to push our mission of #techforgood.
         </p>
         <p>
           The Technology team is responsible for the execution of DSC-NUS
@@ -239,7 +238,7 @@ const projects = [
         <p>
           DigiCourse is continuously deployed from Github to Herokuapp, with the
           aid of Heroku build-packs such as the{" "}
-          <a href="https://evantay.com/psql-heroku-buildpack">
+          <a href="https://github.com/DigiPie/psql-heroku-buildpack">
             psql-heroku-buildpack
           </a>
           . I wrote this build pack to automate the execution of a PostgreSQL
@@ -305,12 +304,8 @@ const projects = [
           PostgreSQL database stored in the second Docker container.
         </p>
         <p>
-          The backend server also provides a{" "}
-          <a href="https://www.evantay.com/tech/dynalite-api/occupancy">
-            HTTP REST API
-          </a>{" "}
-          which is used by a frontend React web server in the third Docker
-          container.
+          The backend server also provides a HTTP REST API which is used by a
+          frontend React web server in the third Docker container.
         </p>
       </>
     ),
@@ -340,8 +335,7 @@ const projects = [
           script file on deployment to Heroku.
         </p>
         <p>
-          I developed this buildpack while working on{" "}
-          <a href="https://evantay.com/digicourse">DigiCourse</a>, a full-stack
+          I developed this buildpack while working on DigiCourse, a full-stack
           application built on PostgreSQL. I wrote this build pack to automate
           the execution of a PostgreSQL setup script file in the Git repo on
           deployment to Heroku from Github.
