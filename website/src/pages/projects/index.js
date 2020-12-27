@@ -1,9 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
-import Layout from "@theme/Layout";
+import clsx from "clsx";
+
 import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-import clsx from "clsx";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendar,
@@ -15,8 +18,8 @@ import {
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import { faChrome } from "@fortawesome/free-brands-svg-icons";
-import styles from "./styles.module.css";
 
+import styles from "./styles.module.css";
 import SocialLinks from "../components/_SocialLinks";
 import projects from "../../data/_Projects";
 
@@ -46,6 +49,9 @@ function CategoryIcon({ category, size = "1x" }) {
 }
 
 function Projects() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+
   const mainRef = useRef(null);
   const [showProjectItem, setShowProjectItem] = useState(false);
   const [projectItem, setProjectItem] = useState(projects[0]);
@@ -72,9 +78,9 @@ function Projects() {
   });
 
   return (
-    <Layout title={TITLE} description={DESCRIPTION}>
+    <Layout title="Projects" description={siteConfig.tagline}>
       <header className={styles.projectPageHeader}>
-        <h1>{TITLE}</h1>
+        <h1>Projects</h1>
         <SocialLinks />
       </header>
       <main className="container" ref={mainRef} hidden={true}>
@@ -132,7 +138,7 @@ function Projects() {
                       "button button--outline button--secondary btnSec",
                       styles.projectItemButton
                     )}
-                    to={project.slug}
+                    to={useBaseUrl(project.slug)}
                   >
                     Read more
                   </Link>
@@ -150,7 +156,7 @@ function Projects() {
               "button button--outline button--secondary",
               styles.projectItemBackButton
             )}
-            to="/projects"
+            to={useBaseUrl("/projects")}
           >
             All projects
           </Link>
@@ -210,7 +216,7 @@ function Projects() {
               "button button--outline button--secondary",
               styles.projectItemBackButton
             )}
-            to="/projects"
+            to={useBaseUrl("/projects")}
           >
             All projects
           </Link>

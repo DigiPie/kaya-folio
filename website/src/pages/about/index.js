@@ -1,13 +1,13 @@
 import React from "react";
 import clsx from "clsx";
-import Layout from "@theme/Layout";
-import styles from "./styles.module.css";
 
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+
+import styles from "./styles.module.css";
 import SocialLinks from "../components/_SocialLinks";
 import { AboutBody, WorkItems, EducationItems } from "../../data/_About";
-
-const TITLE = "About";
-const DESCRIPTION = "Check out my notable projects and contributions";
 
 function ResumeItem({ location, link, position, period, description }) {
   return (
@@ -24,10 +24,13 @@ function ResumeItem({ location, link, position, period, description }) {
 }
 
 function About() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+
   return (
-    <Layout title={TITLE} description={DESCRIPTION}>
+    <Layout title="About" description={siteConfig.tagline}>
       <header className={styles.aboutHeader}>
-        <h1>{TITLE}</h1>
+        <h1>About</h1>
         <SocialLinks />
       </header>
       <main id="main">
@@ -35,7 +38,7 @@ function About() {
           <div className="container">
             <div className="row">
               <div className={clsx("col col--3", styles.profilePic)}>
-                <img src="img/profilepic.jpg" />
+                <img src={useBaseUrl("img/profilepic.jpg")} />
               </div>
               <div className="col col--9">
                 <AboutBody />

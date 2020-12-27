@@ -44,8 +44,8 @@ module.exports = {
   baseUrl: "/kaya-folio/",
   onBrokenLinks: "throw",
   favicon: "img/favicon.png",
-  organizationName: "digipie", // Usually your GitHub org/user name.
-  projectName: "kaya-folio", // Usually your repo name.
+  organizationName: "digipie",
+  projectName: "kaya-folio",
   themeConfig: {
     colorMode: {
       defaultMode: "dark",

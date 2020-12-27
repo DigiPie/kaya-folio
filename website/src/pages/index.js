@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import clsx from "clsx";
-import Layout from "@theme/Layout";
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import useBaseUrl from "@docusaurus/useBaseUrl";
-import styles from "./styles.module.css";
 
+import Link from "@docusaurus/Link";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+
+import styles from "./styles.module.css";
 import SocialLinks from "./components/_SocialLinks";
 
 const features = [
@@ -82,7 +83,7 @@ function Home() {
   }, []);
 
   return (
-    <Layout description="Description will go into a meta tag in <head />">
+    <Layout title="Home" description={siteConfig.tagline}>
       <header
         className={clsx("hero", styles.heroBanner)}
         style={{ minHeight: headerHeight }}
@@ -100,7 +101,7 @@ function Home() {
                 "button button--outline button--secondary btnSec",
                 styles.ctaButtonAbout
               )}
-              to="#main"
+              to={useBaseUrl("#main")}
             >
               Learn more about me
             </Link>
@@ -112,7 +113,7 @@ function Home() {
           <div className="container">
             <div className="row">
               <div className={clsx("col col--3", styles.profilePic)}>
-                <img src="img/profilepic.jpg" />
+                <img src={useBaseUrl("img/profilepic.jpg")} />
               </div>
               <div className="col col--9">
                 <h1>Evan Tay</h1>

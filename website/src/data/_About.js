@@ -43,13 +43,13 @@ export function AboutBody() {
       <div>
         <Link
           className="button button--outline button--primary btnSec"
-          to="#experience"
+          to={useBaseUrl("#experience")}
         >
           My experience
         </Link>{" "}
         <Link
           className="button button--outline button--primary btnSec"
-          to="#education"
+          to={useBaseUrl("#education")}
         >
           My education
         </Link>{" "}
