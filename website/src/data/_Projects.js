@@ -316,7 +316,7 @@ const projects = [
       },
       {
         name: "Presentation Slides (PDF)",
-        link: "pdf/dynalite.pdf",
+        link: "https://evantay.com/pdf/dynalite.pdf",
       },
     ],
   },

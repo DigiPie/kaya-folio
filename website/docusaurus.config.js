@@ -32,7 +32,7 @@ const internetProfiles = {
   },
   resume: {
     label: "Resume",
-    href: "https://digipie.github.io/kaya-folio/pdf/resume.pdf",
+    href: "https://evantay.com/pdf/resume.pdf",
   },
 };
 
@@ -66,7 +66,7 @@ module.exports = {
         { to: "projects", label: "Projects", position: "left" },
         { to: "about", label: "About", position: "right" },
         {
-          href: "https://digipie.github.io/kaya-folio/pdf/resume.pdf",
+          href: "https://evantay.com/pdf/resume.pdf",
           label: "Resume",
           position: "right",
         },
