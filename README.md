@@ -18,7 +18,7 @@
 
 The website should:
 
-- Be easy to maintain and extend both code and content
+- Be easy to maintain and extend for both code and content
   - De-couple code and content whenever possible
   - Create reusable components for code blocks which are repeated
 - Put communication first, and design second
