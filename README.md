@@ -12,7 +12,7 @@
   Previous version: <a href="https://github.com/DigiPie/evantay.com" target="_blank">evantay.com (1.0)</a>
 </p>
 
-![Landing page](img/landing.png)
+![Landing page](img/home.png)
 
 ## How was this built
 
