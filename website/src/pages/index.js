@@ -8,7 +8,7 @@ import Layout from "@theme/Layout";
 
 import styles from "./styles.module.css";
 import SocialLinks from "./components/_SocialLinks";
-import features from "../data/_Features";
+import Features from "../data/_Landing";
 
 function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
@@ -50,22 +50,17 @@ function Home() {
 
   return (
     <Layout title="Home" description={siteConfig.tagline}>
-      <header
-        className={clsx("hero", styles.heroBanner)}
-        style={{ minHeight: headerHeight }}
-      >
+      <header className={styles.heroBanner} style={{ minHeight: headerHeight }}>
         <div className="container">
           <div style={{ minHeight: bannerHeight }}>
-            <p>Hello world, my name is</p>
+            <p>Hi, my name is</p>
             <h1 className="colorSuccess">Evan Tay.</h1>
             <p>{siteConfig.tagline}</p>
             <SocialLinks />
-          </div>
-          <div>
             <Link
               className={clsx(
                 "button button--outline button--secondary btnSec",
-                styles.ctaButtonAbout
+                styles.heroBannerButton
               )}
               to={useBaseUrl("#main")}
             >
@@ -75,7 +70,7 @@ function Home() {
         </div>
       </header>
       <main id="main">
-        <div className={styles.about}>
+        <div className={styles.aboutBody}>
           <div className="container">
             <div className="row">
               <div className={clsx("col col--3", styles.profilePic)}>
@@ -84,13 +79,16 @@ function Home() {
               <div className="col col--9">
                 <h1>Evan Tay</h1>
                 <p>
-                  Hello! I'm Evan, a Software Engineer and Cloud Engineer based
-                  in Singapore.
+                  Hello! I'm Evan, a Full Stack Software Engineer and Certified
+                  Cloud Engineer based in Singapore.
                 </p>
                 <p>
-                  I am currently working at{" "}
-                  <a href="https://padlet.com/dashboard">Padlet</a> as a Full
-                  Stack Engineer.
+                  I love building cool, fun and meaningful things with tech,
+                  whether that be{" "}
+                  <Link to={useBaseUrl("projects/")}>
+                    websites, applications or games
+                  </Link>
+                  .
                 </p>
                 <p>
                   I graduated from the{" "}
@@ -100,13 +98,18 @@ function Home() {
                   with a{" "}
                   <a href="https://www.comp.nus.edu.sg/programmes/ug/cs/">
                     Bachelor of Computing in Computer Science
-                  </a>
-                  .
+                  </a>{" "}
+                  in Winter 2020.
+                </p>
+                <p>
+                  I am currently working at{" "}
+                  <a href="https://padlet.com/dashboard">Padlet</a> as a Full
+                  Stack Engineer.
                 </p>
                 <Link
                   className={clsx(
                     "button button--outline button--primary btnSec",
-                    styles.buttonAbout
+                    styles.aboutBodyButton
                   )}
                   to={useBaseUrl("/about")}
                 >
@@ -116,29 +119,38 @@ function Home() {
             </div>
           </div>
         </div>
-        {features && features.length > 0 && (
-          <section className={styles.features}>
+        {Features && Features.length > 0 && (
+          <section className={styles.featureBody}>
             <div className="container">
               <div className="row">
-                {features.map((props, idx) => (
+                {Features.map((props, idx) => (
                   <Feature key={idx} {...props} />
                 ))}
               </div>
               <div className={styles.ctaButtons}>
                 <Link
-                  className={"button button--outline button--secondary btnSec"}
+                  className={clsx(
+                    "button button--outline button--secondary btnSec",
+                    styles.ctaButtonBlog
+                  )}
                   to={useBaseUrl("blog/")}
                 >
                   My blog
                 </Link>
                 <Link
-                  className={"button button--outline button--secondary btnSec"}
+                  className={clsx(
+                    "button button--outline button--secondary btnSec",
+                    styles.ctaButtonDocs
+                  )}
                   to={useBaseUrl("docs/")}
                 >
                   My docs
                 </Link>
                 <Link
-                  className={"button button--outline button--secondary btnSec"}
+                  className={clsx(
+                    "button button--outline button--secondary btnSec",
+                    styles.ctaButtonProjects
+                  )}
                   to={useBaseUrl("projects/")}
                 >
                   My code

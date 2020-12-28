@@ -1,13 +1,11 @@
 import React from "react";
 import clsx from "clsx";
 
-import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 
 import styles from "./styles.module.css";
-import SocialLinks from "../components/_SocialLinks";
 import { AboutBody, WorkItems, EducationItems } from "../../data/_About";
 
 function ResumeItem({ location, link, position, period, description }) {
@@ -32,12 +30,11 @@ function About() {
     <Layout title="About" description={siteConfig.tagline}>
       <header className={styles.aboutHeader}>
         <h1>About</h1>
-        <SocialLinks />
       </header>
       <main id="main">
         <div className={styles.aboutBody}>
           <div className="container">
-            <div className="row">
+            <div className="row padding-bottom--lg">
               <div className={clsx("col col--3", styles.profilePic)}>
                 <img src={useBaseUrl("img/profilepic.jpg")} />
               </div>
@@ -45,7 +42,7 @@ function About() {
                 <AboutBody />
               </div>
             </div>
-            <div id="experience" className="row" style={{ paddingTop: "4rem" }}>
+            <div id="experience" className="row padding-vert--lg">
               <div className={clsx("col col--3", styles.aboutSectionHeader)}>
                 <h2>Experience</h2>
               </div>
@@ -55,7 +52,7 @@ function About() {
                 ))}
               </div>
             </div>
-            <div id="education" className="row" style={{ paddingTop: "4rem" }}>
+            <div id="education" className="row padding-vert--lg">
               <div className={clsx("col col--3", styles.aboutSectionHeader)}>
                 <h2>Education</h2>
               </div>

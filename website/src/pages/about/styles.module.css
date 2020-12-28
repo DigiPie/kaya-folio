@@ -1,8 +1,8 @@
 /* stylelint-disable docusaurus/copyright-header */
 
 .aboutHeader {
-  background: none;
-  color: var(--ifm-color-secondary);
+  background-color: var(--ifm-color-secondary-darkest);
+  color: var(--ifm-color-secondary-lighter);
   padding: 1rem 0;
   text-align: center;
   position: relative;
@@ -23,9 +23,9 @@
 }
 
 .aboutBody {
-  padding: 4.8rem 0;
-  background-color: var(--ifm-color-secondary);
+  background-color: var(--ifm-color-secondary-lightest);
   color: var(--ifm-color-secondary-darkest);
+  padding: 4.8rem 0;
 }
 
 .aboutBody a {

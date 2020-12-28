@@ -1,4 +1,5 @@
 import React from "react";
+
 import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
@@ -19,7 +20,11 @@ export function AboutBody() {
         . To me, coding is the closest thing to magic we have in this world.
       </p>
       <p>
-        I was a Computer Science major at the{" "}
+        I was a{" "}
+        <a href="https://www.comp.nus.edu.sg/programmes/ug/cs/">
+          Computer Science major
+        </a>{" "}
+        at the{" "}
         <a href="https://www.comp.nus.edu.sg/">
           National University of Singapore
         </a>{" "}
@@ -28,7 +33,7 @@ export function AboutBody() {
         <a href="https://dscnustech.github.io/">
           Google Developer Student Club NUS
         </a>
-        , and also the President of the{" "}
+        , and the President of the{" "}
         <a href="https://www.instagram.com/nusskating/">NUS Skating Club</a>. I
         was also a{" "}
         <a href="https://github.com/DigiPie/CS1010-Tutorial-C09">

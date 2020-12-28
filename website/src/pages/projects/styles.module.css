@@ -11,13 +11,13 @@
 }
 
 .projectPageHeader {
-  background: none;
-  color: var(--ifm-color-secondary);
-  padding: 1rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+  background-color: var(--ifm-color-secondary-darkest);
+  color: var(--ifm-color-secondary-lighter);
   display: block;
+  overflow: hidden;
+  padding: 1rem 0;
+  position: relative;
+  text-align: center;
 }
 
 .projectPageHeader h1 {
@@ -26,14 +26,20 @@
   padding-bottom: 6px;
 }
 
+.projectBody {
+  background-color: var(--ifm-color-secondary-lighter);
+  color: var(--ifm-color-secondary-darkest);
+  padding: 4.8rem 0;
+}
+
 .projectCard {
-  border: 1px solid var(--ifm-color-secondary-light);
-  background-color: var(--ifm-navbar-background-color);
-  overflow: hidden;
+  background-color: var(--ifm-color-secondary-darker);
+  border-radius: none;
+  color: var(--ifm-color-secondary-lightest);
   display: flex;
   flex-direction: column;
-  border-radius: none;
   height: 100%;
+  overflow: hidden;
 }
 
 .projectItem {
@@ -72,6 +78,18 @@
   display: flex;
   margin: 0;
   justify-content: center;
+}
+
+.projectItemButton:hover {
+  background-color: var(--ifm-color-success);
+  border-color: var(--ifm-color-success);
+  color: var(--ifm-color-lighter);
+}
+
+.projectItemButton:active {
+  background-color: var(--ifm-color-secondary-darker);
+  border-color: var(--ifm-color-success);
+  color: var(--ifm-color-lighter);
 }
 
 .projectItemBackButton {

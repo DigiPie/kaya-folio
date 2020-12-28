@@ -1,12 +1,14 @@
 /* stylelint-disable docusaurus/copyright-header */
 
 .heroBanner {
+  align-items: flex-start;
   background-color: var(--ifm-color-secondary-darkest);
-  color: var(--ifm-color-secondary);
-  padding: 1rem 0 2rem;
-  text-align: left;
-  position: relative;
+  color: var(--ifm-color-secondary-lightest);
+  display: flex;
   overflow: hidden;
+  padding: 4rem 0 2rem;
+  position: relative;
+  text-align: left;
 }
 
 .heroBanner h1 {
@@ -14,7 +16,6 @@
 }
 
 .heroBanner h2 {
-  color: var(--ifm-color-secondary);
   font-size: 2rem;
   margin-left: 2px;
 }
@@ -30,38 +31,49 @@
   padding: 0;
 }
 
-.ctaButtonAbout {
+.heroBannerButton {
   margin: 24px 4px 0;
 }
 
-.buttonAbout {
-  margin: 24px 0 4px;
+.heroBannerButton:hover {
+  background-color: var(--ifm-color-success);
+  border-color: var(--ifm-color-success);
 }
 
-.about,
-.features {
+.heroBannerButton:active {
+  background-color: var(--ifm-color-secondary-darkest);
+  border-color: var(--ifm-color-success);
+  color: var(--ifm-color-lighter);
+}
+
+.aboutBody,
+.featureBody {
   align-items: center;
   display: flex;
+  padding: 4.8rem 0;
   width: 100%;
 }
 
-.about {
-  padding: 4.8rem 0;
-  background-color: var(--ifm-color-secondary);
+.aboutBody {
+  background-color: var(--ifm-color-secondary-lightest);
   color: var(--ifm-color-secondary-darkest);
 }
 
-.about a {
+.aboutBody a {
   font-weight: bold;
 }
 
-.about p {
+.aboutBody p {
   max-width: 640px;
 }
 
-.features {
-  padding: 2rem 0;
+.aboutBodyButton {
+  margin: 16px 0 0;
+}
+
+.featureBody {
   background-color: var(--ifm-color-secondary-darkest);
+  color: var(--ifm-color-secondary-lightest);
 }
 
 .profilePic {
@@ -74,9 +86,10 @@
   max-width: 196px;
 }
 
-.features {
-  padding: 2rem 0;
+.featureBody {
   background-color: var(--ifm-color-secondary-darkest);
+  color: var(--ifm-color-secondary-lighter);
+  padding: 2rem 0;
 }
 
 .featureImage {
@@ -94,6 +107,45 @@
   justify-content: center;
   padding: 1.6rem 0 1.8rem;
 }
+
+.ctaButtonBlog, .ctaButtonDocs, .ctaButtonProjects {
+  color: var(--ifm-color-lighter);
+}
+
+.ctaButtonBlog:active, .ctaButtonDocs:active, .ctaButtonProjects:active {
+  color: var(--ifm-color-lighter);
+}
+
+.ctaButtonBlog:hover {
+  background-color: var(--ifm-color-success);
+  border-color: var(--ifm-color-success);
+}
+
+.ctaButtonBlog:active {
+  background-color: var(--ifm-color-secondary-darkest);
+  border-color: var(--ifm-color-success);
+}
+
+.ctaButtonDocs:hover {
+  background-color: var(--ifm-color-warning);
+  border-color: var(--ifm-color-warning);
+}
+
+.ctaButtonDocs:active {
+  background-color: var(--ifm-color-secondary-darkest);
+  border-color: var(--ifm-color-warning);
+}
+
+.ctaButtonProjects:hover {
+  background-color: var(--ifm-color-danger);
+  border-color: var(--ifm-color-danger);
+}
+
+.ctaButtonProjects:active {
+  background-color: var(--ifm-color-secondary-darkest);
+  border-color: var(--ifm-color-danger);
+}
+
 
 @media screen and (max-width: 966px) {
   .heroBanner {

@@ -14,13 +14,13 @@
   --ifm-color-primary-light: #5f98f6;
   --ifm-color-primary-lighter: #6ea1f7;
   --ifm-color-primary-lightest: #9abef9;
-  --ifm-color-secondary: #e1e1e1;
-  --ifm-color-secondary-dark: #222222;
-  --ifm-color-secondary-darker: #141414;
+  --ifm-color-secondary: #878787;
+  --ifm-color-secondary-dark: #616161;
+  --ifm-color-secondary-darker: #2e2e2e;
   --ifm-color-secondary-darkest: #141414;
-  --ifm-color-secondary-light: #050505;
-  --ifm-color-secondary-lighter: #5d5d5d;
-  --ifm-color-secondary-lightest: #898989;
+  --ifm-color-secondary-light: #adadad;
+  --ifm-color-secondary-lighter: #d4d4d4;
+  --ifm-color-secondary-lightest: #ededed;
   --ifm-navbar-background-color: #141414;
   --ifm-background-color: #141414;
   --ifm-color-success: #0f9d58;
@@ -86,7 +86,6 @@ p {
 .bgColorSuccess {
   background-color: var(--ifm-color-success);
 }
-
 
 .bgColorDanger {
   background-color: var(--ifm-color-danger);

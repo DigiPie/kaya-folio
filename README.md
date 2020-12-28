@@ -30,6 +30,10 @@ I built this website for my own personal use, but you are free to use it so long
 
 ![Projects page](img/projects.png)
 
+![Projects page](img/projects-1.png)
+
+![Projects page](img/projects-2.png)
+
 ## About page
 
 ![About page](img/about.png)

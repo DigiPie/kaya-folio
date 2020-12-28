@@ -20,11 +20,7 @@ import {
 import { faChrome } from "@fortawesome/free-brands-svg-icons";
 
 import styles from "./styles.module.css";
-import SocialLinks from "../components/_SocialLinks";
 import projects from "../../data/_Projects";
-
-const TITLE = "Projects";
-const DESCRIPTION = "Check out my notable projects and contributions";
 
 function CategoryIcon({ category, size = "1x" }) {
   let faIcon;
@@ -81,145 +77,155 @@ function Projects() {
     <Layout title="Projects" description={siteConfig.tagline}>
       <header className={styles.projectPageHeader}>
         <h1>Projects</h1>
-        <SocialLinks />
       </header>
-      <main className="container" ref={mainRef} hidden={true}>
-        <div
-          className="row"
-          style={{ display: showProjectItem ? "none" : "flex" }}
-        >
-          {projects.map((project) => (
+      <main ref={mainRef} hidden={true}>
+        <div className={styles.projectBody}>
+          <div className="container">
             <div
-              id={project.title}
-              key={project.title + "-card"}
-              className="col col--4 margin-bottom--lg"
+              className="row margin-bottom--lg"
+              style={{ display: showProjectItem ? "none" : "flex" }}
             >
-              <div className={styles.projectCard}>
-                {project.imageUrl ? (
-                  <div className="card__image">
-                    <img
-                      src={useBaseUrl(project.imageUrl)}
-                      alt={project.title}
-                    />
-                  </div>
-                ) : (
-                  <div
-                    className={
-                      project.bgColor == "alternate"
-                        ? "card__image bgColorDanger"
-                        : "card__image bgColorSuccess"
-                    }
-                  >
-                    <h2>{project.title}</h2>
-                  </div>
-                )}
-                <div className="card__body">
-                  <div className="avatar">
-                    <div className="avatar__intro margin-left--none">
-                      <h4 className="avatar__name">
-                        <CategoryIcon category={project.category} />{" "}
-                        {project.title}
-                      </h4>
-                      <p className="avatar__subtitle">{project.subtitle}</p>
-                      <small className="avatar__subtitle">
-                        <FontAwesomeIcon alt="Code" icon={faCalendar} />{" "}
-                        {project.period}
-                      </small>
-                      <small className="avatar__subtitle">
-                        <FontAwesomeIcon alt="Code" icon={faCode} />{" "}
-                        {project.tech}
-                      </small>
+              {projects.map((project) => (
+                <div
+                  id={project.title}
+                  key={project.title + "-card"}
+                  className="col col--4 margin-bottom--lg"
+                >
+                  <div className={styles.projectCard}>
+                    {project.imageUrl ? (
+                      <div className="card__image">
+                        <img
+                          src={useBaseUrl(project.imageUrl)}
+                          alt={project.title}
+                        />
+                      </div>
+                    ) : (
+                      <div
+                        className={
+                          project.bgColor == "alternate"
+                            ? "card__image bgColorDanger"
+                            : "card__image bgColorSuccess"
+                        }
+                      >
+                        <h2>{project.title}</h2>
+                      </div>
+                    )}
+                    <div className="card__body">
+                      <div className="avatar">
+                        <div className="avatar__intro margin-left--none">
+                          <h4 className="avatar__name">
+                            <CategoryIcon category={project.category} />{" "}
+                            {project.title}
+                          </h4>
+                          <p className="avatar__subtitle">{project.subtitle}</p>
+                          <small className="avatar__subtitle">
+                            <FontAwesomeIcon alt="Code" icon={faCalendar} />{" "}
+                            {project.period}
+                          </small>
+                          <small className="avatar__subtitle">
+                            <FontAwesomeIcon alt="Code" icon={faCode} />{" "}
+                            {project.tech}
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card__footer">
+                      <Link
+                        className={clsx(
+                          "button button--secondary btnSec",
+                          styles.projectItemButton
+                        )}
+                        to={useBaseUrl(project.slug)}
+                      >
+                        Read more
+                      </Link>
                     </div>
                   </div>
                 </div>
-                <div className="card__footer">
-                  <Link
-                    className={clsx(
-                      "button button--outline button--secondary btnSec",
-                      styles.projectItemButton
-                    )}
-                    to={useBaseUrl(project.slug)}
-                  >
-                    Read more
-                  </Link>
-                </div>
-              </div>
+              ))}
             </div>
-          ))}
-        </div>
-        <div
-          className={clsx("text--center margin-bottom--xl", styles.projectItem)}
-          style={{ display: showProjectItem ? "block" : "none" }}
-        >
-          <Link
-            className={clsx(
-              "button button--outline button--secondary",
-              styles.projectItemBackButton
-            )}
-            to={useBaseUrl("/projects")}
-          >
-            All projects
-          </Link>
-          <h1>{projectItem.title}</h1>
-          <h2>{projectItem.subtitle}</h2>
-          {projectItem.imageUrl && (
-            <img
-              src={useBaseUrl(projectItem.imageUrl)}
-              alt={projectItem.title}
-            />
-          )}
-          <div>
-            <ul>
-              <li>
-                <CategoryIcon category={projectItem.category} />{" "}
-                {projectItem.category}
-              </li>
-              <li>
-                <FontAwesomeIcon alt="Calendar" icon={faCalendar} />{" "}
-                {projectItem.period}
-              </li>
-              <li>
-                <FontAwesomeIcon alt="Code" icon={faCode} /> {projectItem.tech}
-              </li>
-              {projectItem.team && (
-                <li>
-                  <FontAwesomeIcon alt="Team" icon={faUsers} />{" "}
-                  {projectItem.team.map((member, i) => (
-                    <span key={i}>
-                      {member.link && <a href={member.link}>{member.name}</a>}
-                      {!member.link && member.name}
-                      {i < projectItem.team.length - 1 ? ", " : ""}
-                    </span>
-                  ))}
-                </li>
+            <div
+              className={clsx(
+                "text--center margin-bottom--xl",
+                styles.projectItem
               )}
-            </ul>
-            <b>Description</b>
-            <div>{projectItem.description}</div>
-            {projectItem.links && (
-              <>
-                <b>Links</b>
+              style={{ display: showProjectItem ? "block" : "none" }}
+            >
+              <Link
+                className={clsx(
+                  "button button--outline button--primary",
+                  styles.projectItemBackButton
+                )}
+                to={useBaseUrl("/projects")}
+              >
+                All projects
+              </Link>
+              <h1>{projectItem.title}</h1>
+              <h2>{projectItem.subtitle}</h2>
+              {projectItem.imageUrl && (
+                <img
+                  src={useBaseUrl(projectItem.imageUrl)}
+                  alt={projectItem.title}
+                />
+              )}
+              <div>
                 <ul>
-                  {projectItem.links.map((link, i) => (
-                    <li key={i}>
-                      <a href={link.link}>
-                        <FontAwesomeIcon alt="Link" icon={faLink} /> {link.name}
-                      </a>
+                  <li>
+                    <CategoryIcon category={projectItem.category} />{" "}
+                    {projectItem.category}
+                  </li>
+                  <li>
+                    <FontAwesomeIcon alt="Calendar" icon={faCalendar} />{" "}
+                    {projectItem.period}
+                  </li>
+                  <li>
+                    <FontAwesomeIcon alt="Code" icon={faCode} />{" "}
+                    {projectItem.tech}
+                  </li>
+                  {projectItem.team && (
+                    <li>
+                      <FontAwesomeIcon alt="Team" icon={faUsers} />{" "}
+                      {projectItem.team.map((member, i) => (
+                        <span key={i}>
+                          {member.link && (
+                            <a href={member.link}>{member.name}</a>
+                          )}
+                          {!member.link && member.name}
+                          {i < projectItem.team.length - 1 ? ", " : ""}
+                        </span>
+                      ))}
                     </li>
-                  ))}
+                  )}
                 </ul>
-              </>
-            )}
+                <b>Description</b>
+                <div>{projectItem.description}</div>
+                {projectItem.links && (
+                  <>
+                    <b>Links</b>
+                    <ul>
+                      {projectItem.links.map((link, i) => (
+                        <li key={i}>
+                          <a href={link.link}>
+                            <FontAwesomeIcon alt="Link" icon={faLink} />{" "}
+                            {link.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+              </div>
+              <Link
+                className={clsx(
+                  "button button--outline button--primary",
+                  styles.projectItemBackButton
+                )}
+                to={useBaseUrl("/projects")}
+              >
+                All projects
+              </Link>
+            </div>
           </div>
-          <Link
-            className={clsx(
-              "button button--outline button--secondary",
-              styles.projectItemBackButton
-            )}
-            to={useBaseUrl("/projects")}
-          >
-            All projects
-          </Link>
         </div>
       </main>
     </Layout>
