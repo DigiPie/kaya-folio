@@ -132,7 +132,7 @@ function Projects() {
                     <div className="card__footer">
                       <Link
                         className={clsx(
-                          "button button--secondary btnSec",
+                          "button button--secondary button--outline btnSec",
                           styles.projectItemButton
                         )}
                         to={useBaseUrl(project.slug)}
