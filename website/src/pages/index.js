@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 
 import Link from "@docusaurus/Link";
@@ -30,6 +30,8 @@ function Feature({ imageUrl, title, description }) {
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
+
+  const mainRef = useRef(null);
   const [headerHeight, setHeaderHeight] = useState(384);
   const [bannerHeight, setBannerHeight] = useState(256);
 
@@ -41,6 +43,7 @@ function Home() {
     }
 
     handleResize();
+    mainRef.current.hidden = false;
     window.addEventListener("resize", handleResize);
 
     return (_) => {
@@ -69,7 +72,7 @@ function Home() {
           </div>
         </div>
       </header>
-      <main id="main">
+      <main id="main" ref={mainRef} hidden={true}>
         <div className={styles.aboutBody}>
           <div className="container">
             <div className="row">
