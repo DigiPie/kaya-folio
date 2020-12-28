@@ -12,7 +12,18 @@
   Previous version: <a href="https://github.com/DigiPie/evantay.com" target="_blank">evantay.com (1.0)</a>
 </p>
 
-![Landing page](img/home.png)
+![Landing page](img/landing.png)
+
+## Design motivation
+
+The website should:
+
+- Be easy to maintain and extend both code and content
+  - De-couple code and content whenever possible
+  - Create reusable components for code blocks which are repeated
+- Put communication first, and design second
+  - Avoid trading content accessibility for cooler design
+  - Adopt a minimalistic design
 
 ## How was this built
 
@@ -28,12 +39,14 @@ I built this website for my own personal use, but you are free to use it so long
 
 ## Projects page
 
-![Projects page](img/projects.png)
+![Projects page](img/project-1.png)
 
-![Projects page](img/projects-1.png)
+![Projects page](img/project-2.png)
 
-![Projects page](img/projects-2.png)
+![Projects page](img/project-3.png)
 
 ## About page
 
-![About page](img/about.png)
+![About page](img/about-1.png)
+
+![About page](img/about-2.png)
