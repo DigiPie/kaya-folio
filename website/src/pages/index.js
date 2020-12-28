@@ -130,7 +130,7 @@ function Home() {
               <div className={styles.ctaButtons}>
                 <Link
                   className={clsx(
-                    "button button--outline button--secondary btnSec",
+                    "button button--outline button--secondary",
                     styles.ctaButtonBlog
                   )}
                   to={useBaseUrl("blog/")}
@@ -139,7 +139,7 @@ function Home() {
                 </Link>
                 <Link
                   className={clsx(
-                    "button button--outline button--secondary btnSec",
+                    "button button--outline button--secondary",
                     styles.ctaButtonDocs
                   )}
                   to={useBaseUrl("docs/")}
@@ -148,7 +148,7 @@ function Home() {
                 </Link>
                 <Link
                   className={clsx(
-                    "button button--outline button--secondary btnSec",
+                    "button button--outline button--secondary",
                     styles.ctaButtonProjects
                   )}
                   to={useBaseUrl("projects/")}

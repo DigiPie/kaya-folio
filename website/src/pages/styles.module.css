@@ -110,6 +110,8 @@
 
 .ctaButtonBlog, .ctaButtonDocs, .ctaButtonProjects {
   color: var(--ifm-color-lighter);
+  font-size: 1.2rem;
+  margin: 0.6rem 1.2rem;
 }
 
 .ctaButtonBlog:active, .ctaButtonDocs:active, .ctaButtonProjects:active {
@@ -167,5 +169,11 @@
   .profilePic {
     margin: 4px 0 24px;
     text-align: center;
+  }
+
+  .ctaButtonBlog, .ctaButtonDocs, .ctaButtonProjects {
+    font-size: 1rem;
+    margin: 0.6rem;
+    padding: 6px 16px;
   }
 }
