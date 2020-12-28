@@ -41,7 +41,7 @@ module.exports = {
   tagline:
     "I am a Software Engineer and Cloud Engineer passionate about solving Meaningful Problems.",
   url: "https://digipie.github.io/",
-  baseUrl: "/kaya-folio/",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   favicon: "img/favicon.png",
   organizationName: "digipie",
