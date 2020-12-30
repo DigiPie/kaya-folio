@@ -51,7 +51,7 @@ function Home() {
             <SocialLinks />
             <Link
               className={clsx(
-                "button button--outline button--secondary btnSec",
+                "button button--outline button--success btnSec textUpper",
                 styles.heroBannerButton
               )}
               to={useBaseUrl("#main")}
@@ -100,7 +100,7 @@ function Home() {
                 </p>
                 <Link
                   className={clsx(
-                    "button button--outline button--primary btnSec",
+                    "button button--outline button--primary btnSec textUpper",
                     styles.aboutBodyButton
                   )}
                   to={useBaseUrl("/about")}
@@ -121,19 +121,19 @@ function Home() {
               )}
             >
               <Link
-                className="button button--outline button--success btnDef"
+                className="button button--outline button--success btnDef textUpper"
                 to={useBaseUrl("blog/")}
               >
                 My blog
               </Link>
               <Link
-                className="button button--outline button--warning btnDef"
+                className="button button--outline button--warning btnDef textUpper"
                 to={useBaseUrl("docs/")}
               >
                 My docs
               </Link>
               <Link
-                className="button button--outline button--danger btnDef"
+                className="button button--outline button--danger btnDef textUpper"
                 to={useBaseUrl("projects/")}
               >
                 My code

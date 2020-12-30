@@ -36,19 +36,7 @@
 }
 
 .heroBannerButton {
-  margin: 24px 4px 0;
-  text-transform: uppercase;
-}
-
-.heroBannerButton:hover {
-  background-color: var(--ifm-color-success);
-  border-color: var(--ifm-color-success);
-}
-
-.heroBannerButton:active {
-  background-color: var(--ifm-color-secondary-darkest);
-  border-color: var(--ifm-color-success);
-  color: var(--ifm-color-lighter);
+  margin: 32px 4px 0;
 }
 
 .aboutBody,
@@ -74,7 +62,6 @@
 
 .aboutBodyButton {
   margin: 16px 0 0;
-  text-transform: uppercase;
 }
 
 .directoryBody {
@@ -127,12 +114,6 @@
 
   .heroBanner p {
     font-size: 1rem;
-  }
-
-  .heroBannerButton {
-    background-color: var(--ifm-color-secondary-darkest);
-    border-color: var(--ifm-color-success);
-    color: var(--ifm-color-lighter);
   }
 
   .profilePic {

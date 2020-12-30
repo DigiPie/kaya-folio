@@ -86,13 +86,13 @@ function About() {
                 </p>
                 <div className="button-group button-group--block">
                   <Link
-                    className="button button--outline button--success btnDef"
+                    className="button button--outline button--success btnDef textUpper"
                     to={useBaseUrl("#experience")}
                   >
                     My experience
                   </Link>{" "}
                   <Link
-                    className="button button--outline button--danger btnDef"
+                    className="button button--outline button--danger btnDef textUpper"
                     to={useBaseUrl("#education")}
                   >
                     My education

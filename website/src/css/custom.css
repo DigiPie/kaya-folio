@@ -71,6 +71,10 @@ p {
   margin: 0.6rem 1.2rem;
 }
 
+.textUpper {
+  text-transform: uppercase;
+}
+
 .colorSuccess {
   color: var(--ifm-color-success);
 }
