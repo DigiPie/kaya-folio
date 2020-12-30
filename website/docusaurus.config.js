@@ -43,7 +43,7 @@ module.exports = {
   url: "https://digipie.github.io/",
   baseUrl: "/",
   onBrokenLinks: "throw",
-  favicon: "img/favicon.png",
+  favicon: "img/logo.png",
   organizationName: "digipie",
   projectName: "kaya-folio",
   themeConfig: {
@@ -55,6 +55,12 @@ module.exports = {
     navbar: {
       hideOnScroll: true,
       title: "Evan Tay",
+      logo: {
+        alt: "Evan Tay",
+        src: "img/logo.png",
+        href: "https://evantay.com",
+        target: '_self',
+      },
       items: [
         { to: "blog", label: "Blog", position: "left" },
         {

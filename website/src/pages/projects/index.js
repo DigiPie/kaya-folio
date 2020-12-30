@@ -76,7 +76,7 @@ function Projects() {
   return (
     <Layout title="Projects" description={siteConfig.tagline}>
       <header className={styles.projectPageHeader}>
-        <h1>Projects</h1>
+        <h1 className="underlineColorWarning">Projects</h1>
       </header>
       <main ref={mainRef} hidden={true}>
         <div className={styles.projectBody}>
@@ -132,12 +132,12 @@ function Projects() {
                     <div className="card__footer">
                       <Link
                         className={clsx(
-                          "button button--secondary button--outline btnSec",
+                          "button button--secondary button--outline btnDef",
                           styles.projectItemButton
                         )}
                         to={useBaseUrl(project.slug)}
                       >
-                        Read more
+                        Learn more
                       </Link>
                     </div>
                   </div>

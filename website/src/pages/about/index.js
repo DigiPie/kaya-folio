@@ -30,7 +30,7 @@ function About() {
   return (
     <Layout title="About" description={siteConfig.tagline}>
       <header className={styles.aboutHeader}>
-        <h1>About</h1>
+        <h1 className="underlineColorWarning">About</h1>
       </header>
       <main id="main">
         <div className={styles.aboutBody}>
@@ -82,15 +82,15 @@ function About() {
                   Shortly after graduating, I started working as a Full Stack
                   Engineer at <a href="https://padlet.com/dashboard">Padlet</a>.
                 </p>
-                <div>
+                <div className="button-group button-group--block">
                   <Link
-                    className="button button--outline button--primary btnSec"
+                    className="button button--outline button--success btnDef"
                     to={useBaseUrl("#experience")}
                   >
                     My experience
                   </Link>{" "}
                   <Link
-                    className="button button--outline button--primary btnSec"
+                    className="button button--outline button--danger btnDef"
                     to={useBaseUrl("#education")}
                   >
                     My education
@@ -100,7 +100,7 @@ function About() {
             </div>
             <div id="experience" className="row padding-vert--lg">
               <div className={clsx("col col--3", styles.aboutSectionHeader)}>
-                <h2>Experience</h2>
+                <h2 className="underlineColorSuccess">Experience</h2>
               </div>
               <div className="col col--9">
                 {WorkItems.map((props, idx) => (
@@ -110,7 +110,7 @@ function About() {
             </div>
             <div id="education" className="row padding-vert--lg">
               <div className={clsx("col col--3", styles.aboutSectionHeader)}>
-                <h2>Education</h2>
+                <h2 className="underlineColorDanger">Education</h2>
               </div>
               <div className="col col--9">
                 {EducationItems.map((props, idx) => (

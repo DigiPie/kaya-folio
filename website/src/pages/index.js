@@ -8,24 +8,6 @@ import Layout from "@theme/Layout";
 
 import styles from "./styles.module.css";
 import SocialLinks from "./components/_SocialLinks";
-import Features from "../data/_Landing";
-
-function Feature({ imageUrl, title, description }) {
-  const imgUrl = useBaseUrl(imageUrl);
-  return (
-    <div className={clsx("col col--6", styles.feature)}>
-      {imgUrl && (
-        <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
-      )}
-      <div className={styles.featureText}>
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
 
 function Home() {
   const context = useDocusaurusContext();
@@ -55,9 +37,16 @@ function Home() {
     <Layout title="Home" description={siteConfig.tagline}>
       <header className={styles.heroBanner} style={{ minHeight: headerHeight }}>
         <div className="container">
-          <div style={{ minHeight: bannerHeight }}>
+          <div
+            className={styles.heroBannerText}
+            style={{ minHeight: bannerHeight }}
+          >
             <p>Hi, my name is</p>
-            <h1 className="colorSuccess">Evan Tay.</h1>
+            <h1>
+              <span className="colorSuccess">Evan</span>{" "}
+              <span className="colorWarning">Tay</span>
+              <span className="colorDanger">.</span>
+            </h1>
             <p>{siteConfig.tagline}</p>
             <SocialLinks />
             <Link
@@ -67,7 +56,7 @@ function Home() {
               )}
               to={useBaseUrl("#main")}
             >
-              Learn more about me
+              Learn more
             </Link>
           </div>
         </div>
@@ -122,53 +111,36 @@ function Home() {
             </div>
           </div>
         </div>
-        {Features && Features.length > 0 && (
-          <section className={styles.featureBody}>
-            <div className="container">
-              <div className="row">
-                {Features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-              <div className={styles.ctaButtons}>
-                <Link
-                  className={clsx(
-                    "button button--outline button--secondary",
-                    styles.ctaButtonBlog
-                  )}
-                  to={useBaseUrl("blog/")}
-                >
-                  My blog
-                </Link>
-                <Link
-                  className={clsx(
-                    "button button--outline button--secondary",
-                    styles.ctaButtonDocs
-                  )}
-                  to={useBaseUrl("docs/")}
-                >
-                  My docs
-                </Link>
-                <Link
-                  className={clsx(
-                    "button button--outline button--secondary",
-                    styles.ctaButtonProjects
-                  )}
-                  to={useBaseUrl("projects/")}
-                >
-                  My code
-                </Link>
-              </div>
-              <div>
-                <p className="text--center">
-                  <a href="http://www.freepik.com">
-                    <small>Graphics designed by slidesgo / Freepik</small>
-                  </a>
-                </p>
-              </div>
+        <section className={styles.directoryBody}>
+          <div className="container">
+            <h3 className="text--center">Continue exploring?</h3>
+            <div
+              className={clsx(
+                "button-group button-group--block",
+                styles.ctaButtons
+              )}
+            >
+              <Link
+                className="button button--outline button--success btnDef"
+                to={useBaseUrl("blog/")}
+              >
+                My blog
+              </Link>
+              <Link
+                className="button button--outline button--warning btnDef"
+                to={useBaseUrl("docs/")}
+              >
+                My docs
+              </Link>
+              <Link
+                className="button button--outline button--danger btnDef"
+                to={useBaseUrl("projects/")}
+              >
+                My code
+              </Link>
             </div>
-          </section>
-        )}
+          </div>
+        </section>
       </main>
     </Layout>
   );

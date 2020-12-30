@@ -11,7 +11,6 @@
 }
 
 .aboutHeader h1 {
-  border-bottom: 4px solid var(--ifm-color-warning);
   display: inline-block;
   padding-bottom: 6px;
 }
@@ -25,7 +24,7 @@
 .aboutBody {
   background-color: var(--ifm-color-secondary-lightest);
   color: var(--ifm-color-secondary-darkest);
-  padding: 4.8rem 0;
+  padding: 3.6rem 0;
 }
 
 .aboutBody a {
@@ -52,7 +51,6 @@
 }
 
 .aboutSectionHeader h2 {
-  border-bottom: 4px solid var(--ifm-color-success);
   display: inline-block;
   padding-bottom: 6px;
 }
@@ -79,5 +77,9 @@
   .profilePic {
     margin: 4px 0 24px;
     text-align: center;
+  }
+
+  .btnDef {
+    font-size: 1.1rem;
   }
 }

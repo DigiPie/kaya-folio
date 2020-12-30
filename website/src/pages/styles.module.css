@@ -31,8 +31,13 @@
   padding: 0;
 }
 
+.heroBannerText {
+  min-height: 1024px;
+}
+
 .heroBannerButton {
   margin: 24px 4px 0;
+  text-transform: uppercase;
 }
 
 .heroBannerButton:hover {
@@ -47,10 +52,10 @@
 }
 
 .aboutBody,
-.featureBody {
+.directoryBody {
   align-items: center;
   display: flex;
-  padding: 4.8rem 0;
+  padding: 3.6rem 0;
   width: 100%;
 }
 
@@ -69,11 +74,16 @@
 
 .aboutBodyButton {
   margin: 16px 0 0;
+  text-transform: uppercase;
 }
 
-.featureBody {
+.directoryBody {
   background-color: var(--ifm-color-secondary-darkest);
   color: var(--ifm-color-secondary-lightest);
+}
+
+.directoryBody h3 {
+  font-weight: normal;
 }
 
 .profilePic {
@@ -84,12 +94,6 @@
   border-radius: 5%;
   max-height: 196px;
   max-width: 196px;
-}
-
-.featureBody {
-  background-color: var(--ifm-color-secondary-darkest);
-  color: var(--ifm-color-secondary-lighter);
-  padding: 2rem 0;
 }
 
 .featureImage {
@@ -105,49 +109,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.6rem 0 1.8rem;
+  padding: 1.2rem 0;
 }
-
-.ctaButtonBlog, .ctaButtonDocs, .ctaButtonProjects {
-  color: var(--ifm-color-lighter);
-  font-size: 1.2rem;
-  margin: 0.6rem 1.2rem;
-}
-
-.ctaButtonBlog:active, .ctaButtonDocs:active, .ctaButtonProjects:active {
-  color: var(--ifm-color-lighter);
-}
-
-.ctaButtonBlog:hover {
-  background-color: var(--ifm-color-success);
-  border-color: var(--ifm-color-success);
-}
-
-.ctaButtonBlog:active {
-  background-color: var(--ifm-color-secondary-darkest);
-  border-color: var(--ifm-color-success);
-}
-
-.ctaButtonDocs:hover {
-  background-color: var(--ifm-color-warning);
-  border-color: var(--ifm-color-warning);
-}
-
-.ctaButtonDocs:active {
-  background-color: var(--ifm-color-secondary-darkest);
-  border-color: var(--ifm-color-warning);
-}
-
-.ctaButtonProjects:hover {
-  background-color: var(--ifm-color-danger);
-  border-color: var(--ifm-color-danger);
-}
-
-.ctaButtonProjects:active {
-  background-color: var(--ifm-color-secondary-darkest);
-  border-color: var(--ifm-color-danger);
-}
-
 
 @media screen and (max-width: 966px) {
   .heroBanner {
@@ -166,14 +129,14 @@
     font-size: 1rem;
   }
 
+  .heroBannerButton {
+    background-color: var(--ifm-color-secondary-darkest);
+    border-color: var(--ifm-color-success);
+    color: var(--ifm-color-lighter);
+  }
+
   .profilePic {
     margin: 4px 0 24px;
     text-align: center;
-  }
-
-  .ctaButtonBlog, .ctaButtonDocs, .ctaButtonProjects {
-    font-size: 1rem;
-    margin: 0.6rem;
-    padding: 6px 16px;
   }
 }
