@@ -16,7 +16,9 @@ function ResumeItem({ location, link, position, period, description }) {
         <a href={link}>{location}</a>
       </h3>
       <p>
-        <b>{position}</b> <span>•</span> <i>{period}</i>
+        <b>{position}</b>
+        <br />
+        <i>{period}</i>
       </p>
       <div>{description}</div>
     </div>
