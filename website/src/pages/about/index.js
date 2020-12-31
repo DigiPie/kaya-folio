@@ -84,7 +84,7 @@ function About() {
                   Shortly after graduating, I started working as a Full Stack
                   Engineer at <a href="https://padlet.com/dashboard">Padlet</a>.
                 </p>
-                <div className="button-group button-group--block">
+                <div className="button-group button-group--block wideBodyMaxWidth">
                   <Link
                     className="button button--outline button--success btnDef textUpper"
                     to={useBaseUrl("#experience")}
@@ -120,11 +120,15 @@ function About() {
                 ))}
               </div>
             </div>
-            <div className="row">
+          </div>
+        </div>{" "}
+        <div className={clsx("text--center", styles.directoryBody)}>
+          <div className="container">
+            <h3>Continue exploring?</h3>
+            <div className={styles.ctaButtons}>
               <a
-                className="button button--outline button--primary btnSec"
+                className="button button--outline button--warning btnDef textUpper"
                 href={useBaseUrl("pdf/resume.pdf")}
-                style={{ margin: "0 auto" }}
               >
                 View my resume
               </a>

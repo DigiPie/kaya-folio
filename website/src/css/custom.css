@@ -26,7 +26,7 @@
   --ifm-color-success: #0f9d58;
   --ifm-color-warning: #f4b400;
   --ifm-color-danger: #db4437;
-  --ifm-link-color: #4285F4;
+  --ifm-link-color: #4285f4;
   --ifm-code-font-size: 95%;
 }
 
@@ -113,6 +113,10 @@ p {
   text-decoration: underline;
 }
 
+.wideBodyMaxWidth {
+  max-width: 640px;
+}
+
 @media screen and (max-width: 966px) {
   h1 {
     font-size: 2.4rem;
@@ -130,7 +134,8 @@ p {
     font-size: 1rem;
   }
 
-  .btnDef, .btnSec {
+  .btnDef,
+  .btnSec {
     font-size: 1rem;
   }
 }
