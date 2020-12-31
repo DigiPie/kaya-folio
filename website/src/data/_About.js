@@ -82,29 +82,26 @@ export const WorkItems = [
       <>
         <a href="https://nusmods.com/modules/CS3103/computer-networks-practice">
           CS3103: Computer Networks Practice
-        </a>{" "}
-        • August to December 2020
-        <br />
-        Conducted weekly 2-hour labs for 16 students, covering common network
-        concepts such as IPSec-VPN and IoT protocols like MQTT.
+        </a>
+        : Conducted weekly 2-hour labs for 16 students, covering common network
+        concepts such as IPSec-VPN and IoT protocols like MQTT, from August to
+        December 2020.
         <br />
         <br />
         <a href="https://nusmods.com/modules/CS1010/programming-methodology">
           CS1010: Programming Methodology
-        </a>{" "}
-        • August to December 2018
-        <br />
-        Conducted weekly 2-hour tutorials for 14 students, covering fundamental
-        programming concepts, C and Vim.
+        </a>
+        : Conducted weekly 2-hour tutorials for 14 students, covering
+        fundamental programming concepts, C and Vim, from August to December
+        2018.
         <br />
         <br />
         <a href="https://nusmods.com/modules/CS2030/programming-methodology-ii">
           CS2030: Programming Methodology II
-        </a>{" "}
-        • January to May 2018
-        <br />
-        Prepared lab materials for over 200 students, covering Object-Oriented
-        Programming and Functional Programming in Java.
+        </a>
+        : Prepared lab materials for over 200 students, covering Object-Oriented
+        Programming and Functional Programming in Java, from January to May
+        2018.
       </>
     ),
   },
