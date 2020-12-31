@@ -44,7 +44,7 @@ function About() {
               <div className="col col--9">
                 <h1>Evan Tay</h1>
                 <p>
-                  Hello! I'm Evan, a Full Stack Software Engineer and Certified
+                  Hello! I am Evan, a Full Stack Software Engineer and Certified
                   Cloud Engineer based in Singapore.
                 </p>
                 <p>
