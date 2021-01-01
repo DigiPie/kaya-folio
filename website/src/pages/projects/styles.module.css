@@ -80,17 +80,7 @@
   text-transform: uppercase;
 }
 
-.projectItemButton:hover {
-  background-color: var(--ifm-color-success);
-  border-color: var(--ifm-color-success);
-  color: var(--ifm-color-lighter);
-}
 
-.projectItemButton:active {
-  background-color: var(--ifm-color-secondary-darker);
-  border-color: var(--ifm-color-success);
-  color: var(--ifm-color-lighter);
-}
 
 .projectItemBackButton {
   font-size: 1.2rem;

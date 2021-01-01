@@ -51,7 +51,7 @@ function Home() {
             <SocialLinks />
             <Link
               className={clsx(
-                "button button--outline button--success btnSec textUpper",
+                "button button--outline button--primary btnSec textUpper",
                 styles.heroBannerButton
               )}
               to={useBaseUrl("#main")}
