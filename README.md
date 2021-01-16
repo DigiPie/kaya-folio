@@ -14,6 +14,8 @@
 
 ![Landing page](img/landing.png)
 
+![deploy-docusaurus](https://github.com/DigiPie/kaya-folio/workflows/deploy-docusaurus/badge.svg)
+
 ## Design motivation
 
 The website should:
