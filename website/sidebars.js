@@ -45,6 +45,11 @@ module.exports = {
       ],
     },
     {
+      type: "category",
+      label: "MacOS Tooling",
+      items: ["iterm-cheatsheet"],
+    },
+    {
       type: "doc",
       id: "reading-list",
     },

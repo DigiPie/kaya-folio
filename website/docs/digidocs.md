@@ -14,6 +14,7 @@ slug: "/"
 | 3   | Web Development | [MongoDB](mongodb-setup), [NodeJS](nodejs-auto-reload)     |
 | 4   | Programming     | [C](c-cheatsheet)                                          |
 | 5   | Tools and OS    | [Git](git-cheatsheet), [Ubuntu](os-ubuntu-cheatsheet)      |
+| 6   | MacOS Tooling   | [iTerm2](iterm-cheatsheet)                                 |
 | 6   | Reading list    | [My recommended reading and viewing lists](reading-list)   |
 
 ## Background
