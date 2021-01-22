@@ -7,15 +7,20 @@ slug: "/"
 
 **DigiDocs 2.0** is a collection of concise tutorials focused on full-stack software engineering and cloud operations.
 
-|     | Category        | Topics                                                     |
-| --- | --------------- | ---------------------------------------------------------- |
-| 1   | Cloud           | [Docker](docker-cheatsheet), [GCP GKE](gcp-gke-cheatsheet) |
-| 2   | Networking      | [Mininet](mininet-setup), [Network Model](network-model)   |
-| 3   | Web Development | [MongoDB](mongodb-setup), [NodeJS](nodejs-auto-reload)     |
-| 4   | Programming     | [C](c-cheatsheet)                                          |
-| 5   | Tools and OS    | [Git](git-cheatsheet), [Ubuntu](os-ubuntu-cheatsheet)      |
-| 6   | MacOS Tooling   | [iTerm2](iterm-cheatsheet)                                 |
-| 6   | Reading list    | [My recommended reading and viewing lists](reading-list)   |
+|     | Category             | Topics                                                                                                               |
+| --- | -------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| 1   | Cloud and Networking | [Docker](docker-cheatsheet), [GCP GKE](gcp-gke-cheatsheet), [Mininet](mininet-setup), [Network Model](network-model) |
+| 2   | Web Development      | [MongoDB](mongodb-setup), [NodeJS](nodejs-auto-reload)                                                               |
+| 3   | Programming          | [C](c-cheatsheet)                                                                                                    |
+| 4   | Tooling and OS       | [Git](git-cheatsheet), [Ubuntu](os-ubuntu-cheatsheet), [iTerm2](iterm2-zsh-setup)                                    |
+
+You can also view my [reading list](reading-list) for stuff I think you should read, watch or listen to.
+
+:::info Latest article
+
+[iTerm2 and zsh Setup](iterm2-zsh-setup) on 23 January 2021
+
+:::
 
 ## Background
 

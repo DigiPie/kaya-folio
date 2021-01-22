@@ -6,13 +6,13 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Cloud",
-      items: ["docker-cheatsheet", "gcp-gke-cheatsheet"],
-    },
-    {
-      type: "category",
-      label: "Networking",
-      items: ["mininet-setup", "network-model"],
+      label: "Cloud and Networking",
+      items: [
+        "docker-cheatsheet",
+        "gcp-gke-cheatsheet",
+        "mininet-setup",
+        "network-model",
+      ],
     },
     {
       type: "category",
@@ -36,18 +36,16 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Tools and OS",
+      label: "Tooling and OS",
       items: [
         {
           Git: ["git-cheatsheet", "git-ignore-file"],
         },
+        {
+          iTerm2: ["iterm2-zsh-setup", "iterm2-cheatsheet"],
+        },
         "os-ubuntu-cheatsheet",
       ],
-    },
-    {
-      type: "category",
-      label: "MacOS Tooling",
-      items: ["iterm-cheatsheet"],
     },
     {
       type: "doc",

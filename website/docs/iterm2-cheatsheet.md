@@ -1,5 +1,5 @@
 ---
-title: iTerm Cheatsheet
+title: iTerm2 Cheatsheet
 ---
 
 In this section you will find my notes on [iTerm2](https://iterm2.com/), an awesome terminal emulator for MacOS.
