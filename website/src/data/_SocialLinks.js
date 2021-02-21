@@ -1,9 +1,9 @@
-import { faEnvelopeOpen } from "@fortawesome/free-regular-svg-icons";
-import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faAirFreshener, faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const socialLinks = [
   {
-    faIcon: faLinkedinIn,
+    faIcon: faLinkedin,
     alt: "Linkedin",
     url: "https://www.linkedin.com/in/evanitsg/",
   },
@@ -13,7 +13,7 @@ const socialLinks = [
     url: "https://github.com/digipie",
   },
   {
-    faIcon: faEnvelopeOpen,
+    faIcon: faEnvelope,
     alt: "Email",
     url: "mailto:evan.it.sg@gmail.com",
   },

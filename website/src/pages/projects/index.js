@@ -76,7 +76,7 @@ function Projects() {
   return (
     <Layout title="Projects" description={siteConfig.tagline}>
       <header className={styles.projectPageHeader}>
-        <h1 className="underlineColorWarning">Projects</h1>
+        <h1 className="underlineColorSuccess">Projects</h1>
       </header>
       <main ref={mainRef} hidden={true}>
         <div className={styles.projectBody}>
@@ -132,7 +132,7 @@ function Projects() {
                     <div className="card__footer">
                       <Link
                         className={clsx(
-                          "button button--outline button--primary btnDef textUpper",
+                          "button button--outline button--primary textUpper",
                           styles.projectItemButton
                         )}
                         to={useBaseUrl(project.slug)}
@@ -227,6 +227,25 @@ function Projects() {
             </div>
           </div>
         </div>
+        <section className={styles.directoryBody}>
+          <div className="container">
+            <h3>Continue exploring?</h3>
+            <nav className="pagination-nav">
+              <div className="pagination-nav__item">
+                <Link className="pagination-nav__link" to={useBaseUrl("docs/")}>
+                  <div className="pagination-nav__sublabel">Read my</div>
+                  <div className="pagination-nav__label">Documentation</div>
+                </Link>
+              </div>
+              <div className="pagination-nav__item pagination-nav__item--next">
+                <Link className="pagination-nav__link" href={useBaseUrl("about/")}>
+                  <div className="pagination-nav__sublabel">Read more</div>
+                  <div className="pagination-nav__label">About me</div>
+                </Link>
+              </div>
+            </nav>
+          </div>
+        </section>
       </main>
     </Layout>
   );

@@ -40,17 +40,17 @@ export function AboutBody() {
       </p>
       <p>
         Shortly after graduating, I started working as a Full Stack Engineer at{" "}
-        <a href="https://padlet.com/dashboard">Padlet</a>.
+        <a href="https://padlet.com">Padlet</a>.
       </p>
       <div>
         <Link
-          className="button button--outline button--primary btnSec"
+          className="button button--outline button--primary"
           to={useBaseUrl("#experience")}
         >
           My experience
         </Link>{" "}
         <Link
-          className="button button--outline button--primary btnSec"
+          className="button button--outline button--primary"
           to={useBaseUrl("#education")}
         >
           My education

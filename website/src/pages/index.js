@@ -41,27 +41,30 @@ function Home() {
             className={styles.heroBannerText}
             style={{ minHeight: bannerHeight }}
           >
-            <p>Hi, my name is</p>
+            <p className="colorSuccess">
+              <b>Hi, my name is</b>
+            </p>
             <h1>
-              <span className="colorSuccess">Evan</span>{" "}
-              <span className="colorWarning">Tay</span>
-              <span className="colorDanger">.</span>
+              <span className="colorWarning">Evan</span>{" "}
+              <span className="colorDanger">Tay.</span>
             </h1>
             <p>{siteConfig.tagline}</p>
             <SocialLinks />
-            <Link
-              className={clsx(
-                "button button--outline button--primary btnSec textUpper",
-                styles.heroBannerButton
-              )}
-              to={useBaseUrl("#main")}
-            >
-              Learn more
-            </Link>
+            <nav className={clsx("pagination-nav", styles.heroBannerButton)}>
+              <div className="pagination-nav__item">
+                <Link className="pagination-nav__link" to={useBaseUrl("#main")}>
+                  <div className="pagination-nav__sublabel">Read my</div>
+                  <div className="pagination-nav__label">Introduction</div>
+                </Link>
+              </div>
+            </nav>
           </div>
         </div>
       </header>
       <main id="main" ref={mainRef} hidden={true}>
+        <div className={styles.aboutHeader}>
+          <h1 className="underlineColorSuccess">Welcome</h1>
+        </div>
         <div className={styles.aboutBody}>
           <div className="container">
             <div className="row">
@@ -69,9 +72,9 @@ function Home() {
                 <img src={useBaseUrl("img/profilepic.jpg")} />
               </div>
               <div className="col col--9">
-                <h1>Evan Tay</h1>
+                <h1>Hello,</h1>
                 <p>
-                  Hello! I am Evan, a Full Stack Software Engineer and Certified
+                  I am Evan, a Full Stack Software Engineer and Certified
                   Cloud Engineer based in Singapore.
                 </p>
                 <p>
@@ -95,50 +98,44 @@ function Home() {
                 </p>
                 <p>
                   I am currently working at{" "}
-                  <a href="https://padlet.com/dashboard">Padlet</a> as a Full
-                  Stack Engineer.
+                  <a href="https://padlet.com">Padlet</a> as a Full Stack
+                  Engineer.
                 </p>
-                <Link
-                  className={clsx(
-                    "button button--outline button--primary btnSec textUpper",
-                    styles.aboutBodyButton
-                  )}
-                  to={useBaseUrl("/about")}
-                >
-                  Read more
-                </Link>
+                <div className="button-group button-group--block wideBodyMaxWidth">
+                  <Link
+                    className="button button--outline button--success"
+                    to={useBaseUrl("/projects")}
+                  >
+                    My projects
+                  </Link>{" "}
+                  <Link
+                    className="button button--outline button--success"
+                    to={useBaseUrl("/about")}
+                  >
+                    About me
+                  </Link>{" "}
+                </div>
               </div>
             </div>
           </div>
         </div>
         <section className={styles.directoryBody}>
           <div className="container">
-            <h3 className="text--center">Continue exploring?</h3>
-            <div
-              className={clsx(
-                "button-group button-group--block",
-                styles.ctaButtons
-              )}
-            >
-              <Link
-                className="button button--outline button--success btnDef textUpper"
-                to={useBaseUrl("blog/")}
-              >
-                My blog
-              </Link>
-              <Link
-                className="button button--outline button--warning btnDef textUpper"
-                to={useBaseUrl("docs/")}
-              >
-                My docs
-              </Link>
-              <Link
-                className="button button--outline button--danger btnDef textUpper"
-                to={useBaseUrl("projects/")}
-              >
-                My code
-              </Link>
-            </div>
+            <h3>Continue exploring?</h3>
+            <nav className="pagination-nav">
+              <div className="pagination-nav__item">
+                <Link className="pagination-nav__link" to={useBaseUrl("blog/")}>
+                  <div className="pagination-nav__sublabel">Read my</div>
+                  <div className="pagination-nav__label">Blog</div>
+                </Link>
+              </div>
+              <div className="pagination-nav__item pagination-nav__item--next">
+                <Link className="pagination-nav__link" to={useBaseUrl("docs/")}>
+                  <div className="pagination-nav__sublabel">Read my</div>
+                  <div className="pagination-nav__label">Documentation</div>
+                </Link>
+              </div>
+            </nav>
           </div>
         </section>
       </main>

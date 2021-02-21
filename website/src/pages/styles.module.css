@@ -11,7 +11,7 @@
   text-align: left;
 }
 
-.heroBanner h1 {
+.heroBannerName {
   font-size: 3.6rem;
 }
 
@@ -36,7 +36,22 @@
 }
 
 .heroBannerButton {
-  margin: 32px 4px 0;
+  margin: 24px 0.6rem 0 4px;
+}
+
+.aboutHeader {
+  background-color: var(--ifm-color-secondary-darkest);
+  color: var(--ifm-color-secondary-lighter);
+  padding: 1rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.aboutHeader h1 {
+  display: inline-block;
+  padding-bottom: 6px;
 }
 
 .aboutBody,

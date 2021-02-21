@@ -7,13 +7,13 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #4285f4;
-  --ifm-color-primary-dark: #2572f2;
-  --ifm-color-primary-darker: #1669f1;
-  --ifm-color-primary-darkest: #0c55cd;
-  --ifm-color-primary-light: #5f98f6;
-  --ifm-color-primary-lighter: #6ea1f7;
-  --ifm-color-primary-lightest: #9abef9;
+  --ifm-color-primary: #0f9d58;
+  --ifm-color-primary-dark: #0d8d4f;
+  --ifm-color-primary-darker: #0d854b;
+  --ifm-color-primary-darkest: #0a6e3e;
+  --ifm-color-primary-light: #10ad61;
+  --ifm-color-primary-lighter: #11b565;
+  --ifm-color-primary-lightest: #13cc72;
   --ifm-color-secondary: #878787;
   --ifm-color-secondary-dark: #616161;
   --ifm-color-secondary-darker: #2e2e2e;
@@ -26,7 +26,7 @@
   --ifm-color-success: #0f9d58;
   --ifm-color-warning: #f4b400;
   --ifm-color-danger: #db4437;
-  --ifm-link-color: #4285f4;
+  --ifm-link-color: #0f9d58;
   --ifm-code-font-size: 95%;
 }
 
@@ -37,17 +37,8 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-a,
-a:hover {
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--ifm-color-success);
-}
-
 h1 {
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 
 h2 {
@@ -55,20 +46,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 p {
   font-size: 1rem;
-}
-
-.btnDef {
-  font-size: 1.2rem;
-}
-
-.btnSec {
-  font-size: 1.2rem;
-  margin: 0.6rem 1.2rem;
 }
 
 .textUpper {
@@ -131,11 +113,6 @@ p {
   }
 
   p {
-    font-size: 1rem;
-  }
-
-  .btnDef,
-  .btnSec {
     font-size: 1rem;
   }
 }

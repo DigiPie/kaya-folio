@@ -32,7 +32,7 @@ function About() {
   return (
     <Layout title="About" description={siteConfig.tagline}>
       <header className={styles.aboutHeader}>
-        <h1 className="underlineColorWarning">About</h1>
+        <h1 className="underlineColorSuccess">About</h1>
       </header>
       <main id="main">
         <div className={styles.aboutBody}>
@@ -42,9 +42,9 @@ function About() {
                 <img src={useBaseUrl("img/profilepic.jpg")} />
               </div>
               <div className="col col--9">
-                <h1>Evan Tay</h1>
+                <h1>Hello,</h1>
                 <p>
-                  Hello! I am Evan, a Full Stack Software Engineer and Certified
+                  I am Evan, a Full Stack Software Engineer and Certified
                   Cloud Engineer based in Singapore.
                 </p>
                 <p>
@@ -82,17 +82,17 @@ function About() {
                 </p>
                 <p>
                   Shortly after graduating, I started working as a Full Stack
-                  Engineer at <a href="https://padlet.com/dashboard">Padlet</a>.
+                  Engineer at <a href="https://padlet.com">Padlet</a>.
                 </p>
                 <div className="button-group button-group--block wideBodyMaxWidth">
                   <Link
-                    className="button button--outline button--success btnDef textUpper"
+                    className="button button--outline button--success"
                     to={useBaseUrl("#experience")}
                   >
                     My experience
                   </Link>{" "}
                   <Link
-                    className="button button--outline button--danger btnDef textUpper"
+                    className="button button--outline button--success"
                     to={useBaseUrl("#education")}
                   >
                     My education
@@ -102,7 +102,7 @@ function About() {
             </div>
             <div id="experience" className="row padding-vert--lg">
               <div className={clsx("col col--3", styles.aboutSectionHeader)}>
-                <h2 className="underlineColorSuccess">Experience</h2>
+                <h2 className="underlineColorWarning">Experience</h2>
               </div>
               <div className="col col--9">
                 {WorkItems.map((props, idx) => (
@@ -122,19 +122,25 @@ function About() {
             </div>
           </div>
         </div>{" "}
-        <div className={clsx("text--center", styles.directoryBody)}>
+        <section className={styles.directoryBody}>
           <div className="container">
             <h3>Continue exploring?</h3>
-            <div className={styles.ctaButtons}>
-              <a
-                className="button button--outline button--warning btnDef textUpper"
-                href={useBaseUrl("pdf/resume.pdf")}
-              >
-                View my resume
-              </a>
-            </div>
+            <nav className="pagination-nav">
+              <div className="pagination-nav__item">
+                <Link className="pagination-nav__link" to={useBaseUrl("projects/")}>
+                  <div className="pagination-nav__sublabel">View my</div>
+                  <div className="pagination-nav__label">Projects</div>
+                </Link>
+              </div>
+              <div className="pagination-nav__item pagination-nav__item--next">
+                <a className="pagination-nav__link" href={useBaseUrl("pdf/resume.pdf")}>
+                  <div className="pagination-nav__sublabel">View my</div>
+                  <div className="pagination-nav__label">Resume</div>
+                </a>
+              </div>
+            </nav>
           </div>
-        </div>
+        </section>
       </main>
     </Layout>
   );

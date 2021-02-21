@@ -73,13 +73,6 @@
   width: 100%;
 }
 
-.ctaButtons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.2rem 0;
-}
-
 .directoryBody h3 {
   font-weight: normal;
 }
@@ -97,9 +90,5 @@
   .profilePic {
     margin: 4px 0 24px;
     text-align: center;
-  }
-
-  .btnDef {
-    font-size: 1.1rem;
   }
 }
