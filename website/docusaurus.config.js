@@ -69,7 +69,7 @@ module.exports = {
           label: "Docs",
           position: "left",
         },
-        { to: "projects", label: "Projects", position: "left" },
+        { to: "projects", label: "Projects", position: "right" },
         { to: "about", label: "About", position: "right" },
         {
           href: "https://evantay.com/pdf/resume.pdf",
