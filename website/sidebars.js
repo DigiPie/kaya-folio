@@ -16,16 +16,6 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Web Development",
-      items: [
-        {
-          MongoDB: ["mongodb-setup", "mongodb-cheatsheet"],
-          NodeJS: ["nodejs-auto-reload", "nodejs-set-npm-run-shell"],
-        },
-      ],
-    },
-    {
-      type: "category",
       label: "Programming",
       items: [
         {
@@ -45,6 +35,16 @@ module.exports = {
           iTerm2: ["iterm2-zsh-setup", "iterm2-cheatsheet"],
         },
         "os-ubuntu-cheatsheet",
+      ],
+    },
+    {
+      type: "category",
+      label: "Web Development",
+      items: [
+        {
+          MongoDB: ["mongodb-setup", "mongodb-cheatsheet"],
+          NodeJS: ["nodejs-auto-reload", "nodejs-set-npm-run-shell"],
+        },
       ],
     },
     {

@@ -8,22 +8,37 @@ Updated on March 21, 2021
 
 ## Introduction
 
-**DigiDocs 2.0** is a collection of concise tutorials focused on full-stack software engineering and cloud operations.
+**DigiDocs 2.0** is a collection of concise notes on full-stack software engineering and cloud operations. These notes are filed under their respective topic, and related topics are categorised under the same chapter.
 
-## 2021 Topics
+## Cloud and Networking
 
-|     | Category       | Topics                     |
-| --- | -------------- | -------------------------- |
-| 1   | Tooling and OS | [iTerm2](iterm2-zsh-setup) |
+|     | Topic                          | Last Update       |
+| --- | ------------------------------ | ----------------- |
+| 1   | [Docker](docker-cheatsheet)    | December 24, 2020 |
+| 2   | [GCP GKE](gcp-gke-cheatsheet)  | December 24, 2020 |
+| 3   | [Mininet](mininet-setup)       | December 27, 2020 |
+| 4   | [Network Model](network-model) | November 30, 2020 |
 
-## 2020 Topics
+## Programming
 
-|     | Category             | Topics                                                                                                               |
-| --- | -------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| 1   | Cloud and Networking | [Docker](docker-cheatsheet), [GCP GKE](gcp-gke-cheatsheet), [Mininet](mininet-setup), [Network Model](network-model) |
-| 2   | Web Development      | [MongoDB](mongodb-setup), [NodeJS](nodejs-auto-reload)                                                               |
-| 3   | Programming          | [C](c-cheatsheet)                                                                                                    |
-| 4   | Tooling and OS       | [Git](git-cheatsheet), [Ubuntu](os-ubuntu-cheatsheet)                                                                |
+|     | Topic             | Last Update       |
+| --- | ----------------- | ----------------- |
+| 1   | [C](c-cheatsheet) | December 23, 2020 |
+
+## Tooling and OS
+
+|     | Topic                          | Last Update       |
+| --- | ------------------------------ | ----------------- |
+| 1   | [Git](git-cheatsheet)          | December 23, 2020 |
+| 1   | [iTerm2](iterm2-cheatsheet)    | January 23, 2021  |
+| 1   | [Ubuntu](os-ubuntu-cheatsheet) | December 23, 2020 |
+
+## Web Development
+
+|     | Topic                        | Last Update       |
+| --- | ---------------------------- | ----------------- |
+| 1   | [MongoDB](mongodb-setup)     | December 23, 2020 |
+| 2   | [NodeJS](nodejs-auto-reload) | December 23, 2020 |
 
 ## Reading List
 
