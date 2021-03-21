@@ -2,7 +2,9 @@
 title: MongoDB Setup
 ---
 
-*This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/mongodb/local-setup/)*
+Created on December 23, 2020
+
+_This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/mongodb/local-setup/)_
 
 The purpose of this guide is to quickly set up a local copy of MongoDB **on Windows** for local development purposes. Authentication will not be enabled or covered in this tutorial.
 
@@ -18,7 +20,7 @@ The purpose of this guide is to quickly set up a local copy of MongoDB **on Wind
 
 6. Next, create a new collection, use the `use` command:
 
-``` bash
+```bash
 # To display the database you are using
 db
 
@@ -40,7 +42,7 @@ Read <https://docs.mongodb.com/manual/mongo/> for more information.
 
 7. Next, create a user with `readWrite` and `dbAdmin` roles, using the `db.createUser()` command:
 
-``` bash
+```bash
 # Switch to the database you want to add the user to
 use dev
 
@@ -105,7 +107,7 @@ Read <https://docs.mongodb.com/manual/tutorial/enable-authentication/> for more 
 
 To verify your connection-string, simply use `mongo <mongoURI>`:
 
-``` bash
+```bash
 # Example, without authentication
 mongo mongodb://localhost:27017/dev
 

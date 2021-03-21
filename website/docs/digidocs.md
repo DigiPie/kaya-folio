@@ -3,24 +3,31 @@ title: DigiDocs 2.0
 slug: "/"
 ---
 
+Created on January 23, 2021  
+Updated on March 21, 2021
+
 ## Introduction
 
 **DigiDocs 2.0** is a collection of concise tutorials focused on full-stack software engineering and cloud operations.
+
+## 2021 Topics
+
+|     | Category       | Topics                     |
+| --- | -------------- | -------------------------- |
+| 1   | Tooling and OS | [iTerm2](iterm2-zsh-setup) |
+
+## 2020 Topics
 
 |     | Category             | Topics                                                                                                               |
 | --- | -------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | 1   | Cloud and Networking | [Docker](docker-cheatsheet), [GCP GKE](gcp-gke-cheatsheet), [Mininet](mininet-setup), [Network Model](network-model) |
 | 2   | Web Development      | [MongoDB](mongodb-setup), [NodeJS](nodejs-auto-reload)                                                               |
 | 3   | Programming          | [C](c-cheatsheet)                                                                                                    |
-| 4   | Tooling and OS       | [Git](git-cheatsheet), [Ubuntu](os-ubuntu-cheatsheet), [iTerm2](iterm2-zsh-setup)                                    |
+| 4   | Tooling and OS       | [Git](git-cheatsheet), [Ubuntu](os-ubuntu-cheatsheet)                                                                |
 
-You can also view my [reading list](reading-list) for stuff I think you should read, watch or listen to.
+## Reading List
 
-:::info Latest article
-
-[iTerm2 and zsh Setup](iterm2-zsh-setup) on 23 January 2021
-
-:::
+You can also view my [Reading List](reading-list) for stuff I think you should read, watch or listen to.
 
 ## Background
 

@@ -2,6 +2,9 @@
 title: Reading List
 ---
 
+Created on December 23, 2020  
+Updated on December 24, 2020
+
 Here, you will find things I found thought-provoking and interesting, ranging from academic papers to conference videos.
 
 ## Articles

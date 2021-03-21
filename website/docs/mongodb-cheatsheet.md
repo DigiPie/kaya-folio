@@ -2,7 +2,9 @@
 title: MongoDB Cheatsheet
 ---
 
-*This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/mongodb/cheat-sheet/)*
+Created on December 23, 2020
+
+_This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/mongodb/cheat-sheet/)_
 
 The purpose of this page is to summarise key `mongodb` commands you will often use.
 
@@ -11,13 +13,13 @@ The purpose of this page is to summarise key `mongodb` commands you will often u
 ```bash
 # Select the database
 show dbs
-use <db-name> 
+use <db-name>
 
 # Show all collections in the database
-show collections 
+show collections
 
 # Print out all documents in the database
-db.<collection-name>.find() 
+db.<collection-name>.find()
 
 # Print out in an easy-to-read but less compact format
 db.<collection-name>.find().pretty()
@@ -27,10 +29,10 @@ db.<collection-name>.find().pretty()
 
 ```bash
 show dbs
-use <db-name> 
+use <db-name>
 
 # Show all collections in the database
-show collections 
+show collections
 
 # Remove all documents in the collection
 db.<collection-name>.remove( { } )

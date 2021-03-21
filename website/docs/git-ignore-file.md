@@ -2,7 +2,9 @@
 title: Git Ignore file
 ---
 
-*This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/git/ignoring-files/)*
+Created on December 24, 2020
+
+_This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/git/ignoring-files/)_
 
 This section covers how to tell Git to ignore certain files and directories by using _.gitignore_ files or the `git update-index` commands.
 

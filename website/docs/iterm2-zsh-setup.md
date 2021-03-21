@@ -2,6 +2,9 @@
 title: iTerm2 and zsh Setup
 ---
 
+Created on January 16, 2021  
+Updated on January 23, 2021
+
 In this section you will find my notes on setting up [iTerm2](https://iterm2.com/), an awesome terminal emulator for MacOS, and [ohmyzsh](https://ohmyz.sh/), an amazing open-source framework for managing your zsh configuration.
 
 ## Install

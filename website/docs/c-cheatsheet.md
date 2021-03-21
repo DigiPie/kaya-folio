@@ -2,13 +2,16 @@
 title: C Cheatsheet
 ---
 
-*This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/c/arguments/)*
+Created on December 23, 2020
+
+_This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/c/arguments/)_
 
 ## Print out arguments
 
 The example program below prints out all command line arguments passed into the `main()` function.
 
 **print-arguments.c**
+
 ```c
 #include <stdio.h>
 

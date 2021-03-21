@@ -2,23 +2,25 @@
 title: Network Model (CS4226)
 ---
 
+Created on November 30, 2020
+
 In this document, you will find my summary for the Network Performance Model and Queueing Model content covered under [CS4226: Internet Architecture](https://nusmods.com/modules/CS4226/internet-architecture) course taught by [Dr. Richard Ma](https://www.comp.nus.edu.sg/~tbma/). I compiled this document with the help of notes written by my good friend Matthew over [here](https://crazoter.github.io/My-Docs/docs/markdown/CS4226_summary).
 
 ## Performance metrics
 
-| Metric | Definition |
-| :-- | :-- |
-| Link Rate / Bandwidth | Theoretical maximum capacity; indirectly related to speed |
+| Metric                           | Definition                                                                                                                 |
+| :------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| Link Rate / Bandwidth            | Theoretical maximum capacity; indirectly related to speed                                                                  |
 | Throughput / Effective bandwidth | Actual data transfer rate between source and destination; directly related to speed; with **end-to-end delay** factored in |
 
 ## End-to-end delay
 
-For a given packet being sent over a link, end-to-end delay is made up of: 
+For a given packet being sent over a link, end-to-end delay is made up of:
 
-* Transmission delay: dependent on packet size $L\ (bits)$ and link rate $R\ (bits/s)$: $d_{T} = \frac{L}{R}$
-* Propagation delay: dependent on distance and propagation speed
-* Processing delay: dependent on $L$
-* **Queueing delay**: dependent on queue size and $d_{T}$
+- Transmission delay: dependent on packet size $L\ (bits)$ and link rate $R\ (bits/s)$: $d_{T} = \frac{L}{R}$
+- Propagation delay: dependent on distance and propagation speed
+- Processing delay: dependent on $L$
+- **Queueing delay**: dependent on queue size and $d_{T}$
 
 ## Queueing delay
 

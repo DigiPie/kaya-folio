@@ -2,7 +2,10 @@
 title: Mininet Setup
 ---
 
-*This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/mininet/getting-started/)*
+Created on December 21, 2020  
+Updated on December 27, 2020
+
+_This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/mininet/getting-started/)_
 
 ![Mininet diagram](../static/img/docs/mininet.png)
 
@@ -21,12 +24,12 @@ I wrote this setup guide using MacOS, POX [using Python3](https://github.com/nox
 ## Set up Mininet VM
 
 1. Download, setup and launch the latest Mininet VM [here](https://github.com/mininet/mininet/wiki/Mininet-VM-Images).
-    - For virtualization program, try VirtualBox first given that it is free and open-source.
-    - If you do use VirtualBox, remember to add a Host-only network adapter to your VM under  
-    _Select VM > Settings > Network_
-    - If you are on MacOS, and the Mininet VM aborts when you launch it (as it does for me), you may have to consider using [VMware Fusion](https://www.vmware.com/products/fusion.html) instead.
-    - If you do use VMware Fusion, change your network adapter:  
-    _Virtual Machine > Network Adapter > Bridged (Autodetect)_
+   - For virtualization program, try VirtualBox first given that it is free and open-source.
+   - If you do use VirtualBox, remember to add a Host-only network adapter to your VM under  
+     _Select VM > Settings > Network_
+   - If you are on MacOS, and the Mininet VM aborts when you launch it (as it does for me), you may have to consider using [VMware Fusion](https://www.vmware.com/products/fusion.html) instead.
+   - If you do use VMware Fusion, change your network adapter:  
+     _Virtual Machine > Network Adapter > Bridged (Autodetect)_
 2. Log into the VM using `mininet` as both username and password.
 
 Before setting up the NOX/POX on your local machine, it would be best to familiarise and verify that your Mininet setup is working fine. Try out a few of the commands in [#mininet-cheat-sheet](#mininet-cheat-sheet) such as `pingall`.
@@ -37,16 +40,16 @@ You will be setting up the NOX/POX controller on your local machine, and linking
 
 Verify that your POX installation is working:
 
-``` bash
-git clone https://github.com/noxrepo/pox 
+```bash
+git clone https://github.com/noxrepo/pox
 cd pox
 ./pox.py log.level --DEBUG
 ```
 
-1. Verify that you see:   
-`INFO:core:POX 0.7.0 (gar) is up.`
+1. Verify that you see:  
+   `INFO:core:POX 0.7.0 (gar) is up.`
 1. You can terminate POX after step 1.
-1. If it does not work, it is likely because you do not have Python3 installed. You can  `git checkout master` to change to the Python2 version for POX. See [this](https://github.com/noxrepo/pox/issues/192) for more information.
+1. If it does not work, it is likely because you do not have Python3 installed. You can `git checkout master` to change to the Python2 version for POX. See [this](https://github.com/noxrepo/pox/issues/192) for more information.
 
 ## Connecting POX to Mininet VM
 
@@ -56,25 +59,25 @@ Next, we will set up a Mininet network (on your Mininet VM) with the remote cont
 
 On your local machine, at the `pox/` directory:
 
-``` bash
+```bash
 ./pox.py log.level --DEBUG forwarding.l2_learning
 ```
 
 1. Verify that you see something similar to:  
-`DEBUG:openflow.of_01:Listening on 0.0.0.0:6633`
+   `DEBUG:openflow.of_01:Listening on 0.0.0.0:6633`
 
 On your Mininet VM, check if your VM can reach the POX controller at the port it is listening on:
 
-``` bash
+```bash
 nc -zvw10 0.0.0.0 6633
 ```
 
 1. Replace the IP address and port with what you see after `Listening on` in the previous step.
 2. Verify that you see something similar to:  
-`Connection to 127.0.0.1 port 6633 [tcp/*] succeeded!`
+   `Connection to 127.0.0.1 port 6633 [tcp/*] succeeded!`
 3. If you see something like:  
-`nc: connectx to 127.0.0.1 port 6633 (tcp) failed: Connection refused`,  
-it is probably because your VM cannot access your host machine. See [#troubleshoot-connectivity](#troubleshoot-connectivity).
+   `nc: connectx to 127.0.0.1 port 6633 (tcp) failed: Connection refused`,  
+   it is probably because your VM cannot access your host machine. See [#troubleshoot-connectivity](#troubleshoot-connectivity).
 
 ### Verify Mininet uses remote POX
 
@@ -88,13 +91,13 @@ sudo mn --controller=remote,ip=0.0.0.0,port=6633
 
 Lastly, check if your POX remote controller is connected:
 
-``` bash
+```bash
 h1 ping h2
 ```
 
 1. Verify that `h1` is able to ping `h2`. If not, your remote controller is not connected.
 2. You should also see output in the POX window similar to:  
-`DEBUG:forwarding.l2_learning:installing flow for 52:1e:48:64:23:43.2 -> 02:07:aa:33:88:e5.1`
+   `DEBUG:forwarding.l2_learning:installing flow for 52:1e:48:64:23:43.2 -> 02:07:aa:33:88:e5.1`
 
 If you are able to make it to this point, your setup for Mininet VM and remote POX is completed. See [#resources](#resources) for more information on what you can do next with Mininet!
 
@@ -102,7 +105,7 @@ If you are able to make it to this point, your setup for Mininet VM and remote P
 
 #### Enter Mininet
 
-``` bash
+```bash
 sudo mn
 ```
 
@@ -110,25 +113,25 @@ sudo mn
 
 Display all Mininet commands:
 
-``` bash
+```bash
 help
 ```
 
 Display all nodes:
 
-``` bash
+```bash
 nodes
 ```
 
 Display all links:
 
-``` bash
+```bash
 net
 ```
 
 Display information on everything:
 
-``` bash
+```bash
 dump
 ```
 
@@ -136,13 +139,13 @@ dump
 
 This command tests the connectivity between all hosts:
 
-``` bash
+```bash
 pingall
 ```
 
 #### Exit Mininet
 
-``` bash
+```bash
 exit
 sudo mn –c
 ```
@@ -156,7 +159,6 @@ If you are unable to connect to the POX controller from your VM, it could be one
 1. Firewall rules are blocking it.
 2. Incorrect IP address or port.
 
-
 If you are certain you are specifiying the correct IP address and port, and that your firewall is off or allowing traffic in for the port POX is listening on, attempt the fix in [#vm-host-connectivity](#vm-host-connectivity).
 
 ### VM-Host connectivity
@@ -166,18 +168,18 @@ The instructions here are for VMware Fusion and MacOS, but you can use it as a g
 On your local machine:
 
 1. Turn off your Mininet VM:  
-_Virtual Machine > Shutdown (for VMware Fusion)_
+   _Virtual Machine > Shutdown (for VMware Fusion)_
 1. Change your network adapter to Bridged (Autodetect) if you have not done so yet:  
-_Virtual Machine > Network Adapter > Bridged (Autodetect)_
+   _Virtual Machine > Network Adapter > Bridged (Autodetect)_
 1. Turn on your Mininet VM.
 1. Find out your local machine's IP address:  
-_System Preferences > Network > Wi-Fi_
+   _System Preferences > Network > Wi-Fi_
 1. Look out for something similar to:  
-`Wi-Fi is connected to YourWifi and has the IP address 192.168.0.152`
+   `Wi-Fi is connected to YourWifi and has the IP address 192.168.0.152`
 
 On your Mininet VM:
 
-Use your local machine's IP address for the `nc` command:  
+Use your local machine's IP address for the `nc` command:
 
 ```bash
 nc -zvw10 192.168.0.152 6633

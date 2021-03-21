@@ -2,7 +2,9 @@
 title: Git Cheatsheet
 ---
 
-*This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/git/cheat-sheet/)*
+Created on December 24, 2020
+
+_This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/git/cheat-sheet/)_
 
 :::tip
 
@@ -35,18 +37,18 @@ git branch -vv
 **Example scenario:**  
 I have merged my development branch `feat/new-feature` into `develop` and wish to delete the local and remote branch of `feat/new-feature` now.
 
-**The solution:**  
+**The solution:**
 
-- Delete the local branch: 
-    - `git branch -d feat/new-feature`
-    - or with `--force`: `git branch -D feat/new-feature`
+- Delete the local branch:
+  - `git branch -d feat/new-feature`
+  - or with `--force`: `git branch -D feat/new-feature`
 - Delete the remote branch: `git push <remote> -d <branch>`
 
-**The general command format it is based on:**  
+**The general command format it is based on:**
 
-- Delete a local branch: 
-    - `git branch -d|--delete <branch>`
-    - or with `--force`: `git branch -D <branch>`
+- Delete a local branch:
+  - `git branch -d|--delete <branch>`
+  - or with `--force`: `git branch -D <branch>`
 - Delete a remote branch: `git push <remote> -d|--delete <branch>`
 
 ## Reset a branch
@@ -75,7 +77,7 @@ If `-B` is given, `<new_branch>` is created if it doesn’t exist; otherwise, it
 **Example scenario:**  
 I want to stop tracking changes for a given file temporarily, as I am still editing it and do not want an incomplete copy of it to be added to staging when I do `git add *` (to add all changes in the current path).
 
-**The solution:**  
+**The solution:**
 
 To temporarily ignore (stop tracking) a file:
 

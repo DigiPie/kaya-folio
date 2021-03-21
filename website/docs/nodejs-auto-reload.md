@@ -2,7 +2,9 @@
 title: NodeJS Auto-reload server
 ---
 
-*This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/nodejs/auto-reload/)*
+Created on December 23, 2020
+
+_This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/nodejs/auto-reload/)_
 
 **Problem:** Manually reloading the NodeJS server by hitting `Ctrl + C` and entering `npm start` repeatedly in development is exhausting.
 
@@ -18,7 +20,7 @@ Nodemon is a utility that will monitor for any changes in your source and automa
 
 ### How-to-use
 
-``` bash
+```bash
 npm i -g nodemon
 ```
 
@@ -34,7 +36,7 @@ You can also add it to npm scripts to make life even easier.
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
-  },
+  }
 }
 ```
 

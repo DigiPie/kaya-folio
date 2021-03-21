@@ -2,6 +2,8 @@
 title: Docker Cheatsheet
 ---
 
+Created on December 24, 2020
+
 _This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/container/docker/)_
 
 In this section you will find my notes on using Docker for the deployment of Git projects.

@@ -2,6 +2,8 @@
 title: Ubuntu Cheatsheet
 ---
 
+Created on December 24, 2020
+
 _This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/os/ubuntu18-04/)_
 
 In this section you will find my notes on setting up and securing Ubuntu 18.04. [Vim](https://www.linux.com/learn/vim-101-beginners-guide-vim) knowledge is assumed.

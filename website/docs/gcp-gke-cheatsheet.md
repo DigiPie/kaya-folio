@@ -2,6 +2,8 @@
 title: GKE Cheatsheet
 ---
 
+Created on December 24, 2020
+
 _This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/gcp/kubernetes-engine/)_
 
 In this section, you will find my notes on using Kubernetes on Google Cloud Platform's [Kubernetes Engine](https://cloud.google.com/kubernetes-engine) (GKE). It covers a typical workflow for starting a Kubernetes cluster and deploying an application on it.
