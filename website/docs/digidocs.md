@@ -4,7 +4,7 @@ slug: "/"
 ---
 
 Created on January 23, 2021  
-Updated on March 21, 2021
+Updated on March 27, 2021
 
 ## Introduction
 
@@ -30,8 +30,8 @@ Updated on March 21, 2021
 |     | Topic                          | Last Update       |
 | --- | ------------------------------ | ----------------- |
 | 1   | [Git](git-cheatsheet)          | December 23, 2020 |
-| 1   | [iTerm2](iterm2-cheatsheet)    | January 23, 2021  |
-| 1   | [Ubuntu](os-ubuntu-cheatsheet) | December 23, 2020 |
+| 2   | [iTerm2](iterm2-cheatsheet)    | January 23, 2021  |
+| 3   | [Ubuntu](os-ubuntu-cheatsheet) | December 23, 2020 |
 
 ## Web Development
 
