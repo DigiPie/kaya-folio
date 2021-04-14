@@ -11,7 +11,8 @@ Here, you will find things I found thought-provoking and interesting, ranging fr
 
 **2021**
 
-- [Melodies Sim's Medium Article: Lessons Learnt from Scaling Memcached in Production](https://levelup.gitconnected.com/lessons-learnt-from-scaling-memcached-in-production-86778ab616c7): my [Article Summary](scaling-memcached.md)
+- [Figma: How Figma’s multiplayer technology works](https://www.figma.com/blog/how-figmas-multiplayer-technology-works/): How Figma implemented multiplayer in-house, without having to use operational transforms which is the standard multiplayer algorithm used by apps like Google Docs.
+- [Melodies Sim: Lessons Learnt from Scaling Memcached in Production](https://levelup.gitconnected.com/lessons-learnt-from-scaling-memcached-in-production-86778ab616c7): Scaling Memcached with High Availability and Consistency in mind (my [Article Summary](scaling-memcached.md)).
 
 **2020**
 
