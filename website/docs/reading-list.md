@@ -3,11 +3,15 @@ title: Reading List
 ---
 
 Created on December 23, 2020  
-Updated on December 24, 2020
+Updated on April 14, 2021
 
 Here, you will find things I found thought-provoking and interesting, ranging from academic papers to conference videos.
 
 ## Articles
+
+**2021**
+
+- [Melodies Sim's Medium Article: Lessons Learnt from Scaling Memcached in Production](https://levelup.gitconnected.com/lessons-learnt-from-scaling-memcached-in-production-86778ab616c7): my [Article Summary](scaling-memcached.md)
 
 **2020**
 
