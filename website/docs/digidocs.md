@@ -4,7 +4,7 @@ slug: "/"
 ---
 
 Created on January 23, 2021  
-Updated on April 14, 2021
+Updated on April 15, 2021
 
 ## Introduction
 
@@ -40,11 +40,15 @@ Updated on April 14, 2021
 | 1   | [MongoDB](mongodb-setup)     | December 23, 2020 |
 | 2   | [NodeJS](nodejs-auto-reload) | December 23, 2020 |
 
-## Article Summaries and Reading List
+## Article Summaries
+
+|     | Topic                                                                    | Last Update    |
+| --- | ------------------------------------------------------------------------ | -------------- |
+| 1   | [Lessons Learnt from Scaling Memcached in Production](scaling-memcached) | April 14, 2021 |
+
+## Reading List
 
 You can also view my [Reading List](reading-list) for stuff I think you should read, watch or listen to.
-
-I write **Article Summaries** for some of the articles I read too.
 
 ## Background
 
