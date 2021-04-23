@@ -40,7 +40,7 @@ module.exports = {
   title: "Evan Tay",
   tagline:
     "I am a Software Engineer and Cloud Engineer passionate about solving Meaningful Problems.",
-  url: "https://digipie.github.io/",
+  url: "https://evantay.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   favicon: "img/logo.png",
@@ -59,7 +59,7 @@ module.exports = {
         alt: "Evan Tay",
         src: "img/logo.png",
         href: "https://evantay.com",
-        target: '_self',
+        target: "_self",
       },
       items: [
         { to: "blog", label: "Blog", position: "left" },
