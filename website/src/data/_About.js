@@ -182,7 +182,16 @@ export const EducationItems = [
       <>
         <b>Academics</b>
         <ul>
-          <li>Specialisations in Software Engineering and Networking</li>
+          <li>
+            <a href="https://evantay.com/pdf/cert_software_engineering.pdf">
+              Certificate of Merit in Software Engineering
+            </a>
+          </li>
+          <li>
+            <a href="https://evantay.com/pdf/cert_distributed_systems.pdf">
+              Certificate of Merit in Networking and Distributed Systems
+            </a>
+          </li>
           <li>
             <a href="http://rc4.nus.edu.sg/">
               Residential College 4 Systems Dynamics Programme
