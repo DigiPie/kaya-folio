@@ -26,14 +26,14 @@
 }
 
 .projectBody {
-  background-color: var(--ifm-color-secondary-lightest);
-  color: var(--ifm-color-secondary-darkest);
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-color-secondary-lightest);
   padding: 3.6rem 0;
 }
 
 .projectCard {
-  background-color: var(--ifm-color-secondary-darker);
-  border-radius: none;
+  background-color: var(--ifm-color-secondary-darkest);
+  border-radius: var(--ifm-pagination-nav-border-radius);
   color: var(--ifm-color-secondary-lightest);
   display: flex;
   flex-direction: column;
@@ -73,11 +73,14 @@
 }
 
 .projectItemButton {
-  border-radius: 0%;
   display: flex;
   margin: 0;
   justify-content: center;
   text-transform: uppercase;
+}
+
+.projectItemBackButton {
+  margin: 1rem 0;
 }
 
 .directoryBody {
