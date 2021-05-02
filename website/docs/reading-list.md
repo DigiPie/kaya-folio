@@ -1,6 +1,5 @@
 ---
-title: Reviews and Summaries
-slug: "/reviews-and-summaries/"
+title: Reading List
 ---
 
 Created on December 23, 2020  

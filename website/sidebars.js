@@ -2,7 +2,7 @@ module.exports = {
   docs: [
     {
       type: "doc",
-      id: "digidocs",
+      id: "contents",
     },
     {
       type: "category",
@@ -51,7 +51,7 @@ module.exports = {
       type: "category",
       label: "Reviews and Summaries",
       items: [
-        "reviews-and-summaries",
+        "reading-list",
         {
           "Article Summaries": ["scaling-memcached"],
         },
