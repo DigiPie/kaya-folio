@@ -49,12 +49,13 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Article Summaries",
-      items: ["scaling-memcached"],
-    },
-    {
-      type: "doc",
-      id: "reading-list",
+      label: "Reviews and Summaries",
+      items: [
+        "reviews-and-summaries",
+        {
+          "Article Summaries": ["scaling-memcached"],
+        },
+      ],
     },
   ],
 };
