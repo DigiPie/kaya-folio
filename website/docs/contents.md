@@ -4,7 +4,7 @@ slug: "/"
 ---
 
 Created on January 23, 2021  
-Updated on May 2, 2021
+Updated on May 16, 2021
 
 ## Documentation
 
@@ -42,10 +42,16 @@ Here, you will find a collection of concise notes on full-stack software enginee
 
 ## Reviews and Summaries
 
-I house my personal book summaries in this corner of the site. I also maintain a [Reading List](reading-list) of articles, books, videos, and more which I think are meaningful and insightful.
+Here, you will find my thoughts on articles, books, videos and other forms of media. I also maintain a ["Reading" List](reading-list) of articles, books, videos, and more which I think are meaningful and insightful.
 
 ### Article Summaries
 
 |     | Topic                                                                    | Last Update    |
 | --- | ------------------------------------------------------------------------ | -------------- |
 | 1   | [Lessons Learnt from Scaling Memcached in Production](scaling-memcached) | April 14, 2021 |
+
+### Book Reviews
+
+|     | Title                                                          | Last Update  |
+| --- | -------------------------------------------------------------- | ------------ |
+| 1   | [Ikigai: The Japanese Secret to a Long and Happy Life](ikigai) | May 16, 2021 |

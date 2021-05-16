@@ -55,6 +55,9 @@ module.exports = {
         {
           "Article Summaries": ["scaling-memcached"],
         },
+        {
+          "Book Reviews": ["ikigai"],
+        },
       ],
     },
   ],
