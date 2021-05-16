@@ -51,7 +51,7 @@ module.exports = {
       type: "category",
       label: "Reviews and Summaries",
       items: [
-        "reading-list",
+        "recommends",
         {
           "Article Summaries": ["scaling-memcached"],
         },
