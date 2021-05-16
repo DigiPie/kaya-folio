@@ -26,7 +26,7 @@ Ironically, by not taking any risks and letting all your money get eroded by cer
 
 This quote was the wake-up call for me to start investing, and could be yours too if you are someone who is privileged enough to start doing the same (i.e. you have the financial ability to buy bubble tea at least once a week).
 
-![Milksha's Bubble Tea](../static/img/blog/bubbletea.jpg)
+![Milksha's Bubble Tea](/img/blog/bubbletea.jpg)
 
 _Photo by my bubble-tea buddy Elsie Lee_  
 **Pictured (from left):** Milksha's Fresh Milk, and Izumo Matcha Milk with Honey Pearls  
@@ -56,7 +56,7 @@ These guys have real, solid credentials. They are far more experienced in invest
 
 Credentials aside, they also have a proven track record of high returns for most of their portfolios. Despite how volatile and uncertain 2020 was, I achieved an **impressive 19.59% [time-weighted return](https://www.investopedia.com/terms/t/time-weightedror.asp)** for my portfolio of [StashAway Risk Index](https://www.stashaway.sg/r/what-is-the-stashaway-risk-index) 22%, between 3rd of February 2020, and 10th of March, 2021.
 
-![Evan's StashAway returns](../static/img/blog/stashaway_returns.png)
+![Evan's StashAway returns](/img/blog/stashaway_returns.png)
 
 To find out how well StashAway's portfolios performed at other risk-levels, check out their article: [_Our Returns in 2020_](https://www.stashaway.my/r/our-returns-2020).
 
@@ -82,7 +82,7 @@ You can read more about StashAway's Frequently Asked Questions [here](https://ww
 
 ## Closing note
 
-I hope you found this post/rambling/_thing_ (*gestures wildly at everything) insightful in any way. If you are still interested in StashAway, but not entirely convinced by me (I’ll try not to take it personally), you can check out this [video](https://www.youtube.com/watch?v=0IvyrANMz78) by _Kevin Learns Investing_. All the best with getting financially fit!
+I hope you found this post/rambling/_thing_ (\*gestures wildly at everything) insightful in any way. If you are still interested in StashAway, but not entirely convinced by me (I’ll try not to take it personally), you can check out this [video](https://www.youtube.com/watch?v=0IvyrANMz78) by _Kevin Learns Investing_. All the best with getting financially fit!
 
 ## [Lobang](https://www.singlish.net/lobang/)
 
