@@ -74,8 +74,8 @@ function Home() {
               <div className="col col--9">
                 <h1>Hello,</h1>
                 <p>
-                  I am Evan, a Full Stack Software Engineer and Certified
-                  Cloud Engineer based in Singapore.
+                  I am Evan, a Full Stack Software Engineer and Certified Cloud
+                  Engineer based in Singapore.
                 </p>
                 <p>
                   I love building cool, fun and meaningful things with tech,
@@ -98,8 +98,8 @@ function Home() {
                 </p>
                 <p>
                   I am currently working at{" "}
-                  <a href="https://padlet.com">Padlet</a> as a Full Stack
-                  Engineer.
+                  <a href="https://padlet.com">Padlet</a> as a Full Stack and
+                  Support Engineer.
                 </p>
                 <div className="button-group button-group--block wideBodyMaxWidth">
                   <Link
