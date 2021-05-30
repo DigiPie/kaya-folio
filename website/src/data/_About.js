@@ -64,12 +64,26 @@ export const WorkItems = [
   {
     location: "Padlet",
     link: "https://www.padlet.com",
-    position: "Full Stack Engineer",
+    position: "Software Engineer",
     period: "January 2021 to Present",
     description: (
       <>
-        I work on the Padlet platform which is used by millions of users across
-        the globe.
+        Padlet is a real-time collaborative platform on which{" "}
+        <a href="https://www.alexa.com/siteinfo/padlet.com">
+          millions of people across the globe
+        </a>{" "}
+        share content using digital bulletin boards called padlets. I work on
+        the platform as a Full Stack and Support Engineer.
+        <br />
+        <br />
+        As a Full Stack Engineer, I deliver end-to-end solutions by working on
+        all levels of the stack, from the infrastructure to the backend (Ruby on
+        Rails) to the frontend (VueJS).
+        <br />
+        <br />
+        As a Support Engineer, I triage, route and fix issues escalated from the
+        support team. I also spec and build internal tools for administering
+        Padlet.
       </>
     ),
   },
@@ -116,9 +130,9 @@ export const WorkItems = [
         and product managers who build technology for the public good.
         <br />
         <br />I worked on Vault.gov.sg, a Whole-of-Government data discovery and
-        sharing platform. I worked as a Full-Stack Software Engineer (Backend:
-        MySQL, NodeJS-ExpressJS; Frontend: ReactJS-NextJS) and Cloud Engineer
-        (AWS EB, RDS, S3).
+        sharing platform. I worked as a Full Stack Engineer (Backend: MySQL,
+        NodeJS-ExpressJS; Frontend: ReactJS-NextJS) and Cloud Engineer (AWS EB,
+        RDS, S3).
       </>
     ),
   },
