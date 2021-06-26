@@ -63,15 +63,15 @@ module.exports = {
         target: "_self",
       },
       items: [
-        { to: "blog", label: "Blog", position: "left" },
+        { to: "blog/", label: "Blog", position: "left" },
         {
           to: "docs/",
           activeBasePath: "docs",
           label: "Docs",
           position: "left",
         },
-        { to: "projects", label: "Projects", position: "right" },
-        { to: "about", label: "About", position: "right" },
+        { to: "projects/", label: "Projects", position: "right" },
+        { to: "about/", label: "About", position: "right" },
         {
           href: "https://evantay.com/pdf/resume.pdf",
           label: "Resume",
