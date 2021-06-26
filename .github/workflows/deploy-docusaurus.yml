@@ -26,6 +26,8 @@ jobs:
           cd website
           npm install 
           npm run build
+        env:
+          POSTHOG_API_KEY: ${{ secrets.POSTHOG_API_KEY }}
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2

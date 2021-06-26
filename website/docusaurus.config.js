@@ -46,6 +46,7 @@ module.exports = {
   favicon: "img/logo.png",
   organizationName: "digipie",
   projectName: "kaya-folio",
+  plugins: ["posthog-docusaurus"],
   themeConfig: {
     colorMode: {
       defaultMode: "dark",
@@ -100,6 +101,10 @@ module.exports = {
         },
       ],
       copyright: `Last updated on ${new Date().toDateString()}`,
+    },
+    posthog: {
+      apiKey: process.env.POSTHOG_API_KEY || "DEV",
+      enableInDevelopment: false,
     },
   },
   presets: [
