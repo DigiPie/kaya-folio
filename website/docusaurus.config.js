@@ -19,7 +19,7 @@ const internetProfiles = {
     to: "blog",
   },
   docs: {
-    label: "Docs",
+    label: "Documentation",
     to: "docs",
   },
   projects: {

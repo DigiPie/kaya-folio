@@ -76,7 +76,7 @@ function Projects() {
   return (
     <Layout title="Projects" description={siteConfig.tagline}>
       <header className={styles.projectPageHeader}>
-        <h1 className="underlineColorSuccess">Projects</h1>
+        <h2 className="underlineColorSuccess">My projects</h2>
       </header>
       <main ref={mainRef} hidden={true}>
         <div className={styles.projectBody}>
@@ -233,13 +233,16 @@ function Projects() {
             <nav className="pagination-nav">
               <div className="pagination-nav__item">
                 <Link className="pagination-nav__link" to={useBaseUrl("docs/")}>
-                  <div className="pagination-nav__sublabel">Read my</div>
-                  <div className="pagination-nav__label">Documentation</div>
+                  <div className="pagination-nav__sublabel">Read</div>
+                  <div className="pagination-nav__label">My docs</div>
                 </Link>
               </div>
               <div className="pagination-nav__item pagination-nav__item--next">
-                <Link className="pagination-nav__link" href={useBaseUrl("about/")}>
-                  <div className="pagination-nav__sublabel">Read more</div>
+                <Link
+                  className="pagination-nav__link"
+                  href={useBaseUrl("about/")}
+                >
+                  <div className="pagination-nav__sublabel">Learn more</div>
                   <div className="pagination-nav__label">About me</div>
                 </Link>
               </div>
