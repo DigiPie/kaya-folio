@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://evantay.com/blog</id>
+    <title>Evan Tay Blog</title>
+    <updated>2021-06-26T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://evantay.com/blog"/>
+    <subtitle>Evan Tay Blog</subtitle>
+    <icon>https://evantay.com/img/logo.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Integrating PostHog product analytics with Docusaurus v2 on GitHub Pages]]></title>
+        <id>docusaurus-posthog</id>
+        <link href="https://evantay.com/blog/docusaurus-posthog"/>
+        <updated>2021-06-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I integrated PostHog analytics into this website today. I decided to do so after reading Gergely Orosz's Stats page on his blog The Pragmatic Engineer. He had installed Plausible analytics and made his analytics dashboard public. I thought that was cool and wanted to do the same.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Top 3 reasons why you should start investing with StashAway today!]]></title>
+        <id>stashaway</id>
+        <link href="https://evantay.com/blog/stashaway"/>
+        <updated>2021-03-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Disclaimer: This post is not sponsored, and does not constitute financial advice of any form (I bet you know better than me). Read at your own discretion!]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHub Action for Docusaurus]]></title>
+        <id>docusaurus-gh-action</id>
+        <link href="https://evantay.com/blog/docusaurus-gh-action"/>
+        <updated>2021-01-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I got tired of deploying my Docusaurus website to GitHub Pages manually, and decided to do something about it using GitHub Action.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[History of EvanTay.com]]></title>
+        <id>history</id>
+        <link href="https://evantay.com/blog/history"/>
+        <updated>2020-12-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[_Established in 2013_]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[STACK 2020 Developers Conference]]></title>
+        <id>stack-2020</id>
+        <link href="https://evantay.com/blog/stack-2020"/>
+        <updated>2020-12-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[STACK 2020 Developers Conference is GovTech’s flagship conference and the largest government-led developers event in Singapore that connects government, industry and the tech community.]]></summary>
+    </entry>
+</feed>

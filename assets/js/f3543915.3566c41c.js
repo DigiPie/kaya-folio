@@ -1,0 +1,1 @@
+(self.webpackChunkevantay_com=self.webpackChunkevantay_com||[]).push([[3376],{8073:function(a){"use strict";a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"cloud","name":"cloud","count":1,"permalink":"/blog/tags/cloud"}')}}]);

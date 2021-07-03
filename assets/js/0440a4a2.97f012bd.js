@@ -1,0 +1,1 @@
+(self.webpackChunkevantay_com=self.webpackChunkevantay_com||[]).push([[5986],{6052:function(a){"use strict";a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"gov-tech-stack","name":"govtechstack","count":1,"permalink":"/blog/tags/gov-tech-stack"}')}}]);

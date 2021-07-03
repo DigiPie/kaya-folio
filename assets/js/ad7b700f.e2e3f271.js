@@ -1,0 +1,1 @@
+(self.webpackChunkevantay_com=self.webpackChunkevantay_com||[]).push([[8465],{1521:function(a){"use strict";a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"posthog","name":"posthog","count":1,"permalink":"/blog/tags/posthog"}')}}]);
