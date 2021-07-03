@@ -99,6 +99,25 @@ p {
   max-width: 640px;
 }
 
+.contentTableContainer table {
+  display: table;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+}
+
+.contentTableContainer th:first-child {
+  width: 5%;
+}
+
+.contentTableContainer td:first-child {
+  text-align: right;
+}
+
+.contentTableContainer th:last-child {
+  width: 25%;
+}
+
 @media screen and (max-width: 966px) {
   h1 {
     font-size: 2.4rem;

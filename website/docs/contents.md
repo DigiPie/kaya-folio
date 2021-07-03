@@ -12,33 +12,49 @@ Here, you will find a collection of concise notes on full-stack software enginee
 
 ### Cloud and Networking
 
-|     | Topic                          | Last Update       |
+<div class="contentTableContainer">
+
+|     | Topic                          | Date Last Updated |
 | --- | ------------------------------ | ----------------- |
 | 1   | [Docker](docker-cheatsheet)    | December 24, 2020 |
 | 2   | [GCP GKE](gcp-gke-cheatsheet)  | December 24, 2020 |
 | 3   | [Mininet](mininet-setup)       | December 27, 2020 |
 | 4   | [Network Model](network-model) | November 30, 2020 |
 
+</div>
+
 ### Programming
 
-|     | Topic             | Last Update       |
+<div class="contentTableContainer">
+
+|     | Topic             | Date Last Updated |
 | --- | ----------------- | ----------------- |
 | 1   | [C](c-cheatsheet) | December 23, 2020 |
 
+</div>
+
 ### Tooling and OS
 
-|     | Topic                          | Last Update       |
+<div class="contentTableContainer">
+
+|     | Topic                          | Date Last Updated |
 | --- | ------------------------------ | ----------------- |
 | 1   | [Git](git-cheatsheet)          | December 23, 2020 |
 | 2   | [iTerm2](iterm2-cheatsheet)    | January 23, 2021  |
 | 3   | [Ubuntu](os-ubuntu-cheatsheet) | December 23, 2020 |
 
+</div>
+
 ### Web Development
 
-|     | Topic                        | Last Update       |
+<div class="contentTableContainer">
+
+|     | Topic                        | Date Last Updated |
 | --- | ---------------------------- | ----------------- |
 | 1   | [MongoDB](mongodb-setup)     | December 23, 2020 |
 | 2   | [NodeJS](nodejs-auto-reload) | December 23, 2020 |
+
+</div>
 
 ## Reviews and Summaries
 
@@ -46,12 +62,20 @@ Here, you will find my thoughts on articles, books, videos and other forms of me
 
 ### Article Summaries
 
-|     | Topic                                                                    | Last Update    |
-| --- | ------------------------------------------------------------------------ | -------------- |
-| 1   | [Lessons Learnt from Scaling Memcached in Production](scaling-memcached) | April 14, 2021 |
+<div class="contentTableContainer">
+
+|     | Topic                                                                    | Date Last Updated |
+| --- | ------------------------------------------------------------------------ | ----------------- |
+| 1   | [Lessons Learnt from Scaling Memcached in Production](scaling-memcached) | April 14, 2021    |
+
+</div>
 
 ### Book Reviews
 
-|     | Title                                                          | Last Update  |
-| --- | -------------------------------------------------------------- | ------------ |
-| 1   | [Ikigai: The Japanese Secret to a Long and Happy Life](ikigai) | May 16, 2021 |
+<div class="contentTableContainer">
+
+|     | Title                                                          | Date Last Updated |
+| --- | -------------------------------------------------------------- | ----------------- |
+| 1   | [Ikigai: The Japanese Secret to a Long and Happy Life](ikigai) | May 16, 2021      |
+
+</div>
