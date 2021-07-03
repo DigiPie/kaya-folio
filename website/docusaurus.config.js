@@ -113,8 +113,8 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl: "https://github.com/DigiPie/kaya-folio/tree/main/website",
+          disableVersioning: false,
+          editCurrentVersion: false,
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
