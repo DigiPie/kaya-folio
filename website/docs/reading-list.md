@@ -1,6 +1,5 @@
 ---
-slug: recommends
-title: Recommendation List
+title: Reading List
 ---
 
 Created on December 23, 2020  

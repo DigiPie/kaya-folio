@@ -4,7 +4,7 @@ title: Scaling Memcached
 
 Created on April 14, 2021
 
-Article summary for [Melodies Sim's Medium Article: Lessons Learnt from Scaling Memcached in Production](https://levelup.gitconnected.com/lessons-learnt-from-scaling-memcached-in-production-86778ab616c7)
+Article review for [Melodies Sim's Medium Article: Lessons Learnt from Scaling Memcached in Production](https://levelup.gitconnected.com/lessons-learnt-from-scaling-memcached-in-production-86778ab616c7)
 
 ## Context
 

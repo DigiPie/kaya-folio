@@ -49,14 +49,14 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Reviews and Summaries",
+      label: "Reviews",
       items: [
-        "recommends",
+        "reading-list",
         {
-          "Article Summaries": ["scaling-memcached"],
+          Articles: ["scaling-memcached"],
         },
         {
-          "Book Reviews": ["ikigai"],
+          Books: ["ikigai"],
         },
       ],
     },
