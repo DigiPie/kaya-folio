@@ -48,10 +48,13 @@ module.exports = {
       ],
     },
     {
+      type: "doc",
+      id: "reading-list",
+    },
+    {
       type: "category",
       label: "Reviews",
       items: [
-        "reading-list",
         {
           Articles: ["scaling-memcached"],
         },
