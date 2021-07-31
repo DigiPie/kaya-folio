@@ -8,7 +8,7 @@ Personal thoughts for [Ikigai: The Japanese Secret to a Long and Happy Life](htt
 
 ## Review
 
-![Ikigai](/img/blog/ikigai.jpeg)
+![Ikigai](/img/docs/ikigai.jpeg)
 
 I found the book's cover illustration captivating. Sadly, I can't say I felt the same for the rest of the book. While the authors did introduce numerous interesting concepts, they did not explore the concepts in a depth which was meaningful. Instead, they jumped far too quickly from one concept to another, covering each concept superficially. As such, the book felt like a list of fun facts. It was a pity given how many concepts introduced could have been starters for insightful discourse.
 
