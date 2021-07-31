@@ -4,7 +4,7 @@ slug: "/"
 ---
 
 Created on January 23, 2021  
-Updated on July 3, 2021
+Updated on July 31, 2021
 
 ## Documentation
 
@@ -56,11 +56,11 @@ Here, you will find a collection of concise notes on full-stack software enginee
 
 </div>
 
-## Reviews
+## Reading List
 
 Here, you will find my thoughts on articles, books, videos and other forms of media. I also maintain a [Reading List](reading-list) of articles, books, videos, and more which I think are meaningful and insightful.
 
-### Article Reviews
+### Article Summaries
 
 <div class="contentTableContainer">
 
@@ -70,7 +70,7 @@ Here, you will find my thoughts on articles, books, videos and other forms of me
 
 </div>
 
-### Book Reviews
+### Book Summaries
 
 <div class="contentTableContainer">
 

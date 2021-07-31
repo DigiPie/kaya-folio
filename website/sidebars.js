@@ -53,15 +53,13 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Reviews",
-      items: [
-        {
-          Articles: ["scaling-memcached"],
-        },
-        {
-          Books: ["ikigai"],
-        },
-      ],
+      label: "Article Summaries",
+      items: ["scaling-memcached"],
+    },
+    {
+      type: "category",
+      label: "Book Summaries",
+      items: ["ikigai"],
     },
   ],
 };
