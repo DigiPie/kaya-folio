@@ -43,6 +43,6 @@ The article discusses strategies for building caches with high availability and 
 ## References
 
 - [Melodies Sim's Medium Article: Lessons Learnt from Scaling Memcached in Production](https://levelup.gitconnected.com/lessons-learnt-from-scaling-memcached-in-production-86778ab616c7) - good introduction to Memcached in Production, has more references
-- [Scaling Memcache at Facebook](https://research.fb.com/wp-content/uploads/2016/11/scaling-memcache-at-facebook.pdf)- the paper the article was based upon
+- [Scaling Memcache at Facebook](https://research.fb.com/wp-content/uploads/2016/11/scaling-memcache-at-facebook.pdf) - the paper the article was based upon
 - [Princeton COS 316 Intro to Caching](https://www.cs.princeton.edu/courses/archive/fall19/cos316/lectures/08-caching.pdf)
 - [Dynamo: Amazon’s Highly Available Key-value Store](https://sites.cs.ucsb.edu/~agrawal/fall2009/dynamo.pdf)
