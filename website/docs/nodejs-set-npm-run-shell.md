@@ -2,7 +2,7 @@
 title: NodeJS Set npm run shell
 ---
 
-Created on December 23, 2020
+Published on December 23, 2020
 
 _This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/nodejs/set-npm-run-shell/)_
 

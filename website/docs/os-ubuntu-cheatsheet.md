@@ -2,7 +2,7 @@
 title: Ubuntu Cheatsheet
 ---
 
-Created on December 24, 2020
+Published on December 24, 2020
 
 _This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/os/ubuntu18-04/)_
 

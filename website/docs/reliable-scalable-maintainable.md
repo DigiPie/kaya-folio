@@ -2,7 +2,7 @@
 title: Reliable, Scalable, and Maintainable Applications
 ---
 
-Created on July 31, 2021
+Published on July 31, 2021
 
 This document is my summary of the book _[Martin Kleppmann: Designing Data-Intensive Applications](https://dataintensive.net/)_'s first chapter: _Reliable, Scalable, and Maintainable Applications_. It covers key concerns you should consider when designing distributed and data-intensive systems. It also contains my annotations which reference relevant concepts I've learned from other articles, books or engineers.
 

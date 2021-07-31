@@ -2,7 +2,7 @@
 title: Mininet Setup
 ---
 
-Created on December 21, 2020  
+Published on December 21, 2020  
 Updated on December 27, 2020
 
 _This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/mininet/getting-started/)_

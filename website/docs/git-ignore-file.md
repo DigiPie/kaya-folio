@@ -2,7 +2,7 @@
 title: Git Ignore file
 ---
 
-Created on December 24, 2020
+Published on December 24, 2020
 
 _This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/git/ignoring-files/)_
 

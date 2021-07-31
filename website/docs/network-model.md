@@ -2,7 +2,7 @@
 title: Network Model (CS4226)
 ---
 
-Created on November 30, 2020
+Published on November 30, 2020
 
 In this document, you will find my summary for the Network Performance Model and Queueing Model content covered under [CS4226: Internet Architecture](https://nusmods.com/modules/CS4226/internet-architecture) course taught by [Dr. Richard Ma](https://www.comp.nus.edu.sg/~tbma/). I compiled this document with the help of notes written by my good friend Matthew over [here](https://crazoter.github.io/My-Docs/docs/markdown/CS4226_summary).
 

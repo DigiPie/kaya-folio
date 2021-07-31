@@ -2,7 +2,7 @@
 title: C Cheatsheet
 ---
 
-Created on December 23, 2020
+Published on December 23, 2020
 
 _This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/c/arguments/)_
 

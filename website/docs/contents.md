@@ -3,7 +3,7 @@ title: Contents
 slug: "/"
 ---
 
-Created on January 23, 2021  
+Published on January 23, 2021  
 Updated on July 31, 2021
 
 ## Documentation

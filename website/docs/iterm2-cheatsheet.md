@@ -2,7 +2,7 @@
 title: iTerm2 Cheatsheet
 ---
 
-Created on January 16, 2021  
+Published on January 16, 2021  
 Updated on January 23, 2021
 
 In this section you will find my notes on [iTerm2](https://iterm2.com/), an awesome terminal emulator for MacOS.

@@ -2,7 +2,7 @@
 title: Ikigai
 ---
 
-Created on May 16, 2021
+Published on May 16, 2021
 
 Personal thoughts for [Ikigai: The Japanese Secret to a Long and Happy Life](https://www.goodreads.com/book/show/39995046-ikigai)
 
