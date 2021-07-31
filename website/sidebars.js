@@ -59,7 +59,14 @@ module.exports = {
     {
       type: "category",
       label: "Book Summaries",
-      items: ["ikigai"],
+      items: [
+        {
+          type: "category",
+          label: "Designing Data-Intensive Applications",
+          items: ["reliable-scalable-maintainable"],
+        },
+        "ikigai",
+      ],
     },
   ],
 };
