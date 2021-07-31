@@ -50,5 +50,3 @@ I built this website for my own personal use, but you are free to use it so long
 ## About page
 
 ![About page](img/about-1.png)
-
-![About page](img/about-2.png)
