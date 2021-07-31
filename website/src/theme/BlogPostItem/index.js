@@ -9,10 +9,11 @@ import clsx from "clsx";
 import { MDXProvider } from "@mdx-js/react";
 import Translate, { translate } from "@docusaurus/Translate";
 import Link from "@docusaurus/Link";
+import { usePluralForm } from "@docusaurus/theme-common";
 import MDXComponents from "@theme/MDXComponents";
 import Seo from "@theme/Seo";
-import styles from "./styles.module.css";
-import { usePluralForm } from "@docusaurus/theme-common"; // Very simple pluralization: probably good enough for now
+import EditThisPage from "@theme/EditThisPage";
+import styles from "./styles.module.css"; // Very simple pluralization: probably good enough for now
 
 function useReadingTimePlural() {
   const { selectMessage } = usePluralForm();
@@ -44,8 +45,9 @@ function BlogPostItem(props) {
     truncated,
     isBlogPostPage = false,
   } = props;
-  const { date, formattedDate, permalink, tags, readingTime } = metadata;
-  const { author, title, image, keywords } = frontMatter;
+  const { date, formattedDate, permalink, tags, readingTime, title, editUrl } =
+    metadata;
+  const { author, image, keywords } = frontMatter;
   const authorURL = frontMatter.author_url || frontMatter.authorURL;
   const authorTitle = frontMatter.author_title || frontMatter.authorTitle;
   const authorImageURL =
@@ -55,21 +57,18 @@ function BlogPostItem(props) {
     const TitleHeading = isBlogPostPage ? "h1" : "h2";
     return (
       <header>
-        <TitleHeading
-          className={clsx("margin-bottom--sm", styles.blogPostTitle)}
-        >
+        <TitleHeading className={styles.blogPostTitle}>
           {isBlogPostPage ? title : <Link to={permalink}>{title}</Link>}
         </TitleHeading>
-        <div className="margin-vert--md">
-          <time dateTime={date} className={styles.blogPostDate}>
-            {formattedDate}
-            {readingTime && (
-              <>
-                {" · "}
-                {readingTimePlural(readingTime)}
-              </>
-            )}
-          </time>
+        <div className={clsx(styles.blogPostData, "margin-vert--md")}>
+          <time dateTime={date}>{formattedDate}</time>
+
+          {readingTime && (
+            <>
+              {" · "}
+              {readingTimePlural(readingTime)}
+            </>
+          )}
         </div>
         <div className="avatar margin-vert--md">
           {authorImageURL && (
@@ -80,9 +79,9 @@ function BlogPostItem(props) {
           <div className="avatar__intro">
             {author && (
               <>
-                <h4 className="avatar__name">
+                <div className="avatar__name">
                   <Link href={authorURL}>{author}</Link>
-                </h4>
+                </div>
                 <small className="avatar__subtitle">{authorTitle}</small>
               </>
             )}
@@ -107,17 +106,21 @@ function BlogPostItem(props) {
           <MDXProvider components={MDXComponents}>{children}</MDXProvider>
         </div>
         {(tags.length > 0 || truncated) && (
-          <footer className="row margin-vert--lg">
+          <footer
+            className={clsx("row docusaurus-mt-lg", {
+              [styles.blogPostDetailsFull]: isBlogPostPage,
+            })}
+          >
             {tags.length > 0 && (
               <div className="col">
-                <strong>
+                <b>
                   <Translate
                     id="theme.tags.tagsListLabel"
                     description="The label alongside a tag list"
                   >
                     Tags:
                   </Translate>
-                </strong>
+                </b>
                 {tags.map(({ label, permalink: tagPermalink }) => (
                   <Link
                     key={tagPermalink}
@@ -129,20 +132,27 @@ function BlogPostItem(props) {
                 ))}
               </div>
             )}
-            {truncated && (
+
+            {isBlogPostPage && editUrl && (
+              <div className="col margin-top--sm">
+                <EditThisPage editUrl={editUrl} />
+              </div>
+            )}
+
+            {!isBlogPostPage && truncated && (
               <div className="col text--right">
                 <Link
                   to={metadata.permalink}
                   aria-label={`Read more about ${title}`}
                 >
-                  <strong>
+                  <b>
                     <Translate
                       id="theme.blog.post.readMore"
                       description="The label used in blog post item excerpts to link to full blog posts"
                     >
                       Read More
                     </Translate>
-                  </strong>
+                  </b>
                 </Link>
               </div>
             )}
