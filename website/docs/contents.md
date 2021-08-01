@@ -4,7 +4,7 @@ slug: "/"
 ---
 
 Published on January 23, 2021  
-Updated on July 31, 2021
+Updated on August 1, 2021
 
 ## Documentation
 
@@ -27,9 +27,10 @@ Here, you will find a collection of concise notes on full-stack software enginee
 
 <div class="contentTableContainer">
 
-|     | Topic             | Date Last Updated |
-| --- | ----------------- | ----------------- |
-| 1   | [C](c-cheatsheet) | December 23, 2020 |
+|     | Topic                       | Date Last Updated |
+| --- | --------------------------- | ----------------- |
+| 1   | [C](c-cheatsheet)           | December 23, 2020 |
+| 2   | [Javascript](js-cheatsheet) | August 1, 2021    |
 
 </div>
 

@@ -17,12 +17,7 @@ module.exports = {
     {
       type: "category",
       label: "Programming",
-      items: [
-        {
-          type: "doc",
-          id: "c-cheatsheet",
-        },
-      ],
+      items: ["c-cheatsheet", "js-cheatsheet"],
     },
     {
       type: "category",
