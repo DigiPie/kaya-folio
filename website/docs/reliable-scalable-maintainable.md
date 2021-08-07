@@ -3,6 +3,7 @@ title: Reliable, Scalable, and Maintainable Applications
 ---
 
 Published on July 31, 2021
+Updated on August 7, 2021
 
 This document is my summary of the book _[Martin Kleppmann: Designing Data-Intensive Applications](https://dataintensive.net/)_'s first chapter: _Reliable, Scalable, and Maintainable Applications_. It covers key concerns you should consider when designing distributed and data-intensive systems. It also contains my annotations which reference relevant concepts I've learned from other articles, books or engineers.
 
@@ -34,7 +35,7 @@ When we say an _application is working correctly_, we typically mean that it is 
 ### Fault-tolerance
 
 - **Reliability**: A reliable application continues to work correctly, even when things go wrong.
-- **Fault**: Things that can go wrong are called faults. In the context of applications, a fault is typically defined as an individual component of the system deviating from its spec - not performing the way it is expected to do so.
+- **Fault**: Things that can go wrong are often called faults. In the context of applications, a fault is typically defined as an individual component of the system deviating from its spec, when it performs in an unexpected way.
 - **Failure**: The entire system failing to provide the required service to its users.
 - **Fault-tolerant/Resilient**: If an application anticipates and can prevent faults from causing failures, it is fault-tolerant.
 
@@ -60,7 +61,7 @@ Hardware faults such as hard disk crashes tend to be random, independent events.
 
 When we set out to design a fault-tolerant system, thoughts about how we can build it to tolerate hardware and software errors naturally come to mind. We want to introduce hardware redundancy, such that if a hard disk fails, there's a backup which will take its place. We also want to write fault-tolerant code, such that a software bug would not cause the server to crash.
 
-These errors aren't the only ones we should be concerned about when designing a resilient system. We must also consider how we can prevent human errors. After all, we humans design, create and operate these systems.
+These errors aren't the only ones we should consider when designing a resilient system. We must also consider how we can prevent human errors. After all, we humans design, create and operate these systems.
 
 > "Even when they have the best intentions, humans are known to be unreliable." - Page 9 of the book
 
@@ -68,11 +69,11 @@ We are the ones who decide what hardware to run our code on, and the ones who wr
 
 > "How do we make our systems reliable, in spite of unreliable humans?" - Page 9 of the book
 
-To achieve that, we will need to design the system such that we:
+To achieve that, we will need to design the system such that it minimizes:
 
-- **Minimize opportunities for introducing errors**: We should design abstractions, APIs and administrator interfaces which make it easy to do the right thing, and hard to do the wrong thing.
-- **Minimize impact of failures by allowing quick and easy recovery**: We should provide a fast and easy way for developers to roll back a failure-inducing deployment, and for operators to undo accidental changes in the administrator interface.
-- **Minimize delay in diagnosing errors through detailed monitoring**: We should setup clear and detailed monitoring which could provide early warning signals, and also invaluable insights into what went wrong and how we can resolve the faults.
+- **Opportunities for introducing errors**: We should design abstractions, APIs and administrator interfaces which make it easy to do the right thing, and hard to do the wrong thing.
+- **Impact of failures by allowing quick and easy recovery**: We should provide a fast and easy way for developers to roll back a failure-inducing deployment, and for operators to undo accidental changes in the administrator interface.
+- **Delay in diagnosing errors through detailed monitoring**: We should setup clear and detailed monitoring which could provide early warning signals, and also invaluable insights into what went wrong and how we can resolve the faults.
 
 ## Scalability
 
@@ -88,10 +89,10 @@ A load parameter is a metric you can use to describe a particular load for a giv
 
 ### Performance
 
-After defining the load parameters of your system, you can now describe how the system is affected when the load increases:
+After defining the load parameters of your system, you can now describe how increases in load affect the system:
 
-- When a load parameter is increased, how is the system performance affected if you keep the system resources constant?
-- When a load parameter is increased, how much do you need to increase the resources by to keep the system performance constant?
+- When a load parameter increases, how is the system performance affected if you keep the system resources constant?
+- When a load parameter increases, how much do you need to increase the resources by to keep the system performance constant?
 
 To answer these questions, you would need to define performance metrics. Examples include the throughput of a network protocol, and the response time of a web service.
 
