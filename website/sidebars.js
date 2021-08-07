@@ -5,6 +5,27 @@ module.exports = {
       id: "contents",
     },
     {
+      type: "doc",
+      id: "reading-list",
+    },
+    {
+      type: "category",
+      label: "Article Summaries",
+      items: ["scaling-memcached"],
+    },
+    {
+      type: "category",
+      label: "Book Summaries",
+      items: [
+        {
+          type: "category",
+          label: "Designing Data-Intensive Applications",
+          items: ["reliable-scalable-maintainable"],
+        },
+        "ikigai",
+      ],
+    },
+    {
       type: "category",
       label: "Cloud and Networking",
       items: [
@@ -40,27 +61,6 @@ module.exports = {
           MongoDB: ["mongodb-setup", "mongodb-cheatsheet"],
           NodeJS: ["nodejs-auto-reload", "nodejs-set-npm-run-shell"],
         },
-      ],
-    },
-    {
-      type: "doc",
-      id: "reading-list",
-    },
-    {
-      type: "category",
-      label: "Article Summaries",
-      items: ["scaling-memcached"],
-    },
-    {
-      type: "category",
-      label: "Book Summaries",
-      items: [
-        {
-          type: "category",
-          label: "Designing Data-Intensive Applications",
-          items: ["reliable-scalable-maintainable"],
-        },
-        "ikigai",
       ],
     },
   ],
