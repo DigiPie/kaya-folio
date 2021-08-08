@@ -2,8 +2,8 @@
 title: Reliable, Scalable, and Maintainable Applications
 ---
 
-Published on July 31, 2021
-Updated on August 7, 2021
+Published on July 31, 2021  
+Updated on August 8, 2021
 
 This document is my summary of the book _[Martin Kleppmann: Designing Data-Intensive Applications](https://dataintensive.net/)_'s first chapter: _Reliable, Scalable, and Maintainable Applications_. It covers key concerns you should consider when designing distributed and data-intensive systems. It also contains my annotations which reference relevant concepts I've learned from other articles, books or engineers.
 
@@ -51,7 +51,7 @@ Conterintuitively, for fault-tolerant systems, it is ideal to trigger faults del
 
 > "Many critical bugs are actually due to poor error handling." - [Simple Testing Can Prevent Most Critical Failures: An Analysis of Production Failures in Distributed Data-Intensive Systems](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-yuan.pdf)
 
-You can check out the [Netflix Simian Army](https://netflixtechblog.com/tagged/chaos-monkey) for an example of this approach.
+[Chaos engineering](https://en.wikipedia.org/wiki/Chaos_engineering) embodies this approach. It is a discipline which was started at Netflix, as a means to improve their system's reliability. You can check out how its applied in production by reading the [Netflix Simian Army](https://netflixtechblog.com/tagged/chaos-monkey) blog posts.
 
 ### Hardware versus software faults
 
@@ -94,14 +94,53 @@ After defining the load parameters of your system, you can now describe how incr
 - When a load parameter increases, how is the system performance affected if you keep the system resources constant?
 - When a load parameter increases, how much do you need to increase the resources by to keep the system performance constant?
 
-To answer these questions, you would need to define performance metrics. Examples include the throughput of a network protocol, and the response time of a web service.
+To answer these questions, you would need to define performance metrics. Examples of such metrics include the throughput of a network protocol, and the response time of a web service.
+
+### Response time
+
+Response time is a common and important performance metrics for online, distributed systems. There are many different definitions for it out there. In the context of online systems, it is typically defined as the time between a client sending a request to the system and receiving a response from it.
+
+When you consider a system's response time, it is important to consider it not as a single value, the average (mean), but as a distribution of values, the percentiles. That's because the response time for requests varies a lot, and there are many outliers which are much slower. There are many reasons why this is so, here are some:
+
+- **Different types of requests have different processing time**: An online system handles many different types of requests which take varying amount of time to process.
+- **Caching reduces response time for common requests**: Common requests are often cached for high-traffic systems, and responded to much faster than those which are not.
+
+Given these reasons, the distribution of response time is asymmetric and significant outliers are common. This makes the mean much less representative of the response time than the median, otherwise known as the 50th percentile.
+
+The median also provides information about the distribution which the mean does not - if the median response time is 80ms, you can infer that half of the requests have a response time faster than 80ms, and also that the other half would be slower than that. You can't infer the same from an average response time, as it is not a middle value like the median.
+
+You can check out the article [Michael Kopp: Why Averages Suck and Percentiles are Great](https://www.dynatrace.com/news/blog/why-averages-suck-and-percentiles-are-great/) for more information on why the average response time is an inadequate performance metric.
+
+### Tail latencies
+
+You should also consider how slow the outliers are, by looking at higher percentiles such as the 95th and 99th percentile. These are the thresholds at which 95% or 99% of the requests are faster than that particular threshold. They are also commonly called tail latencies. It is important you consider these, because the users with the slowest response time are often those who have used the system the most extensively.
+
+Amazon uses the 99.9th percentile for internal service response time requirements. They do so even though only 0.1% of requests are slower, because the customers with these requests are often the most valuable customers. They experience longer response time because they have much more data on their accounts than most users, which the system needs to process before it can respond. Oftentimes, this is because they have made many more purchases, which is why they are the most valuable customers.
+
+### Scaling to cope with increased load
+
+> "An architecture that is appropriate for one level of load is unlikely to cope with 10 times that load." - Page 17 of the book
+
+If you want to maintain good system performance, when the load parameters increase, you would need to increase the resources. There are two ways of doing so:
+
+- **Vertical scaling**: Scaling up by adding more power - adding more CPU or RAM to your virtual machine instance.
+- **Horizontal scaling**: Scaling out by adding more machines - adding more instances to your instance group.
+
+There are tradeoffs between both approaches. A system running on a single, powerful machine is much simpler to develop and maintain than one on multiple machines. However, as you scale up a machine, it gets increasingly costly to do so, and scaling out becomes inevitable. You would need to find the right balance between both approaches if you want to achieve the most cost-effective and efficient outcome.
+
+While a system running on a single machine is much simpler to develop and maintain than one on multiple machines, high-end powerful machines are very costly.
+
+> "An architecture that scales well for a particualr application is built around assumptions of which operations will be common and which will be rare - the load parameters." - Page 18 of the book
+
+## Maintainability
 
 :::important
 
-This document is a work-in-progress and is about halfway done.
+This document is a work-in-progress and is about 2/3rd done.
 
 :::
 
 ## Resources
 
 - [Martin Kleppmann: Designing Data-Intensive Applications](https://dataintensive.net/)
+- [Michael Kopp: Why Averages Suck and Percentiles are Great](https://www.dynatrace.com/news/blog/why-averages-suck-and-percentiles-are-great/)
