@@ -26,7 +26,7 @@ Here, you will find my thoughts on articles, books, videos and other forms of me
 
 |     | Title                                                                   | Date Last Updated |
 | --- | ----------------------------------------------------------------------- | ----------------- |
-| 1   | [Designing Data-Intensive Applications](reliable-scalable-maintainable) | August 8, 2021    |
+| 1   | [Designing Data-Intensive Applications](reliable-scalable-maintainable) | August 23, 2021   |
 | 2   | [Ikigai: The Japanese Secret to a Long and Happy Life](ikigai)          | May 16, 2021      |
 
 </div>
