@@ -3,15 +3,16 @@ title: Reliable, Scalable, and Maintainable Applications
 ---
 
 Published on July 31, 2021  
-Updated on August 23, 2021
+Updated on September 7, 2021  
+Edited by [Vanessa Tay](https://www.linkedin.com/in/vanessa-tay-5973021ab/)
 
-This document is my summary of the book _[Martin Kleppmann: Designing Data-Intensive Applications](https://dataintensive.net/)_'s first chapter: _Reliable, Scalable, and Maintainable Applications_. It covers key concerns you should consider when designing distributed and data-intensive systems. It also contains things I've learned from other articles, books or engineers.
+The opening chapter of Kleppman’s [_Designing Data-Intensive Applications_](https://dataintensive.net/) book: _Reliable, Scalable, and Maintainable Applications_, addresses key concerns you should consider when designing distributed and data-intensive systems, in an insightful way. I believe anyone working on a distributed system will benefit from reading it. However, as not all of us may have the time (or will) to pour over the book, I’ve decided to share a quick summary of the key points Kleppman raises, as well as to offer some of my personal inputs with references to other literature and experts.
 
 ## Reliability, Scalability, and Maintainability
 
 ![Designing Data-Intensive Applications](/img/docs/ddia.png)
 
-Reliability, Scalability, and Maintainability are terms you might read or hear about often if you are a software engineer working on a distributed, cloud or data-intensive application. So what are they and why are they important?
+Reliability, Scalability, and Maintainability, the three characteristics that Kleppman opens with, are terms you might come across often. If you're not familiar with them, you may wonder: what are they and why are they important?
 
 ## Reliability
 
@@ -19,13 +20,13 @@ When building an application, we want it to work correctly, even when things go 
 
 > "Anything that can go wrong will go wrong." - [Murphy's law](https://en.wikipedia.org/wiki/Murphy%27s_law)
 
-The adage above applies to just about anything in life. Applications are no exception. If we want the applications we design to be reliable during adverse conditions, we will have to design them with the expectation that things will go wrong. We can't blindly hope things won't.
+The adage above can be applied to just about anything in life and applications are no exception. If we want our applications to be resilient during adverse conditions, we will have to design them with the expectation that things will go wrong. We can't blindly hope they won't.
 
 > "Hope is not a strategy." - Traditional SRE saying, found in [Google's Site Reliability Engineering book](https://sre.google/sre-book/introduction/)
 
 ### Working correctly
 
-When we say an application system is working correctly, we typically mean that it is able to:
+When we declare an application system as working correctly, we typically mean that it is able to:
 
 1. Perform the expected functionality,
 1. With good enough performance under the expected load,
@@ -45,37 +46,23 @@ As it is impossible to design a zero-fault system, we should focus on preventing
 
 :::
 
-### Causing faults deliberately
+### Human (un)reliability
 
-Counterintuitively, when we build a fault-tolerant system, it makes sense to trigger faults for it deliberately and regularly. Doing so will allow us to measure how well these systems tolerate faults consistently, and improve their fault-tolerance mechanisms.
+When we design a fault-tolerant system, we will naturally consider how we can build it to tolerate hardware and software errors. We introduce hardware redundancy, such that if a hard disk fails, there's a backup which will take its place. We also write fault-tolerant code, such that a software fault would not cause the server to fail.
 
-For example, to test your system's ability to tolerate machine failure, you could shut down a random virtual machine from your instance group every now and then.
-
-> "Many critical bugs are actually due to poor error handling." - Found in [Simple Testing Can Prevent Most Critical Failures: An Analysis of Production Failures in Distributed Data-Intensive Systems](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-yuan.pdf)
-
-[Chaos engineering](https://en.wikipedia.org/wiki/Chaos_engineering) embodies this approach. It is a discipline started at Netflix, as a means to improve their system's reliability. You can check out how its applied in production by reading the [Netflix Simian Army](https://netflixtechblog.com/tagged/chaos-monkey) blog posts.
-
-### Hardware versus software faults
-
-Hardware faults such as hard disk crashes tend to be random, independent events. One machine failure does not imply that another machine's failure is going to happen in most cases. On the other hand, software faults are highly correlated, because the same software version is typically deployed to all application servers. A bug in the deployed software could cause multiple servers to fail after receiving a particular user input. As such, software faults often cause many more system failures than hardware ones.
-
-### Human errors
-
-When we set out to design a fault-tolerant system, thoughts about how we can build it to tolerate hardware and software errors come to mind naturally. We want to introduce hardware redundancy, such that if a hard disk fails, there's a backup which will take its place. We also want to write fault-tolerant code, such that a software bug would not cause the server to crash.
-
-These errors aren't the only ones we should consider when designing a resilient system. We must also consider how we can prevent human errors. After all, we humans design, create and operate these systems.
+These errors aren't the only ones we should consider. We should also consider how we can prevent human errors. After all, we humans design, create and operate these systems.
 
 > "Even when they have the best intentions, humans are known to be unreliable." - Found on Page 9 of the book
 
-We are the ones who decide what hardware to run our code on, and the ones who write the code. We are the culprits for bugs introduced into the system. Given that, it is important we ask ourselves often:
+We humans write the code, and decide what hardware to run our code on. We are responsible for all bugs and mistakes within our systems. Given that, it is important we ask ourselves often:
 
 > "How do we make our systems reliable, in spite of unreliable humans?" - Found on Page 9 of the book
 
-To achieve that, we will need to design the system such that it minimizes:
+To achieve that, we will need to design the system such that it:
 
-- **Opportunities for introducing errors**: We should design abstractions, APIs and administrator interfaces which make it easy to do the right thing, and hard to do the wrong thing.
-- **Impact of failures by allowing quick and easy recovery**: We should provide a fast and easy way for developers to roll back a failure-inducing deployment, and for operators to undo accidental changes in the administrator interface.
-- **Delay in diagnosing errors through detailed monitoring**: We should set up clear and detailed monitoring which could provide early warning signals, and also invaluable insights into what went wrong and how we can resolve the faults.
+- **Minimizes opportunities for introducing errors**: We should design abstractions, APIs and administrator interfaces which make it easy to do the right thing, and hard to do the wrong thing.
+- **Mitigates impact of failures by allowing quick and easy recovery**: We should provide a fast and easy way for developers to roll back a failure-inducing deployment, and for operators to undo accidental changes in the administrator interface.
+- **Reduces delay in diagnosing errors through detailed monitoring**: We should set up clear and detailed monitoring which could provide early warning signals, and also insights into what went wrong so we can better triage errors.
 
 ## Scalability
 
@@ -83,11 +70,13 @@ As the load on our system increases, we want it to continue working correctly. T
 
 > "If the system grows in a particular way, what are our options for coping with the growth?" - Found on Page 11 of the book
 
-Before, we can describe scalability, we will first need to define load. We can do so numerically by using load parameters.
+Before we can describe scalability, we will first need to define load. We can do so numerically by using load parameters.
 
 ### Load parameter
 
 A load parameter is a metric you can use to describe a particular load for a given system. Examples include requests per second for a web application, and the ratio of cache hits to misses. The load parameters you should focus on depends on the architecture of your system and your user requirements.
+
+> "An architecture that scales well for a particular application is built around assumptions of which operations will be common and which will be rare - the load parameters." - Page 18 of the book
 
 ### Performance
 
@@ -115,9 +104,9 @@ You can check out the article [Michael Kopp: Why Averages Suck and Percentiles a
 
 ### Tail latencies
 
-You should also consider how slow the outliers are, by looking at higher percentiles such as the 95th and 99th percentile. These are the thresholds at which 95% or 99% of the requests are faster than that particular threshold. They are also commonly called tail latencies. It is important you consider these, because the users with the slowest response time are often those who have used the system the most extensively.
+You should also consider how slow the outliers are, by looking at higher percentiles such as the 95th and 99th percentile. These are the thresholds at which 95% or 99% of the requests are faster than that particular threshold. They're also commonly called tail latencies. It is important you consider these, because the users with the slowest response time are often those who have used the system the most extensively.
 
-Amazon uses the 99.9th percentile for internal service response time requirements. They do so even though only 0.1% of requests are slower, because the customers with these requests are often the most valuable customers. They experience longer response time because they have much more data on their accounts than most users, which the system needs to process before it can respond. Oftentimes, this is because they have made many more purchases, which is why they are the most valuable customers.
+Amazon uses the 99.9th percentile for internal service response time requirements. They do so even though only 0.1% of requests are slower, because the customers with these requests are often the most valuable customers. They experience longer response time because they've much more data on their accounts than most users, which the system needs to process before it can respond. Oftentimes, this is because they have made many more purchases, which is why they're the most valuable customers.
 
 ### Scaling to cope with increased load
 
@@ -132,11 +121,9 @@ There are tradeoffs between both approaches. A system running on a single, power
 
 While a system running on a single machine is much simpler to develop and maintain than one on multiple machines, high-end powerful machines are costly.
 
-> "An architecture that scales well for a particular application is built around assumptions of which operations will be common and which will be rare - the load parameters." - Page 18 of the book
-
 ## Maintainability
 
-When building an application, we want to build it such that it is as easy to maintain as possible.
+When building a system, we want to build it such that it is as easy to maintain as possible.
 
 > "It is well known that the majority of the cost of software is not in its initial development, but in its ongoing maintenance - fixing bugs, investigating failures, modifying it for new use cases, and adding new features." - Found on Page 18 of the book
 
@@ -144,17 +131,9 @@ We should design systems which are easy to operate, understand and evolve. To ac
 
 - **Operability**: We should make it easy for operators to keep the system running smoothly.
 - **Simplicity**: We should make it easy for engineers to understand the system by reducing as much system complexity as possible.
-- **Evolvability**: We should make it easy for engineers to change the system in future, adapting it for unanticiapted use cases to match requirement changes.
+- **Evolvability**: We should make it easy for engineers to change the system in future, adapting it for unanticipated use cases to match requirement changes.
 
 ### Operability
-
-A good operations team is vital to keeping a system running smoothly. They are typically responsible for the following, and more:
-
-- Monitoring the telemetry of the system and restoring it if it enters a bad state.
-- Investigating the cause of problems, such as system failures or degraded performance.
-- Updating the system software and platforms, including security patches.
-- Establishing good practices and tools for deployment, such as configuration management.
-- Preserving knowledge about the system, to enable knowledge transfer as individual people join and leave the system's team.
 
 A system with good operability makes routine maintenance tasks easy, allowing the operations team to focus on higher-value contributions. We can achieve that by designing a system with:
 
@@ -174,25 +153,17 @@ Moseley and Marks define two types of complexity in their paper [Out of the Tar 
 - **Essential Complexity**: is inherent in, and the essence of, the problem (as seen by the users).
 - **Accidental Complexity**: is all the rest - complexity with which the development team would not have to deal in the ideal world (e.g. complexity arising from performance issues and from suboptimal language and infrastructure).
 
-While it is inevitable that a system becomes more complex as it grows, we can mitigate it by reducing accidental complexity. We can do so by keeping simplicity in mind when working on the system. One of the best and most common approach to doing so is by implementing abstractions, which can hide a ton of implementation detail behind a simple-to-understand facade.
+While it is inevitable that a system becomes more complex as it grows, we can mitigate it by reducing accidental complexity. We can do so by keeping simplicity in mind when working on the system. One of the best and most common approaches to doing so is by implementing abstractions, which can hide a ton of implementation detail behind a simple-to-understand facade.
 
 ### Evolvability
 
-It is likely your system's requirements will change over time, due to a myraid of reasons, such as:
+It is likely your system's requirements will change due to reasons such as:
 
-- An unanticipated use case emerges
-- Business priorities change
-- User request new features
+- An unanticipated use case emerging
+- Business priorities changing
+- User requesting new features
 
-Your system will have to evolve for these reasons, and the ease at which you adapt it to do so closely depends on its simplicity. The easier it is to understand your system, the easier it would be to modify it.
-
-## Conclusion
-
-A **reliable** system [works correctly](#working-correctly) even when faults occur.
-
-A **scalable** system works correctly with good performance even when load increases.
-
-A **maintainable** system is easy to work with and understand for those working on it.
+The ease at which you evolve your system to meet the new requirements depends heavily on its simplicity. The easier it is to understand your system, the easier it would be to modify it.
 
 ## Resources
 
