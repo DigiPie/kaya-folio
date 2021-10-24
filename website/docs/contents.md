@@ -4,7 +4,7 @@ slug: "/"
 ---
 
 Published on January 23, 2021  
-Updated on August 8, 2021
+Updated on October 24, 2021
 
 ## Reading List
 
@@ -52,10 +52,11 @@ Here, you will find a collection of concise notes on full-stack software enginee
 
 <div class="contentTableContainer">
 
-|     | Topic                       | Date Last Updated |
-| --- | --------------------------- | ----------------- |
-| 1   | [C](c-cheatsheet)           | December 23, 2020 |
-| 2   | [Javascript](js-cheatsheet) | August 1, 2021    |
+|     | Topic                        | Date Last Updated |
+| --- | ---------------------------- | ----------------- |
+| 1   | [C](c-cheatsheet)            | December 23, 2020 |
+| 2   | [Javascript](js-cheatsheet)  | August 1, 2021    |
+| 3   | [Ruby](ruby-dependency-management) | October 23, 2021  |
 
 </div>
 
