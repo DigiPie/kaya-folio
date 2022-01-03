@@ -3,7 +3,7 @@ title: Reliable, Scalable, and Maintainable Applications
 ---
 
 Published on July 31, 2021  
-Updated on September 7, 2021  
+Updated on January 3, 2022  
 Edited by [Vanessa Tay](https://www.linkedin.com/in/vanessa-tay-5973021ab/)
 
 The opening chapter of Kleppman’s [_Designing Data-Intensive Applications_](https://dataintensive.net/) book: _Reliable, Scalable, and Maintainable Applications_, addresses key concerns you should consider when designing distributed and data-intensive systems, in an insightful way. I believe anyone working on a distributed system will benefit from reading it. However, as not all of us may have the time (or will) to pour over the book, I’ve decided to share a quick summary of the key points Kleppman raises, as well as to offer some of my personal inputs with references to other literature and experts.
@@ -104,9 +104,9 @@ You can check out the article [Michael Kopp: Why Averages Suck and Percentiles a
 
 ### Tail latencies
 
-You should also consider how slow the outliers are, by looking at higher percentiles such as the 95th and 99th percentile. These are the thresholds at which 95% or 99% of the requests are faster than that particular threshold. They're also commonly called tail latencies. It is important you consider these, because the users with the slowest response time are often those who have used the system the most extensively.
+You should also consider how slow the outliers are, by looking at higher percentiles such as the 95th and 99th percentile. These are the thresholds at which 95% or 99% of the requests are faster than that particular threshold. They're also commonly called tail latencies. It is important you consider these, because the users with the slowest response time are often those who have used the system most extensively.
 
-Amazon uses the 99.9th percentile for internal service response time requirements. They do so even though only 0.1% of requests are slower, because the customers with these requests are often the most valuable customers. They experience longer response time because they've much more data on their accounts than most users, which the system needs to process before it can respond. Oftentimes, this is because they have made many more purchases, which is why they're the most valuable customers.
+Amazon uses the 99.9th percentile for internal service response time requirements. They do so even though only 0.1% of requests are slower, because the customers with these requests are often the most valuable customers. They experience longer response time because they have more data. They have more data because they made many more purchases than typical customers, thus making them more valuable.
 
 ### Scaling to cope with increased load
 
@@ -118,8 +118,6 @@ If you want to maintain good system performance, when the load parameters increa
 - **Horizontal scaling**: Scaling out by adding more machines - adding more instances to your instance group.
 
 There are tradeoffs between both approaches. A system running on a single, powerful machine is much simpler to develop and maintain than one on multiple machines. However, as you scale up a machine, it gets increasingly costly to do so, and scaling out becomes inevitable. You would need to find the right balance between both approaches if you want to achieve the most cost-effective and efficient outcome.
-
-While a system running on a single machine is much simpler to develop and maintain than one on multiple machines, high-end powerful machines are costly.
 
 ## Maintainability
 
@@ -150,8 +148,8 @@ As a system grows larger, so does its complexity. This makes the system harder t
 
 Moseley and Marks define two types of complexity in their paper [Out of the Tar Pit](http://curtclifton.net/papers/MoseleyMarks06a.pdf):
 
-- **Essential Complexity**: is inherent in, and the essence of, the problem (as seen by the users).
-- **Accidental Complexity**: is all the rest - complexity with which the development team would not have to deal in the ideal world (e.g. complexity arising from performance issues and from suboptimal language and infrastructure).
+- **Essential Complexity**: inherent in the essence of the problem
+- **Accidental Complexity**: anything else which the development team would not have to deal with ideally (e.g. complexity arising from suboptimal language and infrastructure)
 
 While it is inevitable that a system becomes more complex as it grows, we can mitigate it by reducing accidental complexity. We can do so by keeping simplicity in mind when working on the system. One of the best and most common approaches to doing so is by implementing abstractions, which can hide a ton of implementation detail behind a simple-to-understand facade.
 
