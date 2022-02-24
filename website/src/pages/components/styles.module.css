@@ -16,7 +16,7 @@
 .socialLinkList li {
   display: inline-block;
   margin: 0 0.6rem 0 0;
-  width: 16%;
+  width: 12.5%;
 }
 
 @media screen and (max-width: 966px) {

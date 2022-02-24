@@ -1,5 +1,5 @@
-import { faAirFreshener, faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faGithub, faLinkedin, faPadlet } from "@fortawesome/free-brands-svg-icons";
 
 const socialLinks = [
   {
@@ -11,6 +11,11 @@ const socialLinks = [
     faIcon: faGithub,
     alt: "GitHub",
     url: "https://github.com/digipie",
+  },
+  {
+    faIcon: faPadlet,
+    alt: "Padlet",
+    url: "https://padlet.com/about/us/wish/1072760846",
   },
   {
     faIcon: faEnvelope,
