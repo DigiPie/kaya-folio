@@ -1,4 +1,5 @@
 import React from "react";
+import { dom } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./styles.module.css";
 
@@ -17,6 +18,7 @@ function SocialLink({ faIcon, alt, url }) {
 function SocialLinks() {
   return (
     <div className={styles.socialLinkListContainer}>
+      <style type="text/css">{dom.css()}</style>
       <ul className={styles.socialLinkList}>
         {socialLinks.map((props, idx) => (
           <SocialLink key={idx} {...props} />
