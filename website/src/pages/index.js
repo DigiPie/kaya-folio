@@ -41,14 +41,15 @@ function Home() {
             className={styles.heroBannerText}
             style={{ minHeight: bannerHeight }}
           >
-            <p className="colorSuccess">
-              <b>Hi, my name is</b>
+            <p>
+              Hi, my name is
             </p>
-            <h1>
-              <span className="colorWarning">Evan</span>{" "}
-              <span className="colorDanger">Tay.</span>
+            <h1 className="colorSuccess">
+              Evan Tay.
             </h1>
-            <p>{siteConfig.tagline}</p>
+            <p>
+              I am a <span className="colorWarning">Software Engineer</span> and <span className="colorDanger">Cloud Engineer</span> passionate about solving Meaningful Problems.
+            </p>
             <SocialLinks />
             <nav className={clsx("pagination-nav", styles.heroBannerButton)}>
               <div className="pagination-nav__item">
