@@ -7,23 +7,21 @@ import socialLinks from "../../data/_SocialLinks";
 
 function SocialLink({ faIcon, alt, url }) {
   return (
-    <li>
-      <a className="button button--outline button--success" href={url}>
-        <FontAwesomeIcon alt={alt} title={alt} icon={faIcon} size="1x" /> {alt}
+    <div>
+      <a href={url}>
+        <FontAwesomeIcon alt={alt} title={alt} icon={faIcon} size="2x" />
       </a>
-    </li>
+    </div>
   );
 }
 
 function SocialLinks() {
   return (
-    <div className={styles.socialLinkListContainer}>
+    <div className={styles.socialLinks}>
       <style type="text/css">{dom.css()}</style>
-      <ul className={styles.socialLinkList}>
-        {socialLinks.map((props, idx) => (
-          <SocialLink key={idx} {...props} />
-        ))}
-      </ul>
+      {socialLinks.map((props, idx) => (
+        <SocialLink key={idx} {...props} />
+      ))}
     </div>
   );
 }

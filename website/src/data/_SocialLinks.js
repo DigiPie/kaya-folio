@@ -1,4 +1,4 @@
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin, faPadlet } from "@fortawesome/free-brands-svg-icons";
 
 const socialLinks = [
@@ -18,7 +18,7 @@ const socialLinks = [
     url: "https://padlet.com/about/us/wish/1072760846",
   },
   {
-    faIcon: faEnvelope,
+    faIcon: faPaperPlane,
     alt: "Email",
     url: "mailto:evan.it.sg@gmail.com",
   },

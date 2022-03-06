@@ -1,38 +1,37 @@
 /* stylelint-disable docusaurus/copyright-header */
 
-.socialLinkListContainer {
-  margin: 1.2rem 0 1.6rem;
+.socialLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: 1.2rem 0;
+  padding-left: 0.3rem;
 }
 
-.socialLinkList {
-  list-style: none outside;
+.socialLinks div {
+  margin-right: 1rem;
 }
 
-.socialLinkList a {
+.socialLinks a {
   font-size: 1rem;
   width: 100%;
 }
 
-.socialLinkList li {
-  display: inline-block;
-  margin: 0 0.6rem 0 0;
-  width: 12.5%;
+.socialLinks a:hover {
+  color: var(--ifm-color-warning);
+}
+
+.socialLinks a:focus, .socialLinksocialLinksList a:active {
+  color: var(--ifm-color-danger);
 }
 
 @media screen and (max-width: 966px) {
-  .socialLinkListContainer {
-    margin-bottom: 1.6rem;
+  .socialLinks {
+    justify-content: space-between;
+    padding: 0 1.6rem;
   }
 
-  .socialLinkList li {
-    display: flex;
-    margin: 1.6rem 0;
-    width: 50%;
-  }
-
-  .socialLinkList a {
-    padding: 1rem;
-    text-align: left;
-    width: 100%;
+  .socialLinks div {
+    margin-right: 0;
   }
 }
