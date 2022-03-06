@@ -51,14 +51,12 @@ function Home() {
               I am a <span className="colorWarning">Software Engineer</span> and <span className="colorDanger">Cloud Engineer</span> passionate about solving Meaningful Problems.
             </p>
             <SocialLinks />
-            <nav className={clsx("pagination-nav", styles.heroBannerButton)}>
-              <div className="pagination-nav__item">
-                <Link className="pagination-nav__link" to={useBaseUrl("#main")}>
-                  <div className="pagination-nav__sublabel">Read my</div>
-                  <div className="pagination-nav__label">Introduction</div>
-                </Link>
-              </div>
-            </nav>
+            <p class="heroCTA">
+              Find out more about me{" "}
+              <Link to={useBaseUrl("#main")}>
+                below
+              </Link>!
+            </p>
           </div>
         </div>
       </header>
