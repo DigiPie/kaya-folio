@@ -11,8 +11,8 @@
     "serve": "docusaurus serve"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-beta.17",
-    "@docusaurus/preset-classic": "^2.0.0-beta.17",
+    "@docusaurus/core": "^2.0.0-beta.22",
+    "@docusaurus/preset-classic": "^2.0.0-beta.22",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-brands-svg-icons": "^6.0.0",
     "@fortawesome/free-regular-svg-icons": "^5.15.1",
