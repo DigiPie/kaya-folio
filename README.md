@@ -12,9 +12,9 @@
   Previous version: <a href="https://github.com/DigiPie/evantay.com" target="_blank">evantay.com (1.0)</a>
 </p>
 
-![Landing page](img/landing.png)
+![Landing page](img/repository-open-graph-kaya-folio.png)
 
-![deploy-docusaurus](https://github.com/DigiPie/kaya-folio/workflows/deploy-docusaurus/badge.svg)
+![deploy-docusaurus](https://github.com/DigiPie/kaya-folio/workflows/deploy-docusaurus/badge.svg) ![evantay-website](https://img.shields.io/website?url=https%3A%2F%2Fevantay.com)
 
 ## Design motivation
 
@@ -38,11 +38,3 @@ As for the Landing, Projects and About pages, I built them using [ReactJS](https
 ## Can I use it
 
 I built this website for my own personal use, but you are free to use it so long as you credit me. You can do so by linking back to [evantay.com](https://evantay.com/). :relaxed:
-
-## Projects page
-
-![Projects page](img/project-1.png)
-
-![Projects page](img/project-2.png)
-
-![Projects page](img/project-3.png)
