@@ -118,6 +118,10 @@ p {
   width: 25%;
 }
 
+.button:hover:any-link {
+  color: var(--ifm-button-color);
+}
+
 @media screen and (max-width: 966px) {
   h1 {
     font-size: 2.4rem;
