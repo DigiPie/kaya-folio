@@ -99,7 +99,8 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Updated on ${new Date().toLocaleDateString()}`,
+      // I built this website for my own personal use, but you are free to use it so long as you credit me. You can do so by linking back to evantay.com :)
+      copyright: `<a href="https://evantay.com">Design by Evan Tay</a> • <a href="https://github.com/DigiPie/kaya-folio/commits/main">Updated ${new Date().toLocaleDateString()}</a>`,
     },
   },
   presets: [
