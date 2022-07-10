@@ -1,14 +1,13 @@
 /* stylelint-disable docusaurus/copyright-header */
 
 .heroBanner {
-  align-items: flex-start;
   background-color: var(--ifm-color-secondary-darkest);
   color: var(--ifm-color-secondary-lightest);
-  display: flex;
   overflow: hidden;
-  padding: 4rem 0 2rem;
-  position: relative;
-  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.6rem 1.2rem;
 }
 
 .heroBannerWrapper {

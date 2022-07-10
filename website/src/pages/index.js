@@ -35,24 +35,21 @@ function Home() {
   return (
     <Layout title="Home" description={siteConfig.tagline}>
       <header className={styles.heroBanner} style={{ minHeight: headerHeight }}>
-        <div className="container">
-          <div
-            className={styles.heroBannerWrapper}
-            style={{ minHeight: bannerHeight }}
-          >
-            <p>Hi, my name is</p>
-            <h1 className="colorSuccess">Evan Tay.</h1>
-            <p>
-              I am a <span className="colorWarning">Software Engineer</span> and{" "}
-              <span className="colorDanger">Cloud Engineer</span> passionate
-              about solving Meaningful Problems.
-            </p>
-            <SocialLinks />
-            <p>
-              Find out more about me <Link to={useBaseUrl("#main")}>below</Link>
-              !
-            </p>
-          </div>
+        <div
+          className={styles.heroBannerWrapper}
+          style={{ minHeight: bannerHeight }}
+        >
+          <p>Hi, my name is</p>
+          <h1 className="colorSuccess">Evan Tay.</h1>
+          <p>
+            I am a <span className="colorWarning">Software Engineer</span> and{" "}
+            <span className="colorDanger">Cloud Engineer</span> passionate about
+            solving Meaningful Problems.
+          </p>
+          <SocialLinks />
+          <p>
+            Find out more about me <Link to={useBaseUrl("#main")}>below</Link>!
+          </p>
         </div>
       </header>
       <main id="main" ref={mainRef} hidden={true}>
