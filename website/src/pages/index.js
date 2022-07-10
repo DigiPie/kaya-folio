@@ -14,7 +14,7 @@ function Home() {
 
   const mainRef = useRef(null);
   const [isLoading, setIsLoading] = useState(true)
-  const [headerHeight, setHeaderHeight] = useState(768);
+  const [headerHeight, setHeaderHeight] = useState(1536);
   const [bannerHeight, setBannerHeight] = useState(256);
 
   useEffect(() => {
