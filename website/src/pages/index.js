@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import clsx from "clsx";
 
 import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
@@ -38,24 +37,20 @@ function Home() {
       <header className={styles.heroBanner} style={{ minHeight: headerHeight }}>
         <div className="container">
           <div
-            className={styles.heroBannerText}
+            className={styles.heroBannerWrapper}
             style={{ minHeight: bannerHeight }}
           >
+            <p>Hi, my name is</p>
+            <h1 className="colorSuccess">Evan Tay.</h1>
             <p>
-              Hi, my name is
-            </p>
-            <h1 className="colorSuccess">
-              Evan Tay.
-            </h1>
-            <p>
-              I am a <span className="colorWarning">Software Engineer</span> and <span className="colorDanger">Cloud Engineer</span> passionate about solving Meaningful Problems.
+              I am a <span className="colorWarning">Software Engineer</span> and{" "}
+              <span className="colorDanger">Cloud Engineer</span> passionate
+              about solving Meaningful Problems.
             </p>
             <SocialLinks />
-            <p class="heroCTA">
-              Find out more about me{" "}
-              <Link to={useBaseUrl("#main")}>
-                below
-              </Link>!
+            <p>
+              Find out more about me <Link to={useBaseUrl("#main")}>below</Link>
+              !
             </p>
           </div>
         </div>
@@ -64,53 +59,50 @@ function Home() {
         <div className={styles.aboutHeader}>
           <h2 className="underlineColorSuccess">Hello world</h2>
         </div>
-        <div className={styles.aboutBody}>
-          <div className="container">
-            <div className="row">
-              <div className={clsx("col col--3", styles.profilePic)}>
-                <img src={useBaseUrl("img/profilepic.jpg")} />
-              </div>
-              <div className="col col--9">
-                <h2>Hello, </h2>
-                <p>
-                  I am a Full Stack Software Engineer and Certified Cloud
-                  Engineer based in Singapore.
-                </p>
-                <p>
-                  I love building cool, fun and meaningful things with tech,
-                  whether that be{" "}
-                  <Link to={useBaseUrl("projects/")}>
-                    websites, applications or games
-                  </Link>
-                  .
-                </p>
-                <p>
-                  I graduated from the{" "}
-                  <a href="https://www.comp.nus.edu.sg/">
-                    National University of Singapore
-                  </a>{" "}
-                  with a{" "}
-                  <a href="https://www.comp.nus.edu.sg/programmes/ug/cs/">
-                    Bachelor of Computing in Computer Science
-                  </a>{" "}
-                  in Winter 2020.
-                </p>
-                <p>
-                  I am currently working at{" "}
-                  <a href="https://padlet.com">Padlet</a> as a Full Stack and
-                  Support Engineer.
-                </p>
-                <p>
-                  You can read more{" "}
-                  <Link to={useBaseUrl("/about")}>about me</Link> or check out{" "}
-                  <Link to={useBaseUrl("/projects")}>my projects</Link> if you
-                  are interested.
-                </p>
-              </div>
-            </div>
+        <div className={styles.about}>
+          <div>
+            <img
+              className={styles.aboutProfilePic}
+              src={useBaseUrl("img/profilepic.jpg")}
+            />
+          </div>
+          <div class={styles.aboutText}>
+            <h2>Hello, </h2>
+            <p>
+              I am a Full Stack Software Engineer and Certified Cloud Engineer
+              based in Singapore.
+            </p>
+            <p>
+              I love building cool, fun and meaningful things with tech, whether
+              that be{" "}
+              <Link to={useBaseUrl("projects/")}>
+                websites, applications or games
+              </Link>
+              .
+            </p>
+            <p>
+              I graduated from the{" "}
+              <a href="https://www.comp.nus.edu.sg/">
+                National University of Singapore
+              </a>{" "}
+              with a{" "}
+              <a href="https://www.comp.nus.edu.sg/programmes/ug/cs/">
+                Bachelor of Computing in Computer Science
+              </a>{" "}
+              in Winter 2020.
+            </p>
+            <p>
+              I am currently working at <a href="https://padlet.com">Padlet</a>{" "}
+              as a Full Stack and Support Engineer.
+            </p>
+            <p>
+              You can read more <Link to={useBaseUrl("/about")}>about me</Link>{" "}
+              or check out <Link to={useBaseUrl("/projects")}>my projects</Link>{" "}
+              if you are interested.
+            </p>
           </div>
         </div>
-        <section className={styles.directoryBody}>
+        <section className={styles.directory}>
           <div className="container">
             <h3>Continue exploring?</h3>
             <nav className="pagination-nav">

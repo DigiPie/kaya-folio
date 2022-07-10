@@ -11,8 +11,8 @@
   text-align: left;
 }
 
-.heroBannerName {
-  font-size: 3.6rem;
+.heroBannerWrapper {
+  min-height: 1024px;
 }
 
 .heroBanner h1 {
@@ -21,28 +21,10 @@
   font-weight: 600;
 }
 
-.heroBanner h2 {
-  font-size: 2rem;
-  margin-left: 2px;
-}
-
 .heroBanner p {
   font-size: 1.2rem;
   margin: 0 4px;
   max-width: 512px;
-}
-
-.heroBanner ul {
-  margin: 4px;
-  padding: 0;
-}
-
-.heroBannerText {
-  min-height: 1024px;
-}
-
-.heroBannerButton {
-  margin: 0rem 0.6rem 0 4px;
 }
 
 .aboutHeader {
@@ -60,88 +42,40 @@
   padding-bottom: 6px;
 }
 
-.aboutBody,
-.directoryBody {
-  align-items: center;
-  display: flex;
-  padding: 3.6rem 0;
-  width: 100%;
-}
-
-.aboutBody {
+.about {
   background-color: var(--ifm-color-secondary-lightest);
   color: var(--ifm-color-secondary-darkest);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 3.6rem 1.2rem;
 }
 
-.aboutBody a {
-  font-weight: bold;
-}
-
-.aboutBody p {
-  max-width: 640px;
-}
-
-.aboutBodyButton {
-  margin: 16px 0 0;
-}
-
-.directoryBody {
-  background-color: var(--ifm-color-secondary-darkest);
-  color: var(--ifm-color-secondary-lightest);
-}
-
-.directoryBody h3 {
-  font-weight: normal;
-}
-
-.profilePic {
-  text-align: right;
-}
-
-.profilePic img {
+.aboutProfilePic {
   border-radius: 5%;
   max-height: 196px;
   max-width: 196px;
 }
 
-.featureImage {
-  max-height: 384px;
-  max-width: 384px;
+.aboutText {
+  max-width: 512px;
 }
 
-.featureText {
-  padding: 1rem;
+.aboutText a {
+  font-weight: bold;
 }
 
-.ctaButtons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.2rem 0;
+.directory {
+  background-color: var(--ifm-color-secondary-darkest);
+  color: var(--ifm-color-secondary-lightest);
+  padding: 3.6rem 0.4rem;
+  width: 100%;
 }
 
 @media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem 0;
-  }
-
-  .heroBanner h1 {
-    font-size: 3.2rem;
-    line-height: 3.6rem;
-    font-weight: 500;
-    margin-bottom: 0.8rem;
-  }
-
-  .heroBanner h2 {
-    font-size: 1.8rem;
-  }
-
-  .heroBanner p {
-    font-size: 1rem;
-  }
-
-  .profilePic {
-    margin: 4px 0 24px;
-    text-align: center;
+  .about {
+    flex-direction: column;
   }
 }
