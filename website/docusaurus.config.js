@@ -99,7 +99,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Last updated on ${new Date().toDateString()}`,
+      copyright: `Updated on ${new Date().toLocaleDateString()}`,
     },
   },
   presets: [
