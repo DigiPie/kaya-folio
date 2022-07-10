@@ -227,7 +227,7 @@ function Projects() {
             </div>
           </div>
         </div>
-        <section className={styles.directoryBody}>
+        <section className={styles.directory}>
           <div className="container">
             <h3>Continue exploring?</h3>
             <nav className="pagination-nav">
