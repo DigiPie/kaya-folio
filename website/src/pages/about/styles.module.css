@@ -15,80 +15,40 @@
   padding-bottom: 6px;
 }
 
-.aboutBody {
-  align-items: center;
-  display: flex;
-  width: 100%;
-}
-
-.aboutBody {
+.about {
   background-color: var(--ifm-color-secondary-lightest);
   color: var(--ifm-color-secondary-darkest);
-  padding: 3.6rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 3.6rem 1.2rem;
 }
 
-.aboutBody a {
-  font-weight: bold;
-}
-
-.aboutBody p {
-  max-width: 640px;
-}
-
-.profilePic {
-  text-align: right;
-}
-
-.profilePic img {
+.aboutProfilePic {
   border-radius: 5%;
   max-height: 196px;
   max-width: 196px;
 }
 
-.aboutSectionHeader {
-  padding-right: 2rem;
-  text-align: right;
+.aboutText {
+  max-width: 512px;
 }
 
-.aboutSectionHeader h2 {
-  display: inline-block;
-  padding-bottom: 6px;
+.aboutText a {
+  font-weight: bold;
 }
 
-.resumeItem {
-  border-bottom: 2px solid gray;
-  margin-bottom: 36px;
-}
-
-.resumeItem div {
-  margin-bottom: 24px;
-}
-
-.directoryBody {
-  align-items: center;
+.directory {
   background-color: var(--ifm-color-secondary-darkest);
   color: var(--ifm-color-secondary-lightest);
-  display: flex;
-  padding: 3.6rem 0;
+  padding: 3.6rem 0.4rem;
   width: 100%;
 }
 
-.directoryBody h3 {
-  font-weight: normal;
-}
-
 @media screen and (max-width: 966px) {
-  .aboutBody {
-    padding: 3rem 0;
-  }
-
-  .aboutSectionHeader {
-    text-align: left;
-    margin-bottom: 12px;
-  }
-
-  .profilePic {
-    margin: 4px 0 24px;
-    text-align: center;
+  .about {
+    flex-direction: column;
   }
 }
