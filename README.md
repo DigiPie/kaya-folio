@@ -46,7 +46,3 @@ I built this website for my own personal use, but you are free to use it so long
 ![Projects page](img/project-2.png)
 
 ![Projects page](img/project-3.png)
-
-## About page
-
-![About page](img/about-1.png)
