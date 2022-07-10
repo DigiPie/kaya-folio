@@ -21,11 +21,7 @@
 The website should:
 
 - Be easy to maintain and extend for both code and content
-  - De-couple code and content whenever possible
-  - Create reusable components for code blocks which are repeated
-- Put communication first, and design second
-  - Avoid trading content accessibility for cooler design
-  - Adopt a minimalistic design
+- Prioritise accessibility over aesthetics
 
 ## How was this built
 
