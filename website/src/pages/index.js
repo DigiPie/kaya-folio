@@ -13,23 +13,16 @@ function Home() {
   const { siteConfig = {} } = context;
 
   const mainRef = useRef(null);
-  const [headerHeight, setHeaderHeight] = useState(384);
+  const [isLoading, setIsLoading] = useState(true)
+  const [headerHeight, setHeaderHeight] = useState(768);
   const [bannerHeight, setBannerHeight] = useState(256);
 
   useEffect(() => {
-    function handleResize() {
-      const tempHeaderHeight = Math.max(384, window.innerHeight);
-      setHeaderHeight(tempHeaderHeight);
-      setBannerHeight(Math.max(256, tempHeaderHeight / 2));
-    }
-
-    handleResize();
+    const tempHeaderHeight = Math.max(384, window.innerHeight);
+    setHeaderHeight(tempHeaderHeight);
+    setBannerHeight(Math.max(256, tempHeaderHeight / 2));
+    setIsLoading(false);
     mainRef.current.hidden = false;
-    window.addEventListener("resize", handleResize);
-
-    return (_) => {
-      window.removeEventListener("resize", handleResize);
-    };
   }, []);
 
   return (
@@ -37,7 +30,7 @@ function Home() {
       <header className={styles.heroBanner} style={{ minHeight: headerHeight }}>
         <div
           className={styles.heroBannerWrapper}
-          style={{ minHeight: bannerHeight }}
+          style={{ minHeight: bannerHeight, display: isLoading ? "none" : "block" }}
         >
           <p>Hi, my name is</p>
           <h1 className="colorSuccess">Evan Tay.</h1>
