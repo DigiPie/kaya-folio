@@ -21,6 +21,7 @@
   .socialLinks {
     justify-content: space-between;
     padding: 0 1.6rem;
+    padding-bottom: 0.4rem;
   }
 
   .socialLinks div {
