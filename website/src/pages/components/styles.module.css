@@ -17,14 +17,6 @@
   width: 100%;
 }
 
-.socialLinks a:hover {
-  color: var(--ifm-color-warning);
-}
-
-.socialLinks a:focus, .socialLinksocialLinksList a:active {
-  color: var(--ifm-color-danger);
-}
-
 @media screen and (max-width: 966px) {
   .socialLinks {
     justify-content: space-between;
