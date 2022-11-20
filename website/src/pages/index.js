@@ -37,7 +37,7 @@ function Home() {
           <p>
             I am a <span className="text-warning">Software Engineer</span> and{" "}
             <span className="text-danger">Cloud Engineer</span> passionate about
-            solving Meaningful Problems.
+            solving meaningful problems.
           </p>
           <SocialLinks />
           <p>
@@ -61,22 +61,27 @@ function Home() {
             />
           </div>
           <div class={styles.aboutText}>
-            <h2>Hello,</h2>
+            <h2>Hi</h2>
             <p>
-              I am Evan, a Full Stack Software Engineer and Certified Cloud
+              🇸🇬 I am Evan, a Full Stack Software Engineer and Certified Cloud
               Engineer based in Singapore.
             </p>
             <p>
-              I love building cool, fun and meaningful things with tech, whether
-              that be{" "}
+              🚀 I love building cool and meaningful things with tech like {" "}
               <Link to={useBaseUrl("projects/")}>
                 websites, applications or games
               </Link>
-              . To me, coding is the closest thing to magic we have in this
-              world.
+              .
             </p>
             <p>
-              I was a{" "}
+              🌏 To me, coding is the closest thing to magic we have on Earth.
+            </p>
+            <p>
+              👨‍💻 I have been writing beautiful code at <a href="https://padlet.com">Padlet</a>{" "}
+              since 2021.
+            </p>
+            <p>
+              🎒 I was a{" "}
               <a href="https://www.comp.nus.edu.sg/programmes/ug/cs/">
                 Computer Science major
               </a>{" "}
@@ -84,24 +89,26 @@ function Home() {
               <a href="https://www.comp.nus.edu.sg/">
                 National University of Singapore
               </a>{" "}
-              from 2017 to 2020. During my time there, I was the Deputy Head of
-              Technology at{" "}
-              <a href="https://dscnustech.github.io/">
-                Google Developer Student Club NUS
-              </a>
-              , and the President of the{" "}
-              <a href="https://www.instagram.com/nusskating/">
-                NUS Skating Club
-              </a>
-              . I was also a{" "}
+              from 2017 to 2020.
+            </p>
+            <p>
+              🧑‍🏫 Back then, I was a{" "}
               <a href="https://github.com/DigiPie/CS1010-Tutorial-C09">
                 Teaching Assistant
               </a>{" "}
               for Programming Methodology and Networking courses.
             </p>
             <p>
-              I am currently working at <a href="https://padlet.com">Padlet</a>{" "}
-              as a Full Stack and Support Engineer.
+              🛼 I was also Deputy Head of
+              Technology for the{" "}
+              <a href="https://dscnustech.github.io/">
+                NUS Google Developer Student Club
+              </a>
+              , and President of the{" "}
+              <a href="https://www.instagram.com/nusskating/">
+                NUS Skating Club
+              </a>
+              . 
             </p>
           </div>
         </div>
