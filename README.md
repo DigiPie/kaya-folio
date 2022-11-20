@@ -24,7 +24,7 @@ The website should prioritise accessibility over aesthetics, and be easy to main
 
 The Blog and Docs pages are provided by [Docusaurus v2](https://v2.docusaurus.io/).
 
-As for the Landing, Projects and About pages, I built them using [ReactJS](https://reactjs.org/).
+As for the Landing and Projects pages, I built them using [ReactJS](https://reactjs.org/).
 
 ## Can I use this
 
