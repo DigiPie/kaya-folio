@@ -42,7 +42,7 @@ function Home() {
           <SocialLinks />
           <p>
             <Link to={useBaseUrl("#main")}>
-              <button title="Who am I" className="border-0 rounded p-2 pl-4 pr-0 bg-primary-900 hover:bg-primary-800 text-lg cursor-pointer">
+              <button title="Who am I" className="border-0 rounded p-2 pl-4 pr-0 bg-primary-900 hover:bg-primary-800 text-white text-lg cursor-pointer">
                 $whoami<span className="pl-1 animate-pulse">▎</span>
               </button>
             </Link>
