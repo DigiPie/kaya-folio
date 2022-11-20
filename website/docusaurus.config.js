@@ -58,7 +58,6 @@ module.exports = {
       logo: {
         alt: "Evan Tay",
         src: "img/logo.png",
-        href: "https://evantay.com",
         target: "_self",
       },
       items: [
