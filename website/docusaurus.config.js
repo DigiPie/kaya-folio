@@ -10,6 +10,10 @@ const internetProfiles = {
     label: "GitHub",
     href: "https://github.com/digipie",
   },
+  padlet: {
+    label: "Padlet",
+    href: "https://padlet.com/about/us/wish/1072760846",
+  },
   email: {
     label: "Email",
     href: "mailto:evan.it.sg@gmail.com",
@@ -79,6 +83,7 @@ module.exports = {
           items: [
             internetProfiles.linkedin,
             internetProfiles.github,
+            internetProfiles.padlet,
             internetProfiles.email,
           ],
         },
