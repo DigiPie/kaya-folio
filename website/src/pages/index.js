@@ -50,10 +50,10 @@ function Home() {
         </div>
       </header>
       <main id="main" ref={mainRef} hidden={true}>
-        <div className={styles.aboutHeader}>
-          <h2 className="border-0 border-b-4 border-solid border-success">Who am I</h2>
-        </div>
-        <div className={styles.about}>
+      <div className={styles.aboutHeader}>
+        <h2 className="border-0 border-b-4 border-solid border-success">Who am I</h2>
+      </div>
+       <div className={styles.about}>
           <div>
             <img
               className={styles.aboutProfilePic}
@@ -61,10 +61,10 @@ function Home() {
             />
           </div>
           <div class={styles.aboutText}>
-            <h2>Hello, </h2>
+            <h2>Hello,</h2>
             <p>
-              I am a Full Stack Software Engineer and Certified Cloud Engineer
-              based in Singapore.
+              I am Evan, a Full Stack Software Engineer and Certified Cloud
+              Engineer based in Singapore.
             </p>
             <p>
               I love building cool, fun and meaningful things with tech, whether
@@ -72,27 +72,36 @@ function Home() {
               <Link to={useBaseUrl("projects/")}>
                 websites, applications or games
               </Link>
-              .
+              . To me, coding is the closest thing to magic we have in this
+              world.
             </p>
             <p>
-              I graduated from the{" "}
+              I was a{" "}
+              <a href="https://www.comp.nus.edu.sg/programmes/ug/cs/">
+                Computer Science major
+              </a>{" "}
+              at the{" "}
               <a href="https://www.comp.nus.edu.sg/">
                 National University of Singapore
               </a>{" "}
-              with a{" "}
-              <a href="https://www.comp.nus.edu.sg/programmes/ug/cs/">
-                Bachelor of Computing in Computer Science
+              from 2017 to 2020. During my time there, I was the Deputy Head of
+              Technology at{" "}
+              <a href="https://dscnustech.github.io/">
+                Google Developer Student Club NUS
+              </a>
+              , and the President of the{" "}
+              <a href="https://www.instagram.com/nusskating/">
+                NUS Skating Club
+              </a>
+              . I was also a{" "}
+              <a href="https://github.com/DigiPie/CS1010-Tutorial-C09">
+                Teaching Assistant
               </a>{" "}
-              in Winter 2020.
+              for Programming Methodology and Networking courses.
             </p>
             <p>
               I am currently working at <a href="https://padlet.com">Padlet</a>{" "}
               as a Full Stack and Support Engineer.
-            </p>
-            <p>
-              You can read more <Link to={useBaseUrl("/about")}>about me</Link>{" "}
-              or check out <Link to={useBaseUrl("/projects")}>my projects</Link>{" "}
-              if you are interested.
             </p>
           </div>
         </div>
@@ -108,9 +117,29 @@ function Home() {
               </div>
               <div className="pagination-nav__item pagination-nav__item--next">
                 <Link className="pagination-nav__link" to={useBaseUrl("docs/")}>
-                  <div className="pagination-nav__sublabel">Read</div>
+                  <div className="pagination-nav__sublabel">Refer to</div>
                   <div className="pagination-nav__label">My docs</div>
                 </Link>
+              </div>
+            </nav>
+            <nav className="pt-4 pagination-nav">
+              <div className="pagination-nav__item">
+                <Link
+                  className="pagination-nav__link"
+                  to={useBaseUrl("projects/")}
+                >
+                  <div className="pagination-nav__sublabel">Check out</div>
+                  <div className="pagination-nav__label">My projects</div>
+                </Link>
+              </div>
+              <div className="pagination-nav__item pagination-nav__item--next">
+                <a
+                  className="pagination-nav__link"
+                  href={useBaseUrl("pdf/resume.pdf")}
+                >
+                  <div className="pagination-nav__sublabel">Download</div>
+                  <div className="pagination-nav__label">My resume</div>
+                </a>
               </div>
             </nav>
           </div>

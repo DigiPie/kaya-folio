@@ -26,10 +26,6 @@ const internetProfiles = {
     label: "Projects",
     to: "projects",
   },
-  about: {
-    label: "About",
-    to: "about",
-  },
   resume: {
     label: "Resume",
     href: "https://evantay.com/pdf/resume.pdf",
@@ -69,7 +65,6 @@ module.exports = {
           position: "left",
         },
         { to: "projects/", label: "Projects", position: "right" },
-        { to: "about/", label: "About", position: "right" },
         {
           href: "https://evantay.com/pdf/resume.pdf",
           label: "Resume",
@@ -93,7 +88,6 @@ module.exports = {
             internetProfiles.blog,
             internetProfiles.docs,
             internetProfiles.projects,
-            internetProfiles.about,
             internetProfiles.resume,
           ],
         },

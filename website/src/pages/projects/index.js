@@ -232,19 +232,19 @@ function Projects() {
             <h3>Continue exploring?</h3>
             <nav className="pagination-nav">
               <div className="pagination-nav__item">
-                <Link className="pagination-nav__link" to={useBaseUrl("docs/")}>
+                <Link className="pagination-nav__link" to={useBaseUrl("blog/")}>
                   <div className="pagination-nav__sublabel">Read</div>
-                  <div className="pagination-nav__label">My docs</div>
+                  <div className="pagination-nav__label">My blog</div>
                 </Link>
               </div>
               <div className="pagination-nav__item pagination-nav__item--next">
-                <Link
+                <a
                   className="pagination-nav__link"
-                  href={useBaseUrl("about/")}
+                  href={useBaseUrl("pdf/resume.pdf")}
                 >
-                  <div className="pagination-nav__sublabel">Learn more</div>
-                  <div className="pagination-nav__label">About me</div>
-                </Link>
+                  <div className="pagination-nav__sublabel">Download</div>
+                  <div className="pagination-nav__label">My resume</div>
+                </a>
               </div>
             </nav>
           </div>
