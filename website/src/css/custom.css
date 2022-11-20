@@ -4,6 +4,9 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
 
 /* You can override the default Infima variables here. */
 :root {
@@ -51,42 +54,6 @@ h3 {
 
 p {
   font-size: 1rem;
-}
-
-.textUpper {
-  text-transform: uppercase;
-}
-
-.colorSuccess {
-  color: var(--ifm-color-success);
-}
-
-.colorWarning {
-  color: var(--ifm-color-warning);
-}
-
-.colorDanger {
-  color: var(--ifm-color-danger);
-}
-
-.bgColorSuccess {
-  background-color: var(--ifm-color-success);
-}
-
-.bgColorDanger {
-  background-color: var(--ifm-color-danger);
-}
-
-.underlineColorSuccess {
-  border-bottom: 4px solid var(--ifm-color-success);
-}
-
-.underlineColorWarning {
-  border-bottom: 4px solid var(--ifm-color-warning);
-}
-
-.underlineColorDanger {
-  border-bottom: 4px solid var(--ifm-color-danger);
 }
 
 .admonition a,

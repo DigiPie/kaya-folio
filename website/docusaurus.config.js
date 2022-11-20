@@ -58,7 +58,6 @@ module.exports = {
       logo: {
         alt: "Evan Tay",
         src: "img/logo.png",
-        href: "https://evantay.com",
         target: "_self",
       },
       items: [
@@ -132,6 +131,18 @@ module.exports = {
       integrity:
         "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X",
       crossorigin: "anonymous",
+    },
+  ],
+  plugins:    [
+    async function tailwindPlugin(context, options) {
+      return {
+        name: "docusaurus-tailwindcss",
+        configurePostCss(postcssOptions) {
+          postcssOptions.plugins.push(require("tailwindcss"));
+          postcssOptions.plugins.push(require("autoprefixer"));
+          return postcssOptions;
+        },
+      };
     },
   ],
 };
