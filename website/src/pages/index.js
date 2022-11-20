@@ -33,10 +33,10 @@ function Home() {
           style={{ minHeight: bannerHeight, display: isLoading ? "none" : "block" }}
         >
           <p>Hi, my name is</p>
-          <h1 className="colorSuccess">Evan Tay.</h1>
+          <h1 className="text-success">Evan Tay.</h1>
           <p>
-            I am a <span className="colorWarning">Software Engineer</span> and{" "}
-            <span className="colorDanger">Cloud Engineer</span> passionate about
+            I am a <span className="text-warning">Software Engineer</span> and{" "}
+            <span className="text-danger">Cloud Engineer</span> passionate about
             solving Meaningful Problems.
           </p>
           <SocialLinks />
@@ -47,7 +47,7 @@ function Home() {
       </header>
       <main id="main" ref={mainRef} hidden={true}>
         <div className={styles.aboutHeader}>
-          <h2 className="underlineColorSuccess">Hello world</h2>
+          <h2 className="border-0 border-b-4 border-solid border-success">Hello world</h2>
         </div>
         <div className={styles.about}>
           <div>

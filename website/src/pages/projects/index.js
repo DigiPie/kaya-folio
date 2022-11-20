@@ -76,7 +76,7 @@ function Projects() {
   return (
     <Layout title="Projects" description={siteConfig.tagline}>
       <header className={styles.projectPageHeader}>
-        <h2 className="underlineColorSuccess">My projects</h2>
+        <h2 className="border-0 border-b-4 border-solid border-success">My projects</h2>
       </header>
       <main ref={mainRef} hidden={true}>
         <div className={styles.projectBody}>
@@ -103,8 +103,8 @@ function Projects() {
                       <div
                         className={
                           project.bgColor == "alternate"
-                            ? "card__image bgColorDanger"
-                            : "card__image bgColorSuccess"
+                            ? "card__image bg-danger"
+                            : "card__image bg-success"
                         }
                       >
                         <h2>{project.title}</h2>
