@@ -8,7 +8,8 @@ module.exports = {
   darkMode: ['class', '[data-theme="dark"]'], // hooks into docusaurus' dark mode settings
   theme: {
     colors: {
-      'primary': {
+        'white': '#fff',
+        'primary': {
         300: '#13cc72',
         400: '#11b565',
         500: '#10ad61',
