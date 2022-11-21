@@ -316,7 +316,7 @@ const projects = [
     title: "Dynalite",
     slug: "#dynalite",
     imageUrl: "img/projects/dynalite.png",
-    subtitle: "A full-stack IoT occupancy visualisation app.",
+    subtitle: "A full-stack Internet-of-Things occupancy visualisation application.",
     period: "September to November 2019",
     tech: "Raspberry-Pi, Python, COAP, NodeJS, ExpressJS, PostgreSQL, ReactJS, Docker",
     team: [
@@ -381,7 +381,7 @@ const projects = [
     category: "Open Source Tool",
     title: "psql-heroku-buildpack",
     slug: "#psql-heroku-buildpack",
-    subtitle: "A Heroku buildpack which executes a PostgreSQL script file",
+    subtitle: "A Heroku buildpack which executes a PostgreSQL script file on deployment.",
     period: "September 2019",
     tech: "Herokuapp, PostgreSQL",
     description: (
@@ -411,7 +411,7 @@ const projects = [
     title: "BrainTrain",
     slug: "#braintrain",
     imageUrl: "img/projects/braintrain.png",
-    subtitle: "A spaced-repetition flashcard desktop app.",
+    subtitle: "A spaced-repetition flashcard desktop application built in Java.",
     period: "March to April 2019",
     tech: "Java, JUnit5, JavaFx, OpenCSV",
     team: [
@@ -494,7 +494,7 @@ const projects = [
     title: "Glory: Tales of Yi-Shun",
     slug: "#glory",
     imageUrl: "img/projects/glory.png",
-    subtitle: "A 2D hack-n-slash action game.",
+    subtitle: "A 2D hack-and-slash action survival game built using Unity and C#.",
     period: "May to September 2018",
     tech: "Unity, C#",
     team: [
