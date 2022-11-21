@@ -89,7 +89,7 @@ function Projects() {
                   <div
                     id={project.title}
                     key={project.title + "-card"}
-                    className="bg-secondary-800 hover:bg-secondary-900 transition rounded-lg overflow-hidden drop-shadow-lg"
+                    className="bg-secondary-800 hover:bg-secondary-900 transition rounded-lg overflow-hidden"
                   >
                     <Link
                       to={useBaseUrl(project.slug)}
