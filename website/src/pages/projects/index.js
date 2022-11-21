@@ -113,13 +113,13 @@ function Projects() {
                           <h2>{project.title}</h2>
                         </div>
                       )}
-                      <div className="pt-4 pb-8 px-4">
+                      <div className="pt-4 px-4">
                         <h3 className="mb-1">
                           {project.title}
                         </h3>
                         <p className="text-s mb-2 text-secondary-500">{project.period}</p>
                         <p>{project.subtitle}</p>
-                        <p className="absolute bottom-0 left-4 text-primary-default font-bold">Read more</p>
+                        <p className="text-primary-default font-bold">Read more</p>
                       </div>
                     </Link>
                   </div>
