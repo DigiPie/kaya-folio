@@ -52,7 +52,7 @@ const projects = [
     imageUrl: "img/projects/mochai.png",
     subtitle: "An example for testing a NodeJS-MongoDB app with Mocha-Chai.",
     period: "April 2020",
-    tech: "Mocha, Chai, NodeJS, ExpressJS, Mongoose (MongoDB)",
+    tech: "Mocha, Chai, NodeJS, ExpressJS, MongoDB",
     description: (
       <>
         <p>
@@ -401,12 +401,6 @@ const projects = [
           >
             <img src="https://coveralls.io/repos/github/CS2103-AY1819S2-W14-1/main/badge.svg?branch=master" />
           </a>{" "}
-          <a
-            href="https://www.codacy.com/app/cs2103-w14-1/main?utm_source=github.com&utm_medium=referral&utm_content=CS2103-AY1819S2-w14-1/main&utm_campaign=Badge_Grade"
-            title="Codacy code quality"
-          >
-            <img src="https://api.codacy.com/project/badge/Grade/d236c7af6a71427ebeae2571add1f3f4" />
-          </a>
         </p>
         <p>
           We worked on BrainTrain under National University of Singapore's{" "}

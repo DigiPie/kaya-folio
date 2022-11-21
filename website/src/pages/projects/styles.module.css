@@ -11,7 +11,7 @@
 }
 
 .projectPageHeader {
-  background-color: var(--ifm-color-secondary-darkest);
+  background-color: var(--ifm-color-secondary-darker);
   color: var(--ifm-color-secondary-lighter);
   display: block;
   overflow: hidden;
@@ -23,22 +23,6 @@
 .projectPageHeader h2 {
   display: inline-block;
   padding-bottom: 6px;
-}
-
-.projectBody {
-  background-color: var(--ifm-background-color);
-  color: var(--ifm-color-secondary-lightest);
-  padding: 3.6rem 0;
-}
-
-.projectCard {
-  background-color: var(--ifm-color-secondary-darkest);
-  border-radius: var(--ifm-pagination-nav-border-radius);
-  color: var(--ifm-color-secondary-lightest);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow: hidden;
 }
 
 .projectItem {
@@ -78,12 +62,9 @@
   justify-content: center;
 }
 
-.projectItemBackButton {
-  margin: 1rem 0;
-}
 
 .directory {
-  background-color: var(--ifm-color-secondary-darkest);
+  background-color: var(--ifm-color-secondary-darker);
   color: var(--ifm-color-secondary-lightest);
   padding: 3.6rem 0.4rem;
   width: 100%;

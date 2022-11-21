@@ -76,74 +76,56 @@ function Projects() {
   return (
     <Layout title="Projects" description={siteConfig.tagline}>
       <header className={styles.projectPageHeader}>
-        <h2 className="border-0 border-b-4 border-solid border-success">My projects</h2>
+        <h2 className="border-0 border-b-4 border-solid border-success">
+          My projects
+        </h2>
       </header>
       <main ref={mainRef} hidden={true}>
-        <div className={styles.projectBody}>
-          <div className="container">
-            <div
-              className="row margin-bottom--lg"
-              style={{ display: showProjectItem ? "none" : "flex" }}
-            >
-              {projects.map((project) => (
-                <div
-                  id={project.title}
-                  key={project.title + "-card"}
-                  className="col col--4 margin-bottom--lg"
-                >
-                  <div className={styles.projectCard}>
-                    {project.imageUrl ? (
-                      <div className="card__image">
-                        <img
-                          src={useBaseUrl(project.imageUrl)}
-                          alt={project.title}
-                        />
-                      </div>
-                    ) : (
-                      <div
-                        className={
-                          project.bgColor == "alternate"
-                            ? "card__image bg-danger"
-                            : "card__image bg-success"
-                        }
-                      >
-                        <h2>{project.title}</h2>
-                      </div>
-                    )}
-                    <div className="card__body">
-                      <div className="avatar">
-                        <div className="avatar__intro margin-left--none">
-                          <h4 className="avatar__name">
-                            <CategoryIcon category={project.category} />{" "}
-                            {project.title}
-                          </h4>
-                          <p className="avatar__subtitle">{project.subtitle}</p>
-                          <small className="avatar__subtitle">
-                            <FontAwesomeIcon alt="Code" icon={faCalendar} />{" "}
-                            {project.period}
-                          </small>
-                          <small className="avatar__subtitle">
-                            <FontAwesomeIcon alt="Code" icon={faCode} />{" "}
-                            {project.tech}
-                          </small>
+        <div className="py-6 md:py-12">
+          <div className="container max-w-7xl">
+            {!showProjectItem && (
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4 px-2 md:px-0">
+                {projects.map((project) => (
+                  <div
+                    id={project.title}
+                    key={project.title + "-card"}
+                    className="bg-secondary-800 hover:bg-secondary-900 transition rounded-lg overflow-hidden drop-shadow-lg"
+                  >
+                    <Link
+                      to={useBaseUrl(project.slug)}
+                      className="block h-full text-white hover:text-white no-underline hover:no-underline"
+                    >
+                      {project.imageUrl ? (
+                        <div className="card__image">
+                          <img
+                            src={useBaseUrl(project.imageUrl)}
+                            alt={project.title}
+                          />
                         </div>
+                      ) : (
+                        <div
+                          className={
+                            project.bgColor == "alternate"
+                              ? "card__image bg-danger"
+                              : "card__image bg-success"
+                          }
+                        >
+                          <h2>{project.title}</h2>
+                        </div>
+                      )}
+                      <div className="pt-4 pb-8 px-4">
+                        <h3 className="mb-1">
+                          {project.title}
+                        </h3>
+                        <p className="text-s mb-2 text-secondary-500">{project.period}</p>
+                        <p>{project.subtitle}</p>
+                        <p className="absolute bottom-0 left-4 text-primary-default font-bold">Read more</p>
                       </div>
-                    </div>
-                    <div className="card__footer">
-                      <Link
-                        className={clsx(
-                          "button button--outline button--primary",
-                          styles.projectItemButton
-                        )}
-                        to={useBaseUrl(project.slug)}
-                      >
-                        Learn more
-                      </Link>
-                    </div>
+                    </Link>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            )}
             <div
               className={clsx(
                 "text--center margin-bottom--xl",
@@ -151,14 +133,10 @@ function Projects() {
               )}
               style={{ display: showProjectItem ? "block" : "none" }}
             >
-              <Link
-                className={clsx(
-                  "button button--outline button--primary",
-                  styles.projectItemBackButton
-                )}
-                to={useBaseUrl("/projects")}
-              >
-                All projects
+              <Link to={useBaseUrl("/projects")}>
+                <button className="border-0 rounded py-2 px-4 mb-2 bg-primary-900 hover:bg-primary-800 transition text-white text-lg cursor-pointer">
+                  Back
+                </button>
               </Link>
               <h1>{projectItem.title}</h1>
               <h2>{projectItem.subtitle}</h2>
@@ -215,14 +193,10 @@ function Projects() {
                   </>
                 )}
               </div>
-              <Link
-                className={clsx(
-                  "button button--outline button--primary",
-                  styles.projectItemBackButton
-                )}
-                to={useBaseUrl("/projects")}
-              >
-                All projects
+              <Link to={useBaseUrl("/projects")}>
+                <button className="border-0 rounded py-2 px-4 bg-primary-900 hover:bg-primary-800 transition text-white text-lg cursor-pointer">
+                  More projects
+                </button>
               </Link>
             </div>
           </div>
