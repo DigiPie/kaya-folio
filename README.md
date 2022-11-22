@@ -22,6 +22,9 @@
 <p align="center">
   <i>Easy to maintain and extend code and content</i>
 </p>
+<p align="center">
+  <i>Comfortable to use on both web and mobile</i>
+</p>
 
 ## How was this built
 
