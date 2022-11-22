@@ -1,15 +1,4 @@
 /* stylelint-disable docusaurus/copyright-header */
-
-:global(.card__image) {
-  height: 164px;
-  overflow: hidden;
-}
-
-:global(.card__image) h2 {
-  display: inline-block;
-  margin: 12px;
-}
-
 .projectPageHeader {
   background-color: var(--ifm-color-secondary-darker);
   color: var(--ifm-color-secondary-lighter);

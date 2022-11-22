@@ -82,9 +82,9 @@ function Projects() {
       </header>
       <main ref={mainRef} hidden={true}>
         <div className="py-6 md:py-12">
-          <div className="container max-w-7xl">
+          <div className="my-0 mx-auto max-w-7xl">
             {!showProjectItem && (
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4 px-2 md:px-0">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4 px-4 md:px-0">
                 {projects.map((project) => (
                   <div
                     id={project.title}
@@ -96,7 +96,7 @@ function Projects() {
                       className="block h-full text-white hover:text-white no-underline hover:no-underline"
                     >
                       {project.imageUrl ? (
-                        <div className="card__image">
+                        <div className="overflow-hidden h-40 md:h-48">
                           <img
                             src={useBaseUrl(project.imageUrl)}
                             alt={project.title}
@@ -106,11 +106,11 @@ function Projects() {
                         <div
                           className={
                             project.bgColor == "alternate"
-                              ? "card__image bg-danger"
-                              : "card__image bg-success"
+                              ? "overflow-hidden bg-danger h-40 md:h-48"
+                              : "overflow-hidden bg-success h-40 md:h-48"
                           }
                         >
-                          <h2>{project.title}</h2>
+                          <h2 className="m-3 inline-block">{project.title}</h2>
                         </div>
                       )}
                       <div className="pt-4 px-4">
