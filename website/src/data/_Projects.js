@@ -411,7 +411,7 @@ const projects = [
     title: "BrainTrain",
     slug: "#braintrain",
     imageUrl: "img/projects/braintrain.png",
-    subtitle: "A spaced-repetition flashcard desktop application built in Java.",
+    subtitle: "A spaced-repetition flashcard desktop application built in Java and JUnit5.",
     period: "March to April 2019",
     tech: "Java, JUnit5, JavaFx, OpenCSV",
     team: [
