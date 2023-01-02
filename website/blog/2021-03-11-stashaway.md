@@ -8,7 +8,17 @@ author_image_url: https://avatars2.githubusercontent.com/u/13582874
 tags: [investing, sharing]
 ---
 
-_Disclaimer: This post is not sponsored, and does not constitute financial advice of any form (I bet you know better than me). Read at your own discretion!_
+:::caution Deprecated
+
+This article was posted sometime back in early 2021 and may be outdated. Refer to [SingSaver](https://www.singsaver.com.sg/investments/robo-advisory) instead for updated information.
+
+:::
+
+:::note Disclaimer
+
+This post is not sponsored, and does not constitute financial advice of any form (I bet you know better than me). Read at your own discretion.
+
+:::
 
 Signing up on [StashAway](https://www.stashaway.sg/referrals/tayegd) (a [robo-advisor platform](https://blog.moneysmart.sg/invest/robo-advisors-singapore/#what-are-robo-advisors)) back in the early 2020s was the first step in taking control of my financial health. Before that, 100% of my cash was just sitting in a POSB Savings account, growing at an incredibly pointless rate of [0.05% per annum](https://www.dbs.com.sg/personal/rates-online/deposit-rates.page). I might as well have kept the money under my mattress.
 
@@ -83,10 +93,5 @@ You can read more about StashAway's Frequently Asked Questions [here](https://ww
 ## Closing note
 
 I hope you found this post/rambling/_thing_ (\*gestures wildly at everything) insightful in any way. If you are still interested in StashAway, but not entirely convinced by me (I’ll try not to take it personally), you can check out this [video](https://www.youtube.com/watch?v=0IvyrANMz78) by _Kevin Learns Investing_. All the best with getting financially fit!
-
-## [Lobang](https://www.singlish.net/lobang/)
-
-**StashAway Referral Link:** [https://www.stashaway.sg/referrals/tayegd](https://www.stashaway.sg/referrals/tayegd)  
-Both of us will get up to $10,000 SGD managed for free for 6 months!
 
 _Special thanks to Vanessa Tay for editing this!_
