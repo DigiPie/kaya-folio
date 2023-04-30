@@ -60,7 +60,7 @@ function Home() {
               src={useBaseUrl("img/profilepic.jpg")}
             />
           </div>
-          <div class={styles.aboutText}>
+          <div className={styles.aboutText}>
             <h2>Hi</h2>
             <p>
               🇸🇬 I am Evan, a Full Stack Software Engineer and Certified Cloud
