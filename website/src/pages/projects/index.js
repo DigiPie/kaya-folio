@@ -88,7 +88,7 @@ export function ProjectListings() {
 export function ProjectListing(props) {
   const projectItem = props.projectItem;
   return (
-    <div className={clsx("text--center margin-bottom--xl", styles.projectItem)}>
+    <div className={clsx("text--center margin-bottom--xl px-4", styles.projectItem)}>
       <Link to={useBaseUrl("/projects")}>
         <button className="border-0 rounded py-2 px-4 mb-2 bg-primary-900 hover:bg-primary-800 transition text-white text-lg cursor-pointer">
           Back
