@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  A software engineer portfolio template built with <a href="https://docusaurus.io">Docusaurus 3.0</a>, <a href="https://reactjs.org/">ReactJS</a>, and <i><a href="https://lmgtfy.app/?q=kaya">Kaya</a></i>.
+  A software engineer portfolio template built with <a href="https://docusaurus.io">Docusaurus 3.0</a>, <a href="https://reactjs.org/">ReactJS</a>, and <i><a href="https://www.google.com/search?q=kaya">Kaya</a></i>.
 </p>
 
 ![Landing page](img/landing.png)
