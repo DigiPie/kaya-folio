@@ -76,8 +76,8 @@ const projects = [
           <a href="https://github.com/DigiPie/kaya-folio/workflows/deploy-docusaurus/badge.svg">
             <img src="https://github.com/DigiPie/kaya-folio/workflows/deploy-docusaurus/badge.svg" />
           </a>{" "}
-          <a href="https://camo.githubusercontent.com/5111623fd1442456a5718af6ff9c8e4bf080e3756511b436343eac4971bb518a/68747470733a2f2f696d672e736869656c64732e696f2f776562736974653f75726c3d68747470732533412532462532466576616e7461792e636f6d">
-            <img src="https://camo.githubusercontent.com/5111623fd1442456a5718af6ff9c8e4bf080e3756511b436343eac4971bb518a/68747470733a2f2f696d672e736869656c64732e696f2f776562736974653f75726c3d68747470732533412532462532466576616e7461792e636f6d" />
+          <a href="https://camo.githubusercontent.com/399d62140ec640c832d3c3390f39e2df16086f415f7a6723bd803baca2062627/68747470733a2f2f696d672e736869656c64732e696f2f776562736974653f75726c3d68747470732533412532462532466576616e7461792e636f6d">
+            <img src="https://camo.githubusercontent.com/399d62140ec640c832d3c3390f39e2df16086f415f7a6723bd803baca2062627/68747470733a2f2f696d672e736869656c64732e696f2f776562736974653f75726c3d68747470732533412532462532466576616e7461792e636f6d" />
           </a>
         </p>
         <p>
@@ -316,7 +316,8 @@ const projects = [
     title: "Dynalite",
     slug: "#dynalite",
     imageUrl: "img/projects/dynalite.png",
-    subtitle: "A full-stack Internet-of-Things occupancy visualisation application.",
+    subtitle:
+      "A full-stack Internet-of-Things occupancy visualisation application.",
     period: "September to November 2019",
     tech: "Raspberry-Pi, Python, COAP, NodeJS, ExpressJS, PostgreSQL, ReactJS, Docker",
     team: [
@@ -381,7 +382,8 @@ const projects = [
     category: "Open Source Tool",
     title: "psql-heroku-buildpack",
     slug: "#psql-heroku-buildpack",
-    subtitle: "A Heroku buildpack which executes a PostgreSQL script file on deployment.",
+    subtitle:
+      "A Heroku buildpack which executes a PostgreSQL script file on deployment.",
     period: "September 2019",
     tech: "Herokuapp, PostgreSQL",
     description: (
@@ -411,7 +413,8 @@ const projects = [
     title: "BrainTrain",
     slug: "#braintrain",
     imageUrl: "img/projects/braintrain.png",
-    subtitle: "A spaced-repetition flashcard desktop application built in Java and JUnit5.",
+    subtitle:
+      "A spaced-repetition flashcard desktop application built in Java and JUnit5.",
     period: "March to April 2019",
     tech: "Java, JUnit5, JavaFx, OpenCSV",
     team: [
@@ -494,7 +497,8 @@ const projects = [
     title: "Glory: Tales of Yi-Shun",
     slug: "#glory",
     imageUrl: "img/projects/glory.png",
-    subtitle: "A 2D hack-and-slash action survival game built using Unity and C#.",
+    subtitle:
+      "A 2D hack-and-slash action survival game built using Unity and C#.",
     period: "May to September 2018",
     tech: "Unity, C#",
     team: [

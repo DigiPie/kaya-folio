@@ -34,7 +34,7 @@ use <database>
 
 :::tip
 
-Read <https://docs.mongodb.com/manual/mongo/> for more information.
+Read [https://docs.mongodb.com/manual/mongo/](https://docs.mongodb.com/manual/mongo/) for more information.
 
 :::
 
@@ -67,7 +67,7 @@ db.createUser(
 
 :::tip
 
-Read <https://docs.mongodb.com/manual/reference/method/db.createUser/> for more information.
+Read [https://docs.mongodb.com/manual/mongo/](https://docs.mongodb.com/manual/mongo/) for more information.
 
 :::
 
@@ -89,7 +89,7 @@ mongodb://devadmin:<password>@localhost:27017/dev
 
 :::caution
 
-If the username or password includes the at sign @, colon :, slash /, or the percent sign % character, use percent encoding. See <https://docs.mongodb.com/manual/reference/connection-string/#examples> for more information.
+If the username or password includes the at sign @, colon :, slash /, or the percent sign % character, use percent encoding. See [https://docs.mongodb.com/manual/reference/connection-string/#examples](https://docs.mongodb.com/manual/reference/connection-string/#examples) for more information.
 
 :::
 
@@ -99,7 +99,7 @@ Given that we are not enabling authentication, you can use either of the above c
 
 :::tip
 
-Read <https://docs.mongodb.com/manual/tutorial/enable-authentication/> for more information.
+Read [https://docs.mongodb.com/manual/tutorial/enable-authentication/](https://docs.mongodb.com/manual/tutorial/enable-authentication/) for more information.
 
 :::
 

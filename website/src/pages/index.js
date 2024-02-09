@@ -13,7 +13,7 @@ function Home() {
   const { siteConfig = {} } = context;
 
   const mainRef = useRef(null);
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true);
   const [headerHeight, setHeaderHeight] = useState(1536);
   const [bannerHeight, setBannerHeight] = useState(256);
 
@@ -30,7 +30,10 @@ function Home() {
       <header className={styles.heroBanner} style={{ minHeight: headerHeight }}>
         <div
           className={styles.heroBannerWrapper}
-          style={{ minHeight: bannerHeight, display: isLoading ? "none" : "block" }}
+          style={{
+            minHeight: bannerHeight,
+            display: isLoading ? "none" : "block",
+          }}
         >
           <p>Hi, my name is</p>
           <h1 className="text-success">Evan Tay.</h1>
@@ -41,7 +44,7 @@ function Home() {
           </p>
           <SocialLinks />
           <p>
-            <Link to={useBaseUrl("#main")}>
+            <Link hash="#main">
               <button className="border-0 rounded p-2 pl-4 pr-0 bg-primary-900 hover:bg-primary-800 transition text-white text-lg cursor-pointer">
                 whoami<span className="pl-1 animate-pulse">▎</span>
               </button>
@@ -50,10 +53,12 @@ function Home() {
         </div>
       </header>
       <main id="main" ref={mainRef} hidden={true}>
-      <div className={styles.aboutHeader}>
-        <h2 className="border-0 border-b-4 border-solid border-success">Who am I</h2>
-      </div>
-       <div className={styles.about}>
+        <div className={styles.aboutHeader}>
+          <h2 className="border-0 border-b-4 border-solid border-success">
+            Who am I
+          </h2>
+        </div>
+        <div className={styles.about}>
           <div>
             <img
               className={styles.aboutProfilePic}
@@ -67,7 +72,7 @@ function Home() {
               Engineer based in Singapore.
             </p>
             <p>
-              🚀 I love building cool and meaningful things with tech like {" "}
+              🚀 I love building cool and meaningful things with tech like{" "}
               <Link to={useBaseUrl("projects/")}>
                 websites, applications or games
               </Link>
@@ -77,8 +82,8 @@ function Home() {
               🌏 To me, coding is the closest thing to magic we have on Earth.
             </p>
             <p>
-              👨‍💻 I have been writing beautiful code at <a href="https://padlet.com">Padlet</a>{" "}
-              since 2021.
+              👨‍💻 I have been writing beautiful code at{" "}
+              <a href="https://padlet.com">Padlet</a> since 2021.
             </p>
             <p>
               🎒 I was a{" "}
@@ -99,8 +104,7 @@ function Home() {
               for Programming Methodology and Networking courses.
             </p>
             <p>
-              🛼 I was also Deputy Head of
-              Technology for the{" "}
+              🛼 I was also Deputy Head of Technology for the{" "}
               <a href="https://dscnustech.github.io/">
                 NUS Google Developer Student Club
               </a>
@@ -108,7 +112,7 @@ function Home() {
               <a href="https://www.instagram.com/nusskating/">
                 NUS Skating Club
               </a>
-              . 
+              .
             </p>
           </div>
         </div>

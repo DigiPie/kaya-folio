@@ -8,7 +8,7 @@ _This document was migrated from [DigiDocs](https://digipie.github.io/digidocs/g
 
 :::tip
 
-Basic knowledge of Git is assumed in this tutorial. If you are new to Git, visit <http://rogerdudler.github.io/git-guide/> to learn the basics first.
+Basic knowledge of Git is assumed in this tutorial. If you are new to Git, visit [http://rogerdudler.github.io/git-guide/](http://rogerdudler.github.io/git-guide/) to learn the basics first.
 
 :::
 

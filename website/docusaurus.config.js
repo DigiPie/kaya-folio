@@ -1,5 +1,7 @@
-const math = require("remark-math");
-const katex = require("rehype-katex");
+import autoprefixer from "autoprefixer";
+import katex from "rehype-katex";
+import math from "remark-math";
+import tailwind from "tailwindcss";
 
 const internetProfiles = {
   linkedin: {
@@ -132,13 +134,13 @@ module.exports = {
       crossorigin: "anonymous",
     },
   ],
-  plugins:    [
+  plugins: [
     async function tailwindPlugin(context, options) {
       return {
         name: "docusaurus-tailwindcss",
         configurePostCss(postcssOptions) {
-          postcssOptions.plugins.push(require("tailwindcss"));
-          postcssOptions.plugins.push(require("autoprefixer"));
+          postcssOptions.plugins.push(tailwind);
+          postcssOptions.plugins.push(autoprefixer);
           return postcssOptions;
         },
       };
