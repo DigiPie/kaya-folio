@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkevantay_com=self.webpackChunkevantay_com||[]).push([[2392],{7896:e=>{e.exports=JSON.parse('{"label":"microservices","permalink":"/blog/tags/microservices","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

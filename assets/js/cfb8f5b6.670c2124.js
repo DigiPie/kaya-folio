@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkevantay_com=self.webpackChunkevantay_com||[]).push([[7640],{563:e=>{e.exports=JSON.parse('{"label":"software-engineering","permalink":"/blog/tags/software-engineering","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

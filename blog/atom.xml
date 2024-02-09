@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://evantay.com/blog</id>
+    <title>Evan Tay Blog</title>
+    <updated>2021-09-10T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://evantay.com/blog"/>
+    <subtitle>Evan Tay Blog</subtitle>
+    <icon>https://evantay.com/img/logo.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Why every Software Engineer should read Designing Data-Intensive Applications]]></title>
+        <id>https://evantay.com/blog/why-you-should-read-ddia</id>
+        <link href="https://evantay.com/blog/why-you-should-read-ddia"/>
+        <updated>2021-09-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Picking up this book was one of the best decisions I made for my fledgling software engineering career. Its insights enabled me to make well-reasoned software design decisions, and confidently communicate them, in spite of my relative professional inexperience. Given how helpful it has been, I’m here today to share more about the impression it has left on me, and convince you that it is a must-read if you are a software engineer.]]></summary>
+        <content type="html"><![CDATA[<p>Picking up this book was one of the best decisions I made for my fledgling software engineering career. Its insights enabled me to make well-reasoned software design decisions, and confidently communicate them, in spite of my relative professional inexperience. Given how helpful it has been, I’m here today to share more about the impression it has left on me, and convince you that it is a must-read if you are a software engineer.</p>
+<p><img decoding="async" loading="lazy" alt="Designing Data-Intensive Applications" src="https://evantay.com/assets/images/ddia-30dc818fa9e54c52f11a89f8279d4f28.png" width="748" height="982" class="img_ev3q"></p>
+<p>I kickstarted my engineering career back in January 2021, as a full stack engineer at <a href="https://padlet.com/" target="_blank" rel="noopener noreferrer">Padlet</a>. During the onboarding process, my (amazing) mentor, Brian, imparted a great deal of guidance to me. One of his tips was that I should take a look at Kleppman’s <a href="https://dataintensive.net/" target="_blank" rel="noopener noreferrer">Designing Data-Intensive Applications</a>. Thankfully, we had two copies of the book in the office, purchased by my (also amazing) boss, Shu Yang, who recommended me to read it too. I’m thankful I ended up taking their advice, because I was able to glean so much insights from Kleppman, which happened to be highly applicable to the infrastructure and full stack projects I was developing.</p>
+<blockquote>
+<p>"This book should be required reading for software engineers." - Kevin Scott, Chief Technology Officer at Microsoft</p>
+</blockquote>
+<p>Like Brian, Shu Yang and Kevin, I now also believe all software engineers working on a distributed, cloud or data-intensive system will greatly benefit from reading the book. It provides the fundamental framework for thinking about these systems, and also the vocabulary to communicate such thoughts. Coupled together, these insights will empower you to make better design decisions and effectively convey them, even if you lack prior experience in the problem domain.</p>
+<p>Kleppman also compared the key fundamental ideas behind the broad range of popular data systems out there today, by discussing their advantages, limitations and trade-offs, rather than diving deep into the intricacies of each tool. This was ideal given that the book's objective was to help us choose the right tool for the right occasion, which these characteristics will be more relevant for.</p>
+<p>If you lack the time (or will) to pour over the entire book, you should at least check out the opening chapter. In it, Kleppman gives a comprehensive yet succinct overview of what I mentioned above, and provides a clear, detailed explanation of the three key principles in designing data-intensive system architecture: Reliability, Scalability and Maintainability. Just reading this first chapter alone was beneficial to me, as I was now able to better understand and discuss architectural concerns with my team.</p>
+<p>If you're still not convinced whether to invest your time into this book, you can check out a <a href="https://evantay.com/docs/reliable-scalable-maintainable">summary I've written for the first chapter</a>, where I’ve condensed Kleppman’s opening discourse on Reliability, Scalability and Maintainability. I’m certain it’ll provide a glimpse into the many lessons that <a href="https://dataintensive.net/" target="_blank" rel="noopener noreferrer">Designing Data-Intensive Applications</a> has to share, and if you do read the book, definitely let me know what you think!</p>
+<p><em>Special thanks to <a href="https://www.linkedin.com/in/thebestvanessatay" target="_blank" rel="noopener noreferrer">Vanessa Tay</a> for editing this!</em></p>]]></content>
+        <author>
+            <name>Evan Tay</name>
+            <uri>https://github.com/DigiPie</uri>
+        </author>
+        <category label="book-review" term="book-review"/>
+        <category label="software-engineering" term="software-engineering"/>
+        <category label="software-architecture" term="software-architecture"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Integrating PostHog product analytics with Docusaurus v2 on GitHub Pages]]></title>
+        <id>https://evantay.com/blog/docusaurus-posthog</id>
+        <link href="https://evantay.com/blog/docusaurus-posthog"/>
+        <updated>2021-06-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I integrated PostHog analytics into this website today. I decided to do so after reading Gergely Orosz's Stats page on his blog The Pragmatic Engineer. He had installed Plausible analytics and made his analytics dashboard public. I thought that was cool and wanted to do the same.]]></summary>
+        <content type="html"><![CDATA[<p>I integrated <a href="https://posthog.com/" target="_blank" rel="noopener noreferrer">PostHog</a> analytics into this website today. I decided to do so after reading Gergely Orosz's <a href="https://blog.pragmaticengineer.com/stats/" target="_blank" rel="noopener noreferrer">Stats</a> page on his blog <a href="https://blog.pragmaticengineer.com/" target="_blank" rel="noopener noreferrer">The Pragmatic Engineer</a>. He had installed <a href="https://plausible.io/" target="_blank" rel="noopener noreferrer">Plausible</a> analytics and made his <a href="https://plausible.io/blog.pragmaticengineer.com?period=6mo" target="_blank" rel="noopener noreferrer">analytics dashboard</a> public. I thought that was cool and wanted to do the same.</p>
+<p>I managed to find a <a href="https://github.com/infracost/docusaurus-plugin-plausible" target="_blank" rel="noopener noreferrer">Plausible plugin</a> for <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus v2</a>, which is what this website runs on. But I decided to use <a href="https://posthog.com/" target="_blank" rel="noopener noreferrer">PostHog</a> instead. It also has a <a href="https://github.com/PostHog/posthog-docusaurus" target="_blank" rel="noopener noreferrer">Docusaurus plugin</a> and a public dashboard feature. I decided so because it is free and Plausible isn't.</p>
+<p>Plausible only offers a free 30-day trial, and would cost at least $6 monthly subsequently. In comparison, PostHog has a free non-expiring tier which provides up to 1 million events every month. It also requires no credit card and is completely self-serve. There was no need to request and wait for a free license. It took me less than 10 minutes from signing up to getting the analytics running.</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>PostHog is open-source</div><div class="admonitionContent_BuS1"><p>If you are looking for an open-source solution you can self-host, PostHog may be it.</p></div></div>
+<p>Despite what I have shared so far, I would still choose Plausible over PostHog if the former was free too. That's because the Plausible's dashboard interface looks much better and has more visualization options. For comparison, you can view the <a href="https://app.posthog.com/shared_dashboard/OpHsSFokK2VvhHFF-5Jn0rgVzqaMRg" target="_blank" rel="noopener noreferrer">PostHog dashboard</a> for this site, and the <a href="https://plausible.io/blog.pragmaticengineer.com?period=6mo" target="_blank" rel="noopener noreferrer">Plausible dashboard</a> for <a href="https://blog.pragmaticengineer.com/" target="_blank" rel="noopener noreferrer">The Pragmatic Engineer</a>.</p>
+<p>If you want to integrate PostHog with your Docusaurus site, you can follow the guide below. The later steps are for deployment to GitHub Pages via GitHub Actions. But you can easily modify them for other platforms and deployment workflows. I will give some tips for doing that.</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="installation-guide">Installation Guide<a href="https://evantay.com/blog/docusaurus-posthog#installation-guide" class="hash-link" aria-label="Direct link to Installation Guide" title="Direct link to Installation Guide">​</a></h2>
+<ol>
+<li>
+<p>Sign up for <strong>PostHog Cloud</strong> on <a href="https://posthog.com/" target="_blank" rel="noopener noreferrer">posthog.com</a>.</p>
+</li>
+<li>
+<p>Get your <strong>Project API Key</strong> from <a href="https://app.posthog.com/project/settings" target="_blank" rel="noopener noreferrer">Project Settings</a>.
+<img decoding="async" loading="lazy" alt="PostHog Project API Key" src="https://evantay.com/assets/images/posthog_api_key-fc6aa3dcbe700acaa44ac9d74e270d69.png" width="2684" height="350" class="img_ev3q"></p>
+</li>
+<li>
+<p>Install the <code>posthog-docusaurus</code> package by running this command at your Docusaurus project root:</p>
+<div class="language-zsh codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-zsh codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">yarn add posthog-docusaurus</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>or</p>
+<div class="language-zsh codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-zsh codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">npm install --save posthog-docusaurus</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>
+<p>Add this code block to <code>docusaurus.config.js</code>:</p>
+<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">module</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">exports</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token literal-property property">plugins</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token string" style="color:rgb(195, 232, 141)">"posthog-docusaurus"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token literal-property property">themeConfig</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token literal-property property">posthog</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token literal-property property">apiKey</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> process</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">env</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token constant" style="color:rgb(130, 170, 255)">POSTHOG_API_KEY</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">||</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"DEV"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token literal-property property">appUrl</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"https://app.posthog.com"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// optional</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token literal-property property">enableInDevelopment</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token boolean" style="color:rgb(255, 88, 116)">false</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// optional</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>The example in the official PostHog guide for <a href="https://posthog.com/docs/libraries/docusaurus" target="_blank" rel="noopener noreferrer">Docusaurus v2 Integration</a> inserts the API key directly into the code (e.g. <code>apiKey: "phc_fakekeyhHBZOuIq"</code>). It is a bad idea to do so, especially if you host your code publicly (i.e. on a GitHub public repo). It is good practice to keep API keys secret and outside of application code instead. We will be using <a href="https://docs.github.com/en/actions/reference/encrypted-secrets" target="_blank" rel="noopener noreferrer">GitHub Encrypted Secrets</a> to achieve that.</p></div></div>
+</li>
+<li>
+<p>Add a <strong>repository secret</strong> to the GitHub repo hosting your site's code.
+<img decoding="async" loading="lazy" alt="GitHub Action Secrets" src="https://evantay.com/assets/images/posthog_actions_secrets-7a037b4178c7a64a3976caf1d1a95aea.png" width="2566" height="1442" class="img_ev3q"></p>
+<p><strong>Settings</strong> &gt; <strong>Secrets</strong> &gt; <strong>New repository secret</strong> &gt; <strong>Name:</strong> <code>POSTHOG_API_KEY</code></p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>If you are using another deployment platform</div><div class="admonitionContent_BuS1"><p>There should be a settings panel which allows you to specify environment variables or secrets to insert into your application deployments securely. Put your <code>POSTHOG_API_KEY</code> there. Skip the next step.</p></div></div>
+</li>
+<li>
+<p>Open the GitHub Action workflow file responsible for deploying your site, and add the environment variable <code>POSTHOG_API_KEY</code> to the Docusaurus build step:</p>
+<div class="language-yml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-yml codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token key atrule">env</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">POSTHOG_API_KEY</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> $</span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"> secrets.POSTHOG_API_KEY </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Example:</p>
+<div class="language-yml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-yml codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># Install and build Docusaurus website</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain"> </span><span class="token key atrule">name</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> Build Docusaurus website</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">run</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">|</span><span class="token scalar string" style="color:rgb(195, 232, 141)"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token scalar string" style="color:rgb(195, 232, 141)">    cd website</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token scalar string" style="color:rgb(195, 232, 141)">    npm install </span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token scalar string" style="color:rgb(195, 232, 141)">    npm run build</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">env</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token key atrule">POSTHOG_API_KEY</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> $</span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"> secrets.POSTHOG_API_KEY </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ol>
+<p>That's it! Once you deploy your new changes, the plugin will automatically start tracking pageviews, clicks and more. For more customisation options, you can check out the <a href="https://github.com/PostHog/posthog-docusaurus" target="_blank" rel="noopener noreferrer">posthog-docusaurus</a> plugin repo and the PostHog guide for <a href="https://posthog.com/docs/libraries/docusaurus" target="_blank" rel="noopener noreferrer">Docusaurus v2 Integration</a>. You can also check out the <a href="https://github.com/DigiPie/kaya-folio/commit/fd6b029dbc0be34909cd539f2d33bac5de8209bc" target="_blank" rel="noopener noreferrer">commit</a> I made to integrate PostHog into this website.</p>
+<p>If you want to deploy Docusaurus to GitHub Pages, check out my post on <a href="https://evantay.com/blog/docusaurus-gh-action">GitHub Action for Docusaurus</a>.</p>]]></content>
+        <author>
+            <name>Evan Tay</name>
+            <uri>https://github.com/DigiPie</uri>
+        </author>
+        <category label="docusaurus" term="docusaurus"/>
+        <category label="posthog" term="posthog"/>
+        <category label="analytics" term="analytics"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Top 3 reasons why you should start investing with StashAway today!]]></title>
+        <id>https://evantay.com/blog/stashaway</id>
+        <link href="https://evantay.com/blog/stashaway"/>
+        <updated>2021-03-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This article was posted sometime back in early 2021 and may be outdated. Refer to SingSaver instead for updated information.]]></summary>
+        <content type="html"><![CDATA[<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Deprecated</div><div class="admonitionContent_BuS1"><p>This article was posted sometime back in early 2021 and may be outdated. Refer to <a href="https://www.singsaver.com.sg/investments/robo-advisory" target="_blank" rel="noopener noreferrer">SingSaver</a> instead for updated information.</p></div></div>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>Disclaimer</div><div class="admonitionContent_BuS1"><p>This post is not sponsored, and does not constitute financial advice of any form (I bet you know better than me). Read at your own discretion.</p></div></div>
+<p>Signing up on <a href="https://www.stashaway.sg/referrals/tayegd" target="_blank" rel="noopener noreferrer">StashAway</a> (a <a href="https://blog.moneysmart.sg/invest/robo-advisors-singapore/#what-are-robo-advisors" target="_blank" rel="noopener noreferrer">robo-advisor platform</a>) back in the early 2020s was the first step in taking control of my financial health. Before that, 100% of my cash was just sitting in a POSB Savings account, growing at an incredibly pointless rate of <a href="https://www.dbs.com.sg/personal/rates-online/deposit-rates.page" target="_blank" rel="noopener noreferrer">0.05% per annum</a>. I might as well have kept the money under my mattress.</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="backstory">Backstory<a href="https://evantay.com/blog/stashaway#backstory" class="hash-link" aria-label="Direct link to Backstory" title="Direct link to Backstory">​</a></h2>
+<p>I was hesitant to invest for years because I used to think any form of investment was risky. Like <del>most</del> some Singaporeans, I <del>am</del> was <a href="http://www.singlishdictionary.com/" target="_blank" rel="noopener noreferrer"><em>kiasi</em></a>. I was afraid of the unknown. What eventually changed my mind was chancing upon this article: <a href="https://thewokesalaryman.com/2020/10/16/the-big-problem-playing-it-too-safe-with-money-in-our-20s/" target="_blank" rel="noopener noreferrer"><em>The big problem (of) playing it too safe with money in our 20s</em></a> by <em>thewokesalaryman</em>, and the following quote:</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Quote of the Day</div><div class="admonitionContent_BuS1"><p>Ironically, by not taking any risks and letting all your money get eroded by certain inflation, you are actually doing the riskiest thing.</p></div></div>
+<p>This quote was the wake-up call for me to start investing, and could be yours too if you are someone who is privileged enough to start doing the same (i.e. you have the financial ability to buy bubble tea at least once a week).</p>
+<p><img decoding="async" loading="lazy" alt="Milksha&amp;#39;s Bubble Tea" src="https://evantay.com/assets/images/bubbletea-4acc6e9960cd794bcb3fd3f5e1b6a217.jpg" width="960" height="1280" class="img_ev3q"></p>
+<p><em>Photo by my bubble-tea buddy Elsie Lee</em><br>
+<strong>Pictured (from left):</strong> Milksha's Fresh Milk, and Izumo Matcha Milk with Honey Pearls<br>
+<strong>Is Milksha a buy?</strong> Milksha isn't cheap by any stretch but you can't put a price tag on happiness <!-- -->⭐</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Pro Tip from fellow bubble-tea enthusiast Freda</div><div class="admonitionContent_BuS1"><p>Buy Milksha coupons from Shopee beforehand to get massive discounts!</p></div></div>
+<p>Anyhow, I reasoned the best way to kick-start my investment journey would be with a robo-advisor platform, given how beginner-friendly it is, how low the commission fees are, and <del>how lazy I am</del> given the passive and minimal-effort investment a robo-advisor offers.</p>
+<p>You can check out this <a href="https://dollarsandsense.sg/robo-advisors-in-singapore-what-you-need-to-know-before-investing/" target="_blank" rel="noopener noreferrer">page</a> by <em>dollarsandsense</em> giving an introduction to robo-advisors for more reasons why you should or should not invest with a robo-advisor platform.</p>
+<p>I ended up choosing StashAway as my platform of choice, and here are the top 3 reasons why!</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="1-stashaways-all-star-c-suite">1. StashAway's all-star C-suite<a href="https://evantay.com/blog/stashaway#1-stashaways-all-star-c-suite" class="hash-link" aria-label="Direct link to 1. StashAway's all-star C-suite" title="Direct link to 1. StashAway's all-star C-suite">​</a></h2>
+<p>StashAway is led by an "Expert Investment Team" (their words not mine) made up of the following co-founders:</p>
+<ul>
+<li>Chief Executive Officer Michele Ferrario, a former CEO of <a href="https://www.zalora.sg/about/" target="_blank" rel="noopener noreferrer">Zalora Group</a> and the co-founder of <a href="https://www.rocket-internet.com/" target="_blank" rel="noopener noreferrer">Rocket Internet</a></li>
+<li>Chief Investment Officer Freddy Lim, a former Managing Director and Global Head of Derivatives Strategy at <a href="https://www.nomura.com/" target="_blank" rel="noopener noreferrer">Nomura</a></li>
+<li>Chief Technology Officer Nino Ulsamer, the co-founder and former CTO of a now-defunct (oops) software solution company for e-commerce analytics</li>
+</ul>
+<p>These guys have real, solid credentials. They are far more experienced in investing than an amateur like me (surprise surprise), and this assured me that my investments in StashAway would be handled by well-informed and secure hands.</p>
+<p>Credentials aside, they also have a proven track record of high returns for most of their portfolios. Despite how volatile and uncertain 2020 was, I achieved an <strong>impressive 19.59% <a href="https://www.investopedia.com/terms/t/time-weightedror.asp" target="_blank" rel="noopener noreferrer">time-weighted return</a></strong> for my portfolio of <a href="https://www.stashaway.sg/r/what-is-the-stashaway-risk-index" target="_blank" rel="noopener noreferrer">StashAway Risk Index</a> 22%, between 3rd of February 2020, and 10th of March, 2021.</p>
+<p><img decoding="async" loading="lazy" alt="Evan&amp;#39;s StashAway returns" src="https://evantay.com/assets/images/stashaway_returns-256d650580fc97ddb678ec06b3aa49ba.png" width="899" height="184" class="img_ev3q"></p>
+<p>To find out how well StashAway's portfolios performed at other risk-levels, check out their article: <a href="https://www.stashaway.my/r/our-returns-2020" target="_blank" rel="noopener noreferrer"><em>Our Returns in 2020</em></a>.</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="2-no-minimum-amount-at-all">2. No minimum amount at all<a href="https://evantay.com/blog/stashaway#2-no-minimum-amount-at-all" class="hash-link" aria-label="Direct link to 2. No minimum amount at all" title="Direct link to 2. No minimum amount at all">​</a></h2>
+<p>Another robo-advisor platform I was considering at the time was <a href="https://endowus.com/" target="_blank" rel="noopener noreferrer">EndowUs</a>. However, I ultimately went with StashAway because while EndowUs had a minimum investment amount of $10,000.00 (added cents for emphasis), <strong>StashAway had no minimum amount at all</strong>. This is still the case as of 11 March 2021.</p>
+<p>As someone new to investing, the decision to invest $10,000 all at once was too intimidating for me to make. More importantly, I was still a student back then, one who did not have that many digits in his bank account. Therefore, StashAway was a natural choice for its low entry barrier!</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="3-my-money-is-safe">3. My money is safe<a href="https://evantay.com/blog/stashaway#3-my-money-is-safe" class="hash-link" aria-label="Direct link to 3. My money is safe" title="Direct link to 3. My money is safe">​</a></h2>
+<p>Naturally, I was concerned about how safe using StashAway would be. More specifically, I was worried about losing my initial investment of $100 in StashAway, in the event of StashAway filing for bankruptcy. As it turned out, it was an unfound concern given that:</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>Quote</div><div class="admonitionContent_BuS1"><p>Your money is kept entirely separate from StashAway's finances. To ensure that we never touch your money, we use custodian banks that hold your money, whether it's in cash or in securities.</p><p>In these custodian institutions, your assets are always in a segregated account-- one that is separate from StashAway's operations and assets. This means that you will always have full access and claim to your assets no matter what happens to StashAway.</p></div></div>
+<p>You can read more about StashAway's Frequently Asked Questions <a href="https://www.stashaway.sg/faq/115003747047-what-happens-to-my-money-if-stashaway-gets-acquired-goes-public-or-closes" target="_blank" rel="noopener noreferrer">here</a>. Do your own research <em>hor</em>!</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="closing-note">Closing note<a href="https://evantay.com/blog/stashaway#closing-note" class="hash-link" aria-label="Direct link to Closing note" title="Direct link to Closing note">​</a></h2>
+<p>I hope you found this post/rambling/<em>thing</em> (*gestures wildly at everything) insightful in any way. If you are still interested in StashAway, but not entirely convinced by me (I’ll try not to take it personally), you can check out this <a href="https://www.youtube.com/watch?v=0IvyrANMz78" target="_blank" rel="noopener noreferrer">video</a> by <em>Kevin Learns Investing</em>. All the best with getting financially fit!</p>
+<p><em>Special thanks to Vanessa Tay for editing this!</em></p>]]></content>
+        <author>
+            <name>Evan Tay</name>
+            <uri>https://github.com/DigiPie</uri>
+        </author>
+        <category label="investing" term="investing"/>
+        <category label="sharing" term="sharing"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHub Action for Docusaurus]]></title>
+        <id>https://evantay.com/blog/docusaurus-gh-action</id>
+        <link href="https://evantay.com/blog/docusaurus-gh-action"/>
+        <updated>2021-01-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I got tired of deploying my Docusaurus website to GitHub Pages manually, and decided to do something about it using GitHub Action.]]></summary>
+        <content type="html"><![CDATA[<p>I got tired of deploying my Docusaurus website to GitHub Pages manually, and decided to do something about it using GitHub Action.</p>
+<p>Initially, I was planning to follow the <a href="https://v2.docusaurus.io/docs/deployment#triggering-deployment-with-github-actions" target="_blank" rel="noopener noreferrer">official guide</a> on doing so. However, it was actually much more complicated than I liked. I did not really want to generate and store a SSH key on GitHub. Too much effort man.</p>
+<p>I decided it was better off for me to write my own script. Here it is:</p>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="deploy-docusaurusyml">deploy-docusaurus.yml<a href="https://evantay.com/blog/docusaurus-gh-action#deploy-docusaurusyml" class="hash-link" aria-label="Direct link to deploy-docusaurus.yml" title="Direct link to deploy-docusaurus.yml">​</a></h2>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>caution</div><div class="admonitionContent_BuS1"><p>The script below assumes that your Docusaurus website resides at <code>/website</code> of your repo. If that is not the case for you, you will need to:</p><ul>
+<li>Change <code>cd website</code> to <code>cd &lt;docu_site_root&gt;</code>, or delete the entire line if your Docusaurus website is at the root of your repo <code>/</code></li>
+<li>Change <code>build_dir</code>'s value from <code>website/build</code> to <code>&lt;docu_site_root&gt;/build</code>, or <code>build</code> if your Docusaurus website is at the root of your repo <code>/</code></li>
+</ul></div></div>
+<div class="language-yml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-yml codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token key atrule">name</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> deploy</span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain">docusaurus</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token key atrule">on</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">push</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token key atrule">branches</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">main</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">pull_request</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token key atrule">branches</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">main</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># Allows you to run this workflow manually from the Actions tab</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">workflow_dispatch</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># A workflow run is made up of one or more jobs that can run sequentially or in parallel</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token key atrule">jobs</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">publish</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token key atrule">runs-on</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> ubuntu</span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain">latest</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token key atrule">steps</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain"> </span><span class="token key atrule">name</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> Check out repo</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">        </span><span class="token key atrule">uses</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> actions/checkout@v2</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># Node is required for npm</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain"> </span><span class="token key atrule">name</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> Set up Node</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">        </span><span class="token key atrule">uses</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> actions/setup</span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain">node@v2</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">        </span><span class="token key atrule">with</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">          </span><span class="token key atrule">node-version</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"12"</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># Install and build Docusaurus website</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain"> </span><span class="token key atrule">name</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> Build Docusaurus website</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">        </span><span class="token key atrule">run</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">|</span><span class="token scalar string" style="color:rgb(195, 232, 141)"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token scalar string" style="color:rgb(195, 232, 141)">          cd website</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token scalar string" style="color:rgb(195, 232, 141)">          npm install </span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token scalar string" style="color:rgb(195, 232, 141)">          npm run build</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain"> </span><span class="token key atrule">name</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> Deploy to GitHub Pages</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">        </span><span class="token key atrule">if</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> success()</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">        </span><span class="token key atrule">uses</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> crazy</span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain">max/ghaction</span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain">github</span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain">pages@v2</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">        </span><span class="token key atrule">with</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">          </span><span class="token key atrule">target_branch</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> gh</span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain">pages</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">          </span><span class="token key atrule">build_dir</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> website/build</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">        </span><span class="token key atrule">env</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">          </span><span class="token key atrule">GITHUB_TOKEN</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> $</span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"> secrets.GITHUB_TOKEN </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>GitHub will automatically add <code>GITHUB_TOKEN</code> to Secrets. You need not do so. See <a href="https://docs.github.com/en/actions/reference/authentication-in-a-workflow" target="_blank" rel="noopener noreferrer">this</a> for more information.</p></div></div>
+<p>To see this script in action, visit my <a href="https://github.com/DigiPie/kaya-folio/actions" target="_blank" rel="noopener noreferrer">personal website repo</a>.</p>]]></content>
+        <author>
+            <name>Evan Tay</name>
+            <uri>https://github.com/DigiPie</uri>
+        </author>
+        <category label="docusaurus" term="docusaurus"/>
+        <category label="github-action" term="github-action"/>
+        <category label="ci" term="ci"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[History of EvanTay.com]]></title>
+        <id>https://evantay.com/blog/history</id>
+        <link href="https://evantay.com/blog/history"/>
+        <updated>2020-12-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[_Established in 2013_]]></summary>
+        <content type="html"><![CDATA[<p><strong><em>Established in 2013</em></strong></p>
+<p>I first bought my personal domain <a href="https://www.evantay.com/" target="_blank" rel="noopener noreferrer">www.evantay.com</a> way back in 2013. Younger me thought it would be cool and fun to run my own website, and it still is. <!-- -->😎</p>
+<p>To be honest, I can't even remember what my very first website looked like, but I am quite sure it was built using vanilla HTML and CSS, something unthinkable in this day and age.</p>
+<p><strong><em>Move to Grav CMS in 2017</em></strong></p>
+<p>Given that I was building everything from the ground up, maintainability became problematic. In 2017, older younger me decided it wasn't worth the effort to do it myself, and I started shopping for a framework to adopt. I eventually settled on using <a href="https://getgrav.org/" target="_blank" rel="noopener noreferrer">Grav</a>, a flat-file Content Management System (CMS) powered by PHP. I chose it because I was familiar and interested in PHP at the time.</p>
+<p>To get started on building my second site quickly, I used a one-page Grav theme <a href="https://github.com/getgrav/grav-theme-ceevee" target="_blank" rel="noopener noreferrer">Ceevee</a>.</p>
+<p><img decoding="async" loading="lazy" alt="Ceevee" src="https://evantay.com/assets/images/ceevee-c984f85d7b99c9bc76ee1ef040108bb5.png" width="2842" height="1358" class="img_ev3q"></p>
+<p>However, I still wanted to add my personal touch to my portfolio website. This led me to heavily modifying the theme numerous times over the years, from 2017 up until 2020. It was a really fun journey while it lasted.</p>
+<p><img decoding="async" loading="lazy" alt="EvanTay.com v1 site" src="https://evantay.com/assets/images/evantay_v1-3aa5b8191d0711f10104318d8524a768.png" width="2842" height="1358" class="img_ev3q"></p>
+<p><strong><em>Move to Cloud in 2017</em></strong></p>
+<p>About the same time, I also moved from using a website host to <a href="https://digitalocean.com/" target="_blank" rel="noopener noreferrer">DigitalOcean</a>. I hosted my website on the cheapest droplet (VM) I could find (the 5 bucks one). I ran CentOS on the VM, and used an <a href="https://www.nginx.com/" target="_blank" rel="noopener noreferrer">Nginx</a> web server to serve the Grav website. Pretty old-school right?</p>
+<p><strong><em>Start of DigiDocs in 2019</em></strong></p>
+<p>Last year, during January 2019, I also started working on a separate pet project called <a href="https://digipie.github.io/digidocs/" target="_blank" rel="noopener noreferrer">DigiDocs</a>, my personal documentation website. I was motivated to do so because I wanted to consolidate useful knowledge gained from attending university classes, and my own self-directed learning. I kept the site updated up until October 2020.</p>
+<p>Back then, <a href="https://digipie.github.io/digidocs/" target="_blank" rel="noopener noreferrer">DigiDocs</a> lived at <a href="https://www.evantay.com/docs/" target="_blank" rel="noopener noreferrer">www.evantay.com/docs</a>, and was served by the same Nginx server which served my main portfolio website.</p>
+<p><strong><em>Move to Docusaurus v2 in 2020</em></strong></p>
+<p>More recently, in October 2020, I decided to replace both documentation and portfolio site with a single <a href="https://v2.docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus v2</a> website (which you're looking at right now).</p>
+<p>I did so because I wanted to:</p>
+<ol>
+<li><strong>Keep up with the latest technologies</strong>: I wanted to learn more about <a href="https://v2.docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus v2</a> and also <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">ReactJS</a>, which is what Docusaurus is built upon. It was about time to move on from PHP.</li>
+<li><strong>Reduce operating costs by moving from a dynamic to static website</strong> <!-- -->💸<!-- --> : Given that all of my content are static, it did not make sense that I was using a dynamic PHP site generator such as <a href="https://getgrav.org/" target="_blank" rel="noopener noreferrer">Grav</a>. By moving to a static website, I will be able to host my site at a cheaper cost or even for free! I am planning to achieve the latter by using <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub pages</a>.</li>
+</ol>
+<p>So far, the experience of using <a href="https://v2.docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus v2</a> has been great! I am glad I started on this migration journey, despite feeling sentimental about my old portfolio and documentation websites.</p>]]></content>
+        <author>
+            <name>Evan Tay</name>
+            <uri>https://github.com/DigiPie</uri>
+        </author>
+        <category label="sharing" term="sharing"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[STACK 2020 Developers Conference]]></title>
+        <id>https://evantay.com/blog/stack-2020</id>
+        <link href="https://evantay.com/blog/stack-2020"/>
+        <updated>2020-12-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[STACK 2020 Developers Conference is GovTech’s flagship conference and the largest government-led developers event in Singapore that connects government, industry and the tech community.]]></summary>
+        <content type="html"><![CDATA[<p><a href="https://www.stack.gov.sg/" target="_blank" rel="noopener noreferrer">STACK 2020 Developers Conference</a> is GovTech’s flagship conference and the largest government-led developers event in Singapore that connects government, industry and the tech community.</p>
+<p>In this post, you will find my key takeaways for some of the sessions I attended during the conference. I chose to attend these sessions based on my interests in Cloud and Microservices.</p>
+<p><strong>Day 1:</strong></p>
+<ul>
+<li><strong><a href="https://evantay.com/blog/stack-2020#opening-note">Opening note</a></strong> by Dr. Vivian Balakrishnan: Minister-in-charge of Smart Nation Programme Office and Chan Cheow Hoe: Government Chief Digital Technology Officer</li>
+<li><strong><a href="https://evantay.com/blog/stack-2020#rethink-reinvent-rebuild">Rethink, Reinvent, Rebuild</a></strong> by Jeff Barr: Vice President &amp; Chief Evangelist at Amazon Web Services</li>
+<li><strong><a href="https://evantay.com/blog/stack-2020#seeding-the-cloud-engineering-solutions-for-cloud-adoption">Seeding the Cloud: Engineering Solutions for Cloud Adoption</a></strong> by Hunter Nield: Distinguished Engineer at GovTech</li>
+<li><strong><a href="https://evantay.com/blog/stack-2020#six-principles-for-refactoring-a-monolith-to-microservices">Six Principles for Refactoring a Monolith to Microservices</a></strong> by Chris Richardson: Architect at Eventuate, Inc</li>
+</ul>
+<p><strong>Day 2:</strong></p>
+<ul>
+<li><strong><a href="https://evantay.com/blog/stack-2020#you-wont-believe-this-hack-to-improve-your-technical-communication">You Won’t BELIEVE This HACK to Improve Your Technical Communication!</a></strong> by Nikhil Choudhary: Software Engineer at Open Government Products</li>
+<li><strong><a href="https://evantay.com/blog/stack-2020#devops-cloud-and-back-again">DevOps: Cloud and Back Again</a></strong> by Mitchell Hashimoto: Co-Founder and CTO at HashiCorp</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="opening-note">Opening note<a href="https://evantay.com/blog/stack-2020#opening-note" class="hash-link" aria-label="Direct link to Opening note" title="Direct link to Opening note">​</a></h2>
+<p><strong>Speaker(s)</strong></p>
+<ul>
+<li><a href="http://vivian.balakrishnan.sg/" target="_blank" rel="noopener noreferrer">Dr. Vivian Balakrishnan</a>: Minister-in-charge of Smart Nation Programme Office</li>
+<li><a href="https://www.linkedin.com/in/cheow-hoe-chan-92646215/" target="_blank" rel="noopener noreferrer">Chan Cheow Hoe</a>: Government Chief Digital Technology Officer</li>
+</ul>
+<p><strong>Key takeaways</strong></p>
+<p>The government believes openness is the way to building a smart nation.</p>
+<p>On that note, they believe in:</p>
+<ul>
+<li>Adopting the best solutions there are, including those from the industry, instead of doing everything in-house<!-- -->
+<ul>
+<li><a href="https://www.developer.tech.gov.sg/technologies/infrastructure-and-hosting/government-commercial-cloud" target="_blank" rel="noopener noreferrer">Government Commercial Cloud</a>: AWS, Azure, GCP</li>
+</ul>
+</li>
+<li>Collaborating with industry developers via open-source<!-- -->
+<ul>
+<li><a href="https://www.developer.tech.gov.sg/" target="_blank" rel="noopener noreferrer">Singapore Government Developer Portal</a>: Collaboration platform for government and industry developers</li>
+</ul>
+</li>
+<li>Providing transparency to citizens and industry professionals<!-- -->
+<ul>
+<li><a href="https://www.tracetogether.gov.sg/" target="_blank" rel="noopener noreferrer">TraceTogether</a>: Transparent and open collaboration with the industry</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="rethink-reinvent-rebuild">Rethink, Reinvent, Rebuild<a href="https://evantay.com/blog/stack-2020#rethink-reinvent-rebuild" class="hash-link" aria-label="Direct link to Rethink, Reinvent, Rebuild" title="Direct link to Rethink, Reinvent, Rebuild">​</a></h2>
+<p><strong>Speaker(s)</strong></p>
+<ul>
+<li><a href="https://www.linkedin.com/in/jeffbarr/" target="_blank" rel="noopener noreferrer">Jeff Barr</a>: Vice President &amp; Chief Evangelist at Amazon Web Services</li>
+</ul>
+<p><strong>Key takeaways</strong></p>
+<ul>
+<li><strong>Rethink</strong> - Take a good look at where we are<!-- -->
+<ul>
+<li>Everything has changed due to COVID-19, Quarantine, WFH</li>
+<li>No firm ground and constants are now variables</li>
+<li>People are more receptive to change and invention right now</li>
+<li>Good time for innovation and progress</li>
+</ul>
+</li>
+<li><strong>Reinvent</strong> - Solve challenges in a new way<!-- -->
+<ul>
+<li>Dream big dreams, address these challenges, change the world</li>
+<li>Share what you learn to reinforce what you learned<!-- -->
+<ul>
+<li>Content creation / video streaming possibilities</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Rebuild</strong> - Put what you have learned to work<!-- -->
+<ul>
+<li>Take what you learn, do something awesome, and remember to share it!</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="seeding-the-cloud-engineering-solutions-for-cloud-adoption">Seeding the Cloud: Engineering Solutions for Cloud Adoption<a href="https://evantay.com/blog/stack-2020#seeding-the-cloud-engineering-solutions-for-cloud-adoption" class="hash-link" aria-label="Direct link to Seeding the Cloud: Engineering Solutions for Cloud Adoption" title="Direct link to Seeding the Cloud: Engineering Solutions for Cloud Adoption">​</a></h2>
+<p><strong>Speaker(s)</strong></p>
+<ul>
+<li><a href="https://www.linkedin.com/in/hunter/?originalSubdomain=sg" target="_blank" rel="noopener noreferrer">Hunter Nield</a>: Distinguished Engineer at GovTech</li>
+</ul>
+<p><strong>Key takeaways</strong></p>
+<p>Hunter shared about how GovTech uses Infrastructure-as-Code (IaC) and Policy-as-Code (PaC) to accelerate cloud operations. Read <a href="https://evantay.com/blog/stack-2020#devops-cloud-and-back-again">#devops-cloud-and-back-again</a> by Hashicorp CTO Mitchell for more information.</p>
+<ul>
+<li><strong>Establishing a Landing Zone</strong>
+<ul>
+<li>A repeatable configuration across multiple Cloud Service Providers (CSP)</li>
+<li>The foundation of any cloud environment at scale</li>
+<li>Serves as a consistent platform for governance, onboarding, networking and security</li>
+</ul>
+</li>
+<li><strong>Accelerating deployment with Infrastructure-as-Code (IaC)</strong>
+<ul>
+<li>Code and configuration to provision cloud resources and Landing Zones</li>
+<li>Develop common templates for consistency and familiarity</li>
+<li>Get feedback on pain points faced by "customers" while using said templates</li>
+</ul>
+</li>
+<li><strong>Consistent audit and reporting with Policy-as-Code (PaC)</strong>
+<ul>
+<li>Code and configuration to test and validate cloud infrastructure deployed by IaC</li>
+<li>Reduce need for manual audits and speed up auditing process</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="six-principles-for-refactoring-a-monolith-to-microservices">Six Principles for Refactoring a Monolith to Microservices<a href="https://evantay.com/blog/stack-2020#six-principles-for-refactoring-a-monolith-to-microservices" class="hash-link" aria-label="Direct link to Six Principles for Refactoring a Monolith to Microservices" title="Direct link to Six Principles for Refactoring a Monolith to Microservices">​</a></h2>
+<p><strong>Speaker(s)</strong></p>
+<ul>
+<li><a href="https://eventuate.io/about.html" target="_blank" rel="noopener noreferrer">Chris Richardson</a>: Architect at Eventuate, Inc</li>
+</ul>
+<p><strong>Key takeaways</strong></p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>Quote</div><div class="admonitionContent_BuS1"><p>"A Microservice application is structured as a set of loosely coupled services that can be independently deployed." - Chris Richardson</p></div></div>
+<p>Chris shared 6 principles to follow when moving from a Monolith to a Microservice architecture.</p>
+<p>Here are 5 of them <!-- -->😉<!-- --> :</p>
+<ul>
+<li>Adopt Microservice architecture for the right reasons<!-- -->
+<ul>
+<li>Monolith architecture is not necessary bad (an anti-pattern), it has its valid use-cases</li>
+<li>Adopt Microservice architecture because it allows you to deliver software rapidly, frequently and sustainability, with small, autonomous teams working on the different microservices</li>
+</ul>
+</li>
+<li>Migrate to Microservice architecture incrementally rather than via Big Bang rewrite<!-- -->
+<ul>
+<li><strong>Strangler Application</strong>: Incrementally migrate functionality from existing Monolith application to new Strangler Microservice application<!-- -->
+<ul>
+<li>Extract existing code modules and database tables out into microservices</li>
+<li>Implement new features as microservices</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Consider Return-on-Investment when deciding which modules to convert into microservices<!-- -->
+<ul>
+<li>Consider benefit of decoupling said module</li>
+<li>Consider cost of decoupling<!-- -->
+<ul>
+<li>How difficult it is to do so</li>
+<li>How many inbound dependencies it has<!-- -->
+<ul>
+<li>If module A is depended upon by module B, consider extracting module B first</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Define the service boundaries correctly<!-- -->
+<ul>
+<li>Avoid <strong>Runtime Coupling</strong>
+<ul>
+<li>Reduced availability due to reliance of a given microservice on another for serving a given request<!-- -->
+<ul>
+<li>For example, microservice A receives an API request which it can only respond to when its own API request to microservice B is answered first</li>
+</ul>
+</li>
+<li>Make microservices as self-contained as possible<!-- -->
+<ul>
+<li>Able to respond to a request without making follow-up requests to other microservices</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Avoid <strong>Design-Time Coupling</strong>
+<ul>
+<li>Similar to <a href="https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle" target="_blank" rel="noopener noreferrer">Open-Closed Principle</a></li>
+<li>Avoid having to modify other microservices when modifying a given microservice</li>
+<li>Must be able to modify or exend a given microservice independently as much as possible<!-- -->
+<ul>
+<li>Have small and stable API which hides as much implementation complexity as possible</li>
+<li>Hide what you can, not only code but also database schemas, so you can change them without affecting other microservices</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Measuring success<!-- -->
+<ul>
+<li>Improved metrics: Reduced lead time, deployment frequency, failure rate, etc.</li>
+<li>Improvements in other '-ilities': Availability, Reliability and Scalability</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="you-wont-believe-this-hack-to-improve-your-technical-communication">You Won’t BELIEVE This HACK to Improve Your Technical Communication!<a href="https://evantay.com/blog/stack-2020#you-wont-believe-this-hack-to-improve-your-technical-communication" class="hash-link" aria-label="Direct link to You Won’t BELIEVE This HACK to Improve Your Technical Communication!" title="Direct link to You Won’t BELIEVE This HACK to Improve Your Technical Communication!">​</a></h2>
+<p><strong>Speaker(s)</strong></p>
+<ul>
+<li><a href="https://www.linkedin.com/in/nikhil-c-513647148/" target="_blank" rel="noopener noreferrer">Nikhil Choudhary</a>: Software Engineer at Open Government Products</li>
+</ul>
+<p><strong>Key takeaways</strong></p>
+<p>When introducing non-technical folks to coding, keep in mind that the most important objective is to convey understanding of core programming concepts.</p>
+<p>On that note, here are some tips Nikhil shared:</p>
+<ul>
+<li>Forgo coding best practices if doing so make it easier for the audience to understand<!-- -->
+<ul>
+<li>Reduce surface area to increase accessibility, even if it is not good coding practice<!-- -->
+<ul>
+<li>Collapse all HTML, JS and CSS into a single file so students can view everything in one place</li>
+<li>Collapse all functions into one for the same reason as the previous line</li>
+<li>Combine program lines if it makes things clearer</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Use real-world examples to explain technical concepts<!-- -->
+<ul>
+<li>For example, use a restaurant scenario to explain <code>async</code></li>
+</ul>
+</li>
+<li>Enable students in sharing their joy/achievement<!-- -->
+<ul>
+<li>Make deploying their application easy<!-- -->
+<ul>
+<li>Can use <a href="https://app.netlify.com/drop" target="_blank" rel="noopener noreferrer">Netlify Drop</a>: Simply drag and drop your HTML, JS, CSS files and Netlify Drop will do the rest for deployments</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Practise empathy consciously throughout teaching process to identify ways you can make learning easier for your students</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="devops-cloud-and-back-again">DevOps: Cloud and Back Again<a href="https://evantay.com/blog/stack-2020#devops-cloud-and-back-again" class="hash-link" aria-label="Direct link to DevOps: Cloud and Back Again" title="Direct link to DevOps: Cloud and Back Again">​</a></h2>
+<p><strong>Speaker(s)</strong></p>
+<ul>
+<li><a href="https://www.linkedin.com/in/mitchellh/" target="_blank" rel="noopener noreferrer">Mitchell Hashimoto</a>: Co-Founder and CTO at HashiCorp</li>
+</ul>
+<p><strong>Key takeaways</strong></p>
+<p>Mitchell shared more about the <a href="https://www.hashicorp.com/cloud-operating-model" target="_blank" rel="noopener noreferrer">Cloud Operating Model</a> during this session.</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span><a href="https://www.hashicorp.com/cloud-operating-model" target="_blank" rel="noopener noreferrer">Cite</a></div><div class="admonitionContent_BuS1"><p>"The Cloud Operating Model is a new approach for IT operations that organizations need to use to be successful with cloud adoption and thrive in an era of multi-cloud architecture." - Hashicorp</p></div></div>
+<table><thead><tr><th></th><th>Static</th><th>Dynamic</th></tr></thead><tbody><tr><td>Run</td><td>Dedicated infrastructure to run app on</td><td>Scheduled automatically across a fleet (e.g. AWS Auto-Scaling Group, Hashicorp Nomad)</td></tr><tr><td>Connect</td><td>Host-based, static IP-addressing</td><td>Service-based, dynamic IP addresses due to dynamic provisioning</td></tr><tr><td>Secure</td><td>High-trust environment which is IP-address-based, with clear network perimeter</td><td>Low-trust environment with no clear perimeter given multi-tenancy and nature of the Cloud</td></tr><tr><td>Provision</td><td>Dedicated resources - Physical servers, routers and switches</td><td>Capacity on-demand, provision VMs, Containers and other managed services, or simply use Serverless services</td></tr></tbody></table>
+<ul>
+<li>Infrastructure operations on the Cloud must follow the Dynamic Cloud Operating Model fully<!-- -->
+<ul>
+<li>Pointless if you provision infrastructure in minutes using Infrastructure-as-Code (IaC), but still manually handle connectivity and security review using tickets</li>
+<li>Have to adopt dynamic cloud operating tools for all 4 layers</li>
+</ul>
+</li>
+<li>Why use IaC for provisioning<!-- -->
+<ul>
+<li>Split Execution from Definition</li>
+<li>Execution can be automated and carried out via API, UI or automatically through Continuous-Integration (CI) tools</li>
+</ul>
+</li>
+<li>How can teams use IaC<!-- -->
+<ul>
+<li>Operations team still necessary, focus on creating and improving blueprints and handling edge-cases when doing so</li>
+<li>Development team creates infrastructure in a self-service manner, using the blueprints created by the Operations team
+separating buzz words from crucial tech</li>
+</ul>
+</li>
+</ul>
+<p>Read up on Hashicorp's white paper on <a href="https://www.hashicorp.com/cloud-operating-model" target="_blank" rel="noopener noreferrer">Cloud Operating Model</a> for more information.</p>]]></content>
+        <author>
+            <name>Evan Tay</name>
+            <uri>https://github.com/DigiPie</uri>
+        </author>
+        <category label="conference" term="conference"/>
+        <category label="cloud" term="cloud"/>
+        <category label="microservices" term="microservices"/>
+        <category label="GovTechSTACK" term="GovTechSTACK"/>
+    </entry>
+</feed>

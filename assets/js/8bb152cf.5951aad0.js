@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkevantay_com=self.webpackChunkevantay_com||[]).push([[6928],{6088:a=>{a.exports=JSON.parse('{"label":"software-architecture","permalink":"/blog/tags/software-architecture","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
