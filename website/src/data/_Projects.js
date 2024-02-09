@@ -51,9 +51,9 @@ const projects = [
     slug: "#kaya-folio",
     imageUrl: "img/projects/kayafolio.png",
     subtitle:
-      "A software engineer portfolio template built with Docusaurus v2 and ReactJS.",
+      "A software engineer portfolio template built with Docusaurus 3.0 and ReactJS.",
     period: "October 2020 to Present",
-    tech: "Docusaurus v2, ReactJS",
+    tech: "Docusaurus 3.0, ReactJS",
     description: (
       <>
         <p>
@@ -64,7 +64,7 @@ const projects = [
         <p>
           I built it using{" "}
           <a href="https://v2.docusaurus.io/" target="_blank">
-            Docusaurus v2
+            Docusaurus 3.0
           </a>{" "}
           and{" "}
           <a href="https://reactjs.org/" target="_blank">

@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  A software engineer portfolio template built with <a href="https://v2.docusaurus.io/">Docusaurus v2</a>, <a href="https://reactjs.org/">ReactJS</a>, and <i><a href="https://lmgtfy.app/?q=kaya">Kaya</a></i>.
+  A software engineer portfolio template built with <a href="https://docusaurus.io">Docusaurus 3.0</a>, <a href="https://reactjs.org/">ReactJS</a>, and <i><a href="https://lmgtfy.app/?q=kaya">Kaya</a></i>.
 </p>
 
 ![Landing page](img/landing.png)
@@ -28,7 +28,7 @@
 
 ## How was this built
 
-The Blog and Docs pages come pre-built with [Docusaurus v2](https://v2.docusaurus.io/).
+The Blog and Docs pages come pre-built with [Docusaurus 3.0](https://docusaurus.io).
 
 As for the Landing and Projects pages, I built them using [ReactJS](https://reactjs.org/).
 
