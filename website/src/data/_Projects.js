@@ -63,7 +63,7 @@ const projects = [
         </p>
         <p>
           I built it using{" "}
-          <a href="https://v2.docusaurus.io/" target="_blank">
+          <a href="https://docusaurus.io/" target="_blank">
             Docusaurus 3.0
           </a>{" "}
           and{" "}
