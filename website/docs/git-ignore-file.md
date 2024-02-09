@@ -10,7 +10,7 @@ This section covers how to tell Git to ignore certain files and directories by u
 
 :::tip
 
-Basic knowledge of Git is assumed in this tutorial. If you are new to Git, visit <http://rogerdudler.github.io/git-guide/> to learn the basics first.
+Basic knowledge of Git is assumed in this tutorial. If you are new to Git, visit [http://rogerdudler.github.io/git-guide/](http://rogerdudler.github.io/git-guide/) to learn the basics first.
 
 :::
 
