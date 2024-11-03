@@ -76,8 +76,8 @@ const projects = [
           <a href="https://github.com/DigiPie/kaya-folio/workflows/deploy-docusaurus/badge.svg">
             <img src="https://github.com/DigiPie/kaya-folio/workflows/deploy-docusaurus/badge.svg" />
           </a>{" "}
-          <a href="https://camo.githubusercontent.com/9571ed2aba067deff8dbaefbcf35bf68cd00a9a69e40503be848a14c4cc0dedd/68747470733a2f2f696d672e736869656c64732e696f2f776562736974653f75726c3d68747470732533412532462532466576616e7461792e636f6d">
-            <img src="https://camo.githubusercontent.com/9571ed2aba067deff8dbaefbcf35bf68cd00a9a69e40503be848a14c4cc0dedd/68747470733a2f2f696d672e736869656c64732e696f2f776562736974653f75726c3d68747470732533412532462532466576616e7461792e636f6d" />
+          <a href="https://img.shields.io/website?url=https%3A%2F%2Fevantay.com">
+            <img src="https://img.shields.io/website?url=https%3A%2F%2Fevantay.com" />
           </a>
         </p>
         <p>
