@@ -76,8 +76,8 @@ const projects = [
           <a href="https://github.com/DigiPie/kaya-folio/workflows/deploy-docusaurus/badge.svg">
             <img src="https://github.com/DigiPie/kaya-folio/workflows/deploy-docusaurus/badge.svg" />
           </a>{" "}
-          <a href="https://camo.githubusercontent.com/399d62140ec640c832d3c3390f39e2df16086f415f7a6723bd803baca2062627/68747470733a2f2f696d672e736869656c64732e696f2f776562736974653f75726c3d68747470732533412532462532466576616e7461792e636f6d">
-            <img src="https://camo.githubusercontent.com/399d62140ec640c832d3c3390f39e2df16086f415f7a6723bd803baca2062627/68747470733a2f2f696d672e736869656c64732e696f2f776562736974653f75726c3d68747470732533412532462532466576616e7461792e636f6d" />
+          <a href="https://camo.githubusercontent.com/9571ed2aba067deff8dbaefbcf35bf68cd00a9a69e40503be848a14c4cc0dedd/68747470733a2f2f696d672e736869656c64732e696f2f776562736974653f75726c3d68747470732533412532462532466576616e7461792e636f6d">
+            <img src="https://camo.githubusercontent.com/9571ed2aba067deff8dbaefbcf35bf68cd00a9a69e40503be848a14c4cc0dedd/68747470733a2f2f696d672e736869656c64732e696f2f776562736974653f75726c3d68747470732533412532462532466576616e7461792e636f6d" />
           </a>
         </p>
         <p>
