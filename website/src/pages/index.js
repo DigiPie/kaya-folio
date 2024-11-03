@@ -42,7 +42,8 @@ function Home() {
             <span className="text-warning">
               Senior Full-Stack Software Engineer
             </span>{" "}
-            passionate about solving meaningful problems at scale.
+            passionate about solving meaningful problems at{" "}
+            <span className="text-danger">scale</span>.
           </p>
           <SocialLinks />
           <p>
