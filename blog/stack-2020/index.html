@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.5.2">
+<title data-rh="true">STACK 2020 Developers Conference | Evan Tay</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://evantay.com/blog/stack-2020"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="STACK 2020 Developers Conference | Evan Tay"><meta data-rh="true" name="description" content="STACK 2020 Developers Conference is GovTech’s flagship conference and the largest government-led developers event in Singapore that connects government, industry and the tech community."><meta data-rh="true" property="og:description" content="STACK 2020 Developers Conference is GovTech’s flagship conference and the largest government-led developers event in Singapore that connects government, industry and the tech community."><meta data-rh="true" property="og:type" content="article"><meta data-rh="true" property="article:published_time" content="2020-12-03T00:00:00.000Z"><meta data-rh="true" property="article:author" content="https://github.com/DigiPie"><meta data-rh="true" property="article:tag" content="conference,cloud,microservices,GovTechSTACK"><link data-rh="true" rel="icon" href="/img/logo.png"><link data-rh="true" rel="canonical" href="https://evantay.com/blog/stack-2020"><link data-rh="true" rel="alternate" href="https://evantay.com/blog/stack-2020" hreflang="en"><link data-rh="true" rel="alternate" href="https://evantay.com/blog/stack-2020" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://evantay.com/blog/stack-2020","mainEntityOfPage":"https://evantay.com/blog/stack-2020","url":"https://evantay.com/blog/stack-2020","headline":"STACK 2020 Developers Conference","name":"STACK 2020 Developers Conference","description":"STACK 2020 Developers Conference is GovTech’s flagship conference and the largest government-led developers event in Singapore that connects government, industry and the tech community.","datePublished":"2020-12-03T00:00:00.000Z","author":{"@type":"Person","name":"Evan Tay","description":"Final year Computer Science major at NUS","url":"https://github.com/DigiPie","image":"https://avatars2.githubusercontent.com/u/13582874"},"keywords":[],"isPartOf":{"@type":"Blog","@id":"https://evantay.com/blog","name":"Blog"}}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Evan Tay RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Evan Tay Atom Feed">
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.858deb44.css">
+<script src="/assets/js/runtime~main.9ec26cea.js" defer="defer"></script>
+<script src="/assets/js/main.1230ad68.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"dark")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top navbarHideable_m1mJ"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" target="_self" href="/"><div class="navbar__logo"><img src="/img/logo.png" alt="Evan Tay" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.png" alt="Evan Tay" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Evan Tay</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/blog/">Blog</a><a class="navbar__item navbar__link" href="/docs/">Docs</a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/projects/">Projects</a><a href="https://evantay.com/pdf/resume.pdf" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Resume<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><aside class="col col--3"><nav class="sidebar_re4s thin-scrollbar" aria-label="Blog recent posts navigation"><div class="sidebarItemTitle_pO2u margin-bottom--md">Recent posts</div><div role="group"><h3 class="yearGroupHeading_rMGB">2021</h3><ul class="sidebarItemList_Yudw clean-list"><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/why-you-should-read-ddia">Why every Software Engineer should read Designing Data-Intensive Applications</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/docusaurus-posthog">Integrating PostHog product analytics with Docusaurus v2 on GitHub Pages</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/stashaway">Top 3 reasons why you should start investing with StashAway today!</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/docusaurus-gh-action">GitHub Action for Docusaurus</a></li></ul></div><div role="group"><h3 class="yearGroupHeading_rMGB">2020</h3><ul class="sidebarItemList_Yudw clean-list"><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/history">History of EvanTay.com</a></li></ul></div></nav></aside><main class="col col--7"><article><header><h1 class="title_f1Hy">STACK 2020 Developers Conference</h1><div class="container_mt6G margin-vert--md"><time datetime="2020-12-03T00:00:00.000Z">December 3, 2020</time> · <!-- -->8 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a href="https://github.com/DigiPie" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_XqGP" src="https://avatars2.githubusercontent.com/u/13582874" alt="Evan Tay"></a><div class="avatar__intro authorDetails_lV9A"><div class="avatar__name"><a href="https://github.com/DigiPie" target="_blank" rel="noopener noreferrer"><span class="authorName_yefp">Evan Tay</span></a></div><small class="authorTitle_nd0D" title="Final year Computer Science major at NUS">Final year Computer Science major at NUS</small><div class="authorSocials_rSDt"></div></div></div></div></div></header><div id="__blog-post-container" class="markdown"><p><a href="https://www.stack.gov.sg/" target="_blank" rel="noopener noreferrer">STACK 2020 Developers Conference</a> is GovTech’s flagship conference and the largest government-led developers event in Singapore that connects government, industry and the tech community.</p>
+<p>In this post, you will find my key takeaways for some of the sessions I attended during the conference. I chose to attend these sessions based on my interests in Cloud and Microservices.</p>
+<p><strong>Day 1:</strong></p>
+<ul>
+<li><strong><a href="#opening-note">Opening note</a></strong> by Dr. Vivian Balakrishnan: Minister-in-charge of Smart Nation Programme Office and Chan Cheow Hoe: Government Chief Digital Technology Officer</li>
+<li><strong><a href="#rethink-reinvent-rebuild">Rethink, Reinvent, Rebuild</a></strong> by Jeff Barr: Vice President &amp; Chief Evangelist at Amazon Web Services</li>
+<li><strong><a href="#seeding-the-cloud-engineering-solutions-for-cloud-adoption">Seeding the Cloud: Engineering Solutions for Cloud Adoption</a></strong> by Hunter Nield: Distinguished Engineer at GovTech</li>
+<li><strong><a href="#six-principles-for-refactoring-a-monolith-to-microservices">Six Principles for Refactoring a Monolith to Microservices</a></strong> by Chris Richardson: Architect at Eventuate, Inc</li>
+</ul>
+<p><strong>Day 2:</strong></p>
+<ul>
+<li><strong><a href="#you-wont-believe-this-hack-to-improve-your-technical-communication">You Won’t BELIEVE This HACK to Improve Your Technical Communication!</a></strong> by Nikhil Choudhary: Software Engineer at Open Government Products</li>
+<li><strong><a href="#devops-cloud-and-back-again">DevOps: Cloud and Back Again</a></strong> by Mitchell Hashimoto: Co-Founder and CTO at HashiCorp</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="opening-note">Opening note<a href="#opening-note" class="hash-link" aria-label="Direct link to Opening note" title="Direct link to Opening note">​</a></h2>
+<p><strong>Speaker(s)</strong></p>
+<ul>
+<li><a href="http://vivian.balakrishnan.sg/" target="_blank" rel="noopener noreferrer">Dr. Vivian Balakrishnan</a>: Minister-in-charge of Smart Nation Programme Office</li>
+<li><a href="https://www.linkedin.com/in/cheow-hoe-chan-92646215/" target="_blank" rel="noopener noreferrer">Chan Cheow Hoe</a>: Government Chief Digital Technology Officer</li>
+</ul>
+<p><strong>Key takeaways</strong></p>
+<p>The government believes openness is the way to building a smart nation.</p>
+<p>On that note, they believe in:</p>
+<ul>
+<li>Adopting the best solutions there are, including those from the industry, instead of doing everything in-house<!-- -->
+<ul>
+<li><a href="https://www.developer.tech.gov.sg/technologies/infrastructure-and-hosting/government-commercial-cloud" target="_blank" rel="noopener noreferrer">Government Commercial Cloud</a>: AWS, Azure, GCP</li>
+</ul>
+</li>
+<li>Collaborating with industry developers via open-source<!-- -->
+<ul>
+<li><a href="https://www.developer.tech.gov.sg/" target="_blank" rel="noopener noreferrer">Singapore Government Developer Portal</a>: Collaboration platform for government and industry developers</li>
+</ul>
+</li>
+<li>Providing transparency to citizens and industry professionals<!-- -->
+<ul>
+<li><a href="https://www.tracetogether.gov.sg/" target="_blank" rel="noopener noreferrer">TraceTogether</a>: Transparent and open collaboration with the industry</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="rethink-reinvent-rebuild">Rethink, Reinvent, Rebuild<a href="#rethink-reinvent-rebuild" class="hash-link" aria-label="Direct link to Rethink, Reinvent, Rebuild" title="Direct link to Rethink, Reinvent, Rebuild">​</a></h2>
+<p><strong>Speaker(s)</strong></p>
+<ul>
+<li><a href="https://www.linkedin.com/in/jeffbarr/" target="_blank" rel="noopener noreferrer">Jeff Barr</a>: Vice President &amp; Chief Evangelist at Amazon Web Services</li>
+</ul>
+<p><strong>Key takeaways</strong></p>
+<ul>
+<li><strong>Rethink</strong> - Take a good look at where we are<!-- -->
+<ul>
+<li>Everything has changed due to COVID-19, Quarantine, WFH</li>
+<li>No firm ground and constants are now variables</li>
+<li>People are more receptive to change and invention right now</li>
+<li>Good time for innovation and progress</li>
+</ul>
+</li>
+<li><strong>Reinvent</strong> - Solve challenges in a new way<!-- -->
+<ul>
+<li>Dream big dreams, address these challenges, change the world</li>
+<li>Share what you learn to reinforce what you learned<!-- -->
+<ul>
+<li>Content creation / video streaming possibilities</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Rebuild</strong> - Put what you have learned to work<!-- -->
+<ul>
+<li>Take what you learn, do something awesome, and remember to share it!</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="seeding-the-cloud-engineering-solutions-for-cloud-adoption">Seeding the Cloud: Engineering Solutions for Cloud Adoption<a href="#seeding-the-cloud-engineering-solutions-for-cloud-adoption" class="hash-link" aria-label="Direct link to Seeding the Cloud: Engineering Solutions for Cloud Adoption" title="Direct link to Seeding the Cloud: Engineering Solutions for Cloud Adoption">​</a></h2>
+<p><strong>Speaker(s)</strong></p>
+<ul>
+<li><a href="https://www.linkedin.com/in/hunter/?originalSubdomain=sg" target="_blank" rel="noopener noreferrer">Hunter Nield</a>: Distinguished Engineer at GovTech</li>
+</ul>
+<p><strong>Key takeaways</strong></p>
+<p>Hunter shared about how GovTech uses Infrastructure-as-Code (IaC) and Policy-as-Code (PaC) to accelerate cloud operations. Read <a href="#devops-cloud-and-back-again">#devops-cloud-and-back-again</a> by Hashicorp CTO Mitchell for more information.</p>
+<ul>
+<li><strong>Establishing a Landing Zone</strong>
+<ul>
+<li>A repeatable configuration across multiple Cloud Service Providers (CSP)</li>
+<li>The foundation of any cloud environment at scale</li>
+<li>Serves as a consistent platform for governance, onboarding, networking and security</li>
+</ul>
+</li>
+<li><strong>Accelerating deployment with Infrastructure-as-Code (IaC)</strong>
+<ul>
+<li>Code and configuration to provision cloud resources and Landing Zones</li>
+<li>Develop common templates for consistency and familiarity</li>
+<li>Get feedback on pain points faced by &quot;customers&quot; while using said templates</li>
+</ul>
+</li>
+<li><strong>Consistent audit and reporting with Policy-as-Code (PaC)</strong>
+<ul>
+<li>Code and configuration to test and validate cloud infrastructure deployed by IaC</li>
+<li>Reduce need for manual audits and speed up auditing process</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="six-principles-for-refactoring-a-monolith-to-microservices">Six Principles for Refactoring a Monolith to Microservices<a href="#six-principles-for-refactoring-a-monolith-to-microservices" class="hash-link" aria-label="Direct link to Six Principles for Refactoring a Monolith to Microservices" title="Direct link to Six Principles for Refactoring a Monolith to Microservices">​</a></h2>
+<p><strong>Speaker(s)</strong></p>
+<ul>
+<li><a href="https://eventuate.io/about.html" target="_blank" rel="noopener noreferrer">Chris Richardson</a>: Architect at Eventuate, Inc</li>
+</ul>
+<p><strong>Key takeaways</strong></p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>Quote</div><div class="admonitionContent_BuS1"><p>&quot;A Microservice application is structured as a set of loosely coupled services that can be independently deployed.&quot; - Chris Richardson</p></div></div>
+<p>Chris shared 6 principles to follow when moving from a Monolith to a Microservice architecture.</p>
+<p>Here are 5 of them <!-- -->😉<!-- --> :</p>
+<ul>
+<li>Adopt Microservice architecture for the right reasons<!-- -->
+<ul>
+<li>Monolith architecture is not necessary bad (an anti-pattern), it has its valid use-cases</li>
+<li>Adopt Microservice architecture because it allows you to deliver software rapidly, frequently and sustainability, with small, autonomous teams working on the different microservices</li>
+</ul>
+</li>
+<li>Migrate to Microservice architecture incrementally rather than via Big Bang rewrite<!-- -->
+<ul>
+<li><strong>Strangler Application</strong>: Incrementally migrate functionality from existing Monolith application to new Strangler Microservice application<!-- -->
+<ul>
+<li>Extract existing code modules and database tables out into microservices</li>
+<li>Implement new features as microservices</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Consider Return-on-Investment when deciding which modules to convert into microservices<!-- -->
+<ul>
+<li>Consider benefit of decoupling said module</li>
+<li>Consider cost of decoupling<!-- -->
+<ul>
+<li>How difficult it is to do so</li>
+<li>How many inbound dependencies it has<!-- -->
+<ul>
+<li>If module A is depended upon by module B, consider extracting module B first</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Define the service boundaries correctly<!-- -->
+<ul>
+<li>Avoid <strong>Runtime Coupling</strong>
+<ul>
+<li>Reduced availability due to reliance of a given microservice on another for serving a given request<!-- -->
+<ul>
+<li>For example, microservice A receives an API request which it can only respond to when its own API request to microservice B is answered first</li>
+</ul>
+</li>
+<li>Make microservices as self-contained as possible<!-- -->
+<ul>
+<li>Able to respond to a request without making follow-up requests to other microservices</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Avoid <strong>Design-Time Coupling</strong>
+<ul>
+<li>Similar to <a href="https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle" target="_blank" rel="noopener noreferrer">Open-Closed Principle</a></li>
+<li>Avoid having to modify other microservices when modifying a given microservice</li>
+<li>Must be able to modify or exend a given microservice independently as much as possible<!-- -->
+<ul>
+<li>Have small and stable API which hides as much implementation complexity as possible</li>
+<li>Hide what you can, not only code but also database schemas, so you can change them without affecting other microservices</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Measuring success<!-- -->
+<ul>
+<li>Improved metrics: Reduced lead time, deployment frequency, failure rate, etc.</li>
+<li>Improvements in other &#x27;-ilities&#x27;: Availability, Reliability and Scalability</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="you-wont-believe-this-hack-to-improve-your-technical-communication">You Won’t BELIEVE This HACK to Improve Your Technical Communication!<a href="#you-wont-believe-this-hack-to-improve-your-technical-communication" class="hash-link" aria-label="Direct link to You Won’t BELIEVE This HACK to Improve Your Technical Communication!" title="Direct link to You Won’t BELIEVE This HACK to Improve Your Technical Communication!">​</a></h2>
+<p><strong>Speaker(s)</strong></p>
+<ul>
+<li><a href="https://www.linkedin.com/in/nikhil-c-513647148/" target="_blank" rel="noopener noreferrer">Nikhil Choudhary</a>: Software Engineer at Open Government Products</li>
+</ul>
+<p><strong>Key takeaways</strong></p>
+<p>When introducing non-technical folks to coding, keep in mind that the most important objective is to convey understanding of core programming concepts.</p>
+<p>On that note, here are some tips Nikhil shared:</p>
+<ul>
+<li>Forgo coding best practices if doing so make it easier for the audience to understand<!-- -->
+<ul>
+<li>Reduce surface area to increase accessibility, even if it is not good coding practice<!-- -->
+<ul>
+<li>Collapse all HTML, JS and CSS into a single file so students can view everything in one place</li>
+<li>Collapse all functions into one for the same reason as the previous line</li>
+<li>Combine program lines if it makes things clearer</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Use real-world examples to explain technical concepts<!-- -->
+<ul>
+<li>For example, use a restaurant scenario to explain <code>async</code></li>
+</ul>
+</li>
+<li>Enable students in sharing their joy/achievement<!-- -->
+<ul>
+<li>Make deploying their application easy<!-- -->
+<ul>
+<li>Can use <a href="https://app.netlify.com/drop" target="_blank" rel="noopener noreferrer">Netlify Drop</a>: Simply drag and drop your HTML, JS, CSS files and Netlify Drop will do the rest for deployments</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Practise empathy consciously throughout teaching process to identify ways you can make learning easier for your students</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="devops-cloud-and-back-again">DevOps: Cloud and Back Again<a href="#devops-cloud-and-back-again" class="hash-link" aria-label="Direct link to DevOps: Cloud and Back Again" title="Direct link to DevOps: Cloud and Back Again">​</a></h2>
+<p><strong>Speaker(s)</strong></p>
+<ul>
+<li><a href="https://www.linkedin.com/in/mitchellh/" target="_blank" rel="noopener noreferrer">Mitchell Hashimoto</a>: Co-Founder and CTO at HashiCorp</li>
+</ul>
+<p><strong>Key takeaways</strong></p>
+<p>Mitchell shared more about the <a href="https://www.hashicorp.com/cloud-operating-model" target="_blank" rel="noopener noreferrer">Cloud Operating Model</a> during this session.</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span><a href="https://www.hashicorp.com/cloud-operating-model" target="_blank" rel="noopener noreferrer">Cite</a></div><div class="admonitionContent_BuS1"><p>&quot;The Cloud Operating Model is a new approach for IT operations that organizations need to use to be successful with cloud adoption and thrive in an era of multi-cloud architecture.&quot; - Hashicorp</p></div></div>
+<table><thead><tr><th></th><th>Static</th><th>Dynamic</th></tr></thead><tbody><tr><td>Run</td><td>Dedicated infrastructure to run app on</td><td>Scheduled automatically across a fleet (e.g. AWS Auto-Scaling Group, Hashicorp Nomad)</td></tr><tr><td>Connect</td><td>Host-based, static IP-addressing</td><td>Service-based, dynamic IP addresses due to dynamic provisioning</td></tr><tr><td>Secure</td><td>High-trust environment which is IP-address-based, with clear network perimeter</td><td>Low-trust environment with no clear perimeter given multi-tenancy and nature of the Cloud</td></tr><tr><td>Provision</td><td>Dedicated resources - Physical servers, routers and switches</td><td>Capacity on-demand, provision VMs, Containers and other managed services, or simply use Serverless services</td></tr></tbody></table>
+<ul>
+<li>Infrastructure operations on the Cloud must follow the Dynamic Cloud Operating Model fully<!-- -->
+<ul>
+<li>Pointless if you provision infrastructure in minutes using Infrastructure-as-Code (IaC), but still manually handle connectivity and security review using tickets</li>
+<li>Have to adopt dynamic cloud operating tools for all 4 layers</li>
+</ul>
+</li>
+<li>Why use IaC for provisioning<!-- -->
+<ul>
+<li>Split Execution from Definition</li>
+<li>Execution can be automated and carried out via API, UI or automatically through Continuous-Integration (CI) tools</li>
+</ul>
+</li>
+<li>How can teams use IaC<!-- -->
+<ul>
+<li>Operations team still necessary, focus on creating and improving blueprints and handling edge-cases when doing so</li>
+<li>Development team creates infrastructure in a self-service manner, using the blueprints created by the Operations team
+separating buzz words from crucial tech</li>
+</ul>
+</li>
+</ul>
+<p>Read up on Hashicorp&#x27;s white paper on <a href="https://www.hashicorp.com/cloud-operating-model" target="_blank" rel="noopener noreferrer">Cloud Operating Model</a> for more information.</p></div><footer class="docusaurus-mt-lg"><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/blog/tags/conference">conference</a></li><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/blog/tags/cloud">cloud</a></li><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/blog/tags/microservices">microservices</a></li><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/blog/tags/gov-tech-stack">GovTechSTACK</a></li></ul></div></div><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class="col"><a href="https://github.com/DigiPie/kaya-folio/tree/main/website/blog/2020-12-03-stack-conference.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Blog post page navigation"><a class="pagination-nav__link pagination-nav__link--prev" href="/blog/history"><div class="pagination-nav__sublabel">Newer post</div><div class="pagination-nav__label">History of EvanTay.com</div></a></nav></main><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#opening-note" class="table-of-contents__link toc-highlight">Opening note</a></li><li><a href="#rethink-reinvent-rebuild" class="table-of-contents__link toc-highlight">Rethink, Reinvent, Rebuild</a></li><li><a href="#seeding-the-cloud-engineering-solutions-for-cloud-adoption" class="table-of-contents__link toc-highlight">Seeding the Cloud: Engineering Solutions for Cloud Adoption</a></li><li><a href="#six-principles-for-refactoring-a-monolith-to-microservices" class="table-of-contents__link toc-highlight">Six Principles for Refactoring a Monolith to Microservices</a></li><li><a href="#you-wont-believe-this-hack-to-improve-your-technical-communication" class="table-of-contents__link toc-highlight">You Won’t BELIEVE This HACK to Improve Your Technical Communication!</a></li><li><a href="#devops-cloud-and-back-again" class="table-of-contents__link toc-highlight">DevOps: Cloud and Back Again</a></li></ul></div></div></div></div></div><footer class="footer"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Connect</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.linkedin.com/in/evanitsg/" target="_blank" rel="noopener noreferrer" class="footer__link-item">LinkedIn<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/digipie" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://padlet.com/about/us/wish/1072760846" target="_blank" rel="noopener noreferrer" class="footer__link-item">Padlet<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="mailto:evan.it.sg@gmail.com" target="_blank" rel="noopener noreferrer" class="footer__link-item">Email<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">Discover</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" href="/docs">Documentation</a></li><li class="footer__item"><a class="footer__link-item" href="/projects">Projects</a></li><li class="footer__item"><a href="https://evantay.com/pdf/resume.pdf" target="_blank" rel="noopener noreferrer" class="footer__link-item">Resume<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright"><a href="https://evantay.com">Design by Evan Tay</a> • <a href="https://github.com/DigiPie/kaya-folio/commits/main">Updated 11/3/2024</a></div></div></div></footer></div>
+</body>
+</html>
