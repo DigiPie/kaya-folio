@@ -41,7 +41,7 @@ const internetProfiles = {
 module.exports = {
   title: "Evan Tay",
   tagline:
-    "I am a Software Engineer and Cloud Engineer passionate about solving meaningful problems.",
+    "A Senior Full-Stack Software Engineer passionate about solving meaningful problems at scale.",
   url: "https://evantay.com",
   baseUrl: "/",
   onBrokenLinks: "throw",

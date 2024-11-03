@@ -38,9 +38,11 @@ function Home() {
           <p>Hi, my name is</p>
           <h1 className="text-success">Evan Tay.</h1>
           <p>
-            I am a <span className="text-warning">Software Engineer</span> and{" "}
-            <span className="text-danger">Cloud Engineer</span> passionate about
-            solving meaningful problems.
+            I am a{" "}
+            <span className="text-warning">
+              Senior Full-Stack Software Engineer
+            </span>{" "}
+            passionate about solving meaningful problems at scale.
           </p>
           <SocialLinks />
           <p>
