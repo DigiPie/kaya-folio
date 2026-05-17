@@ -2,6 +2,46 @@ import React from "react";
 
 const projects = [
   {
+    category: "BudBud Budgeting App",
+    title: "BudBud",
+    slug: "#budbud",
+    imageUrl: "img/projects/budbud.png",
+    subtitle:
+      "A personal budgeting app for tracking expenses, net worth, and savings goals.",
+    period: "April 2026 to Present",
+    tech: "Lovable, Claude Code",
+    description: (
+      <>
+        <p>
+          BudBud is a personal budgeting app I designed and built for tracking
+          expenses, monthly balance sheets, salary allocation, savings goals,
+          and a shared "buddy" view so a partner or friend can stay aligned
+          with you.
+        </p>
+        <p>
+          I iterate on BudBud constantly with{" "}
+          <a href="https://lovable.dev/" target="_blank">Lovable</a> and{" "}
+          <a href="https://claude.com/claude-code" target="_blank">Claude Code</a>.
+          Between each round, I draw on my product and engineering experience
+          to guide the agents toward building the right thing the right way:
+          a clean data model, row level access, and reusable components for a
+          consistent UI.
+        </p>
+        <p>
+          I focused on delivering a clear and direct experience, responsive
+          across phones and laptops, and accessible to screen readers, because
+          a budgeting tool only earns its place if people open it daily.
+        </p>
+      </>
+    ),
+    links: [
+      {
+        name: "Website",
+        link: "https://budbudbudgeting.lovable.app/",
+      },
+    ],
+  },
+  {
     category: "Project",
     title: "nodejs-mysql-cloudformation",
     slug: "#nodejs-mysql-cloudformation",
