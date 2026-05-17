@@ -40,7 +40,7 @@ function Home() {
           <p>
             I am a{" "}
             <span className="text-warning">
-              Senior Full-Stack Software Engineer
+              Senior Product Engineer
             </span>{" "}
             passionate about solving meaningful problems at{" "}
             <span className="text-danger">scale</span>.
@@ -71,8 +71,7 @@ function Home() {
           <div className={styles.aboutText}>
             <h2>Hi</h2>
             <p>
-              🇸🇬 I am Evan, a Full Stack Software Engineer and Certified Cloud
-              Engineer based in Singapore.
+              🇸🇬 I am Evan, a Senior Product Engineer based in Singapore.
             </p>
             <p>
               🚀 I love building cool and meaningful things with tech like{" "}
