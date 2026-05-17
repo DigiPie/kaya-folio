@@ -81,7 +81,7 @@ function Home() {
               .
             </p>
             <p>
-              🌏 To me, coding is the closest thing to magic we have on Earth.
+              🪄 To me, coding is the closest thing to magic we have on Earth.
             </p>
             <p>
               👨‍💻 I have been writing beautiful code at{" "}
@@ -95,8 +95,8 @@ function Home() {
               at the{" "}
               <a href="https://www.comp.nus.edu.sg/">
                 National University of Singapore
-              </a>{" "}
-              from 2017 to 2020.
+              </a>
+              .
             </p>
             <p>
               🧑‍🏫 Back then, I was a{" "}
