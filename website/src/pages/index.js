@@ -38,12 +38,11 @@ function Home() {
           <p>Hi, my name is</p>
           <h1 className="text-success">Evan Tay.</h1>
           <p>
-            I am a{" "}
-            <span className="text-warning">
-              Senior Product Engineer
-            </span>{" "}
-            passionate about solving meaningful problems at{" "}
-            <span className="text-danger">scale</span>.
+            I am an <span className="text-warning">Engineering Manager</span>{" "}
+            and
+            <span className="text-danger">Product Owner</span> passionate about
+            solving meaningful problems at{" "}
+            <span className="text-success">scale</span>.
           </p>
           <SocialLinks />
           <p>
@@ -71,7 +70,8 @@ function Home() {
           <div className={styles.aboutText}>
             <h2>Hi</h2>
             <p>
-              🇸🇬 I am Evan, a Senior Product Engineer based in Singapore.
+              🇸🇬 I am Evan, an Engineering Manager and Product Owner based in
+              Singapore.
             </p>
             <p>
               🚀 I love building cool and meaningful things with tech like{" "}
