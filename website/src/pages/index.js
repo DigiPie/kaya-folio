@@ -39,7 +39,7 @@ function Home() {
           <h1 className="text-success">Evan Tay.</h1>
           <p>
             I am a <span className="text-warning">Product</span> and{" "}
-            <span className="text-warning">Engineering Manager</span> passionate
+            <span className="text-danger">Engineering Manager</span> passionate
             about solving meaningful problems at{" "}
             <span className="text-success">scale</span>.
           </p>
