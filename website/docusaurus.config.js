@@ -41,7 +41,7 @@ const internetProfiles = {
 module.exports = {
   title: "Evan Tay",
   tagline:
-    "An Engineering Manager and Product Owner passionate about solving meaningful problems at scale.",
+    "A Product and Engineering Manager passionate about solving meaningful problems at scale.",
   url: "https://evantay.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
