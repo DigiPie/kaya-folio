@@ -38,8 +38,8 @@ function Home() {
           <p>Hi, my name is</p>
           <h1 className="text-success">Evan Tay.</h1>
           <p>
-            I am a <span className="text-warning">Product</span> and{" "}
-            <span className="text-danger">Engineering Manager</span> passionate
+            I am an <span className="text-warning">Engineering Manager</span>{" "}
+            and <span className="text-danger">Product Owner</span> passionate
             about solving meaningful problems at{" "}
             <span className="text-success">scale</span>.
           </p>
